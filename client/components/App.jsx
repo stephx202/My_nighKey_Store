@@ -1,24 +1,31 @@
 import React, { useEffect, useState } from "react";
 
-const App = () => {
-  const [tasks, setTasks] = useState([]);
+import Header from './Header.jsx';
+import Main from './Main.jsx';
+import Carousel from './Carousel.jsx';
+import Footer from './Footer.jsx';
 
-  useEffect(() => {
-    fetch("/api/tasks")
-      .then((res) => res.json())
-      .then((tasks) => {
-        setTasks(tasks);
-      });
-  }, []);
+const App = () => {
+  
+  // Commented out, fossil from original template code ////////////////////
+  // const [tasks, setTasks] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("/api/tasks")
+  //     .then((res) => res.json())
+  //     .then((tasks) => {
+  //       setTasks(tasks);
+  //     });
+  // }, []);
+  ////////////////////////////////////////////////////////////////////////
 
   return (
-    <main>
-      {tasks.map((task) => (
-        <span className="task" key={task.id}>
-          {task.description}
-        </span>
-      ))}
-    </main>
+    <>
+      <Header />
+      <Main />
+      <Carousel />
+      <Footer />
+    </>
   );
 };
 
