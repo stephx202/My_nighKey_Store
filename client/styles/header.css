@@ -1,5 +1,6 @@
 body{
-    font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif
+    font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
+    color: #111
 }
 
 #topHeader{
@@ -20,18 +21,15 @@ body{
 
 div.links{
     width: fit-content;
-    justify-self: end;
-    float:right;
-    height: 100%;
     margin-left: auto;
     margin-right: 100px;
     padding: 8px;
     display:inline;
 } 
 
-p,a.links{
+p,div.link{
     display: inline;
-    padding: 0 5px;
+    padding: 12px 5px;
     font-weight: bold;
     font-size: 12px;
 }
@@ -44,7 +42,54 @@ svg:hover{
     fill: #707072;  
 }
 
-a:hover{
+div.link:hover{
     color: #707072;
     cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    opacity: 1;
+    position: absolute;
+    margin-left: -50px;
+    min-width: 200px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+    top: 0px;
+    text-align: left;
+    padding: 15px;
+  }
+
+  .dropdown-content a {
+    /* font-weight: bold; */
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+
+  .dropdown-content a:hover {
+    color: black;
+  }
+
+  .dropdown-content h2 {
+    color: black;
+  }
+
+  .dropdown:hover  .dropdown-content{
+    display: block;
+    transform: translateY(36px);
+    animation: fadeInAnimation ease 0.5s;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        top: -10px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
 }

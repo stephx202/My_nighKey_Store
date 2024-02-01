@@ -13,12 +13,41 @@ const Header = (props) => {
         </a>
         </div>
         <div className="links">
-            <a className="links">Find a Store</a><p>|</p>
-            <a className="links">Help</a><p>|</p>
-            <a className="links">Join Us</a><p>|</p>
-            <a className="links">Sign in</a>
+            <div className="link">Find a Store</div><p>|</p>
+            <div className="dropdown link">Help
+            <div className="dropdown-content">
+            <h2>Help</h2>
+            <a >Order Status</a>
+            <a >Shipping & Delivery</a>
+            <a >Returns</a>
+            <a >Order Cancellation</a>
+            <a >Size Charts</a>
+            <a >Contact Us</a>
+            <a >Membership</a>
+            <a >Promotions & Discounts</a>
+            <a >Product Advice</a>
+            <a >Send Us Feedback</a>
         </div>
+            </div><p>|</p>
+            <div className="link">Join Us</div><p>|</p>
+            <div className="link">Sign in</div>
+        </div>
+        
         </nav>
+        
+
+        {/* <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+	  <button class="btn">Dropdown</button>
+	  <div class="dropdown-menu">
+		<a href="#">courses</a>
+		<a href="#">Menu</a>
+		<a href="#">Link </a>
+	  </div>
+    </div>
+  </div> */}
         </>
     )
 }
