@@ -1,0 +1,50 @@
+body{
+    font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif
+}
+
+#topHeader{
+    background-color: #f5f5f5;
+    display: flex;
+    height: 36px;
+    width: 100%;
+    padding: 0 38px 0 36px;
+}
+
+.partner-brands{
+    display: flex;
+    padding: 5px;
+    margin-block-start: 1 em;
+    margin-block-end: 1 em;
+    /* padding-inline-start: 40px; */
+}
+
+div.links{
+    width: fit-content;
+    justify-self: end;
+    float:right;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 100px;
+    padding: 8px;
+    display:inline;
+} 
+
+p,a.links{
+    display: inline;
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a.partner-brands{
+    padding: 0 12px;
+}
+
+svg:hover{
+    fill: #707072;  
+}
+
+a:hover{
+    color: #707072;
+    cursor: pointer;
+}
