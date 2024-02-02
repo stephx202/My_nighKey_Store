@@ -1,0 +1,16 @@
+#promotion_sublinks {
+  color: #5f5f5f;
+  transition-behavior: normal;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  display: inline-block;
+  white-space: nowrap;
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
