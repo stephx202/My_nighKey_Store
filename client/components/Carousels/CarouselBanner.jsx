@@ -14,7 +14,7 @@ const CustomArrow = ({ className, onClick }) => (
 
 
 const CarouselBanner = (props) => {
-    var settings = {
+    const settings = {
         dots: false,
         infinite: true,
         speed: 500,

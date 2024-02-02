@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Header from './Header.jsx';
 import Main from './Main.jsx';
-import CarouselBanner from './Carousels/CarouselBanner.jsx';
+import Carousels from "./Carousels/Carousels.jsx";
 import Footer from './Footer.jsx';
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
     <>
       <Header />
       <Main />
-      <CarouselBanner />
+      <Carousels/>
       <Footer />
     </>
   );
