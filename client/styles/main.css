@@ -1,4 +1,4 @@
-/* Main Component ////////////////////////////////// /*/
+/* Main Component //////////////////////////////////////////////////////////// /*/
 #main {
     position: relative;
     display: flex;
@@ -7,21 +7,22 @@
     height: 1500px;
     width: 60vw;
     top: 22vh;
-    outline: solid thin red;
+    /* outline: solid thin red; */
 }
 
-/* Image Gallery Component ///////////////////////// */
+/* Image Gallery Component ////////////////////////////////////////////////// */
 #imageGallery {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
     top: 3vh;
     height: 700px;
-    width: 70vh;
-    outline: thin solid blue;
+    width: 33.5vw;
+    /* outline: thin solid blue; */
 }
-/* scroll */
+/* scroll //////////////////////////////////////////////*/
 #imageScroll {
     position: relative;
     display: flex;
@@ -29,7 +30,7 @@
     align-items: center;
     height: 700px;
     width: 5vw;
-    outline: thin solid red;
+    /* outline: thin solid red; */
     overflow: scroll;
 }
 #imageScroll::-webkit-scrollbar {
@@ -45,16 +46,71 @@
     background-color: #f5f5f5;
     border-radius: 5px;
 }
-/* selected image */
+/* selected image ////////////////////////////////////*/
 #selectedImg {
+    position: relative;
+    height: 700px;
+    width: 28vw;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+#selectedVid {
+    position: relative;
+    height: 700px;
+    width: 28vw;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    }
 
+    /* Buttons/tags //////////////////////////////////*/
+#buttonOverlay {
+    position: absolute;
+    height: 700px;
+    width: 33.5vw;
+    pointer-events: none;
+}
+#highlyRated {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3vh;
+    left: 7vw;
+    height: 40px;
+    width: 7.2vw;
+    background-color: white;
+    border-radius: 25px;
+}
+.nikeFont {
+    font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
+}
+#buttonContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 61vh;
+    left: 27vw;
+    height: 38px;
+    width: 4.5vw;
+    border-radius: 25px;
+}
+#galleryButton {
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 38px;
+    width: 38px;
+    background-color: white;
+    outline: thin solid gray;
+    border-radius: 100%;
 }
 
-/* Purchase Info Component ///////////////////////// */
+/* Purchase Info Component ////////////////////////////////////////////////////////// */
 #purchaseInfo {
     position: relative;
     height: 1400px;
     width: 50vh;
-    
-    outline: thin solid blue;
+    /* outline: thin solid blue; */
 }
