@@ -23,7 +23,7 @@ const App = () => {
     <>
       <Header />
       <Main />
-      <Carousel />
+      {/* <Carousel /> */}
       <Footer />
     </>
   );

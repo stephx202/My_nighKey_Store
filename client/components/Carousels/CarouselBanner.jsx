@@ -6,14 +6,14 @@ import './CarouselBanner.css';
 
 
 
-// const CustomArrow = ({ className, onClick }) => (
-//     <div className={className} onClick={onClick}>
-//       Arrow
-//     </div>
-// );
+const CustomArrow = ({ className, onClick }) => (
+    <div className={className} onClick={onClick}>
+      Arrow
+    </div>
+);
 
 
-const Carousel = (props) => {
+const CarouselBanner = (props) => {
     var settings = {
         dots: false,
         infinite: true,
@@ -23,8 +23,8 @@ const Carousel = (props) => {
         initialSlide: 1 ,
         autoplay: true,
         autoplaySpeed: 3000,
-        prevArrow: <div className="slick-prev">Previous</div>,
-        nextArrow: <div className="slick-next">Next</div>,
+        prevArrow: <CustomArrow className="slick-prev" />,
+        nextArrow: <CustomArrow className="slick-next" />,
         responsive: [
           {
             breakpoint: 1024,
@@ -44,7 +44,6 @@ const Carousel = (props) => {
     };
     return (
         <div>
-        <h2></h2>
         <Slider {...settings}>
           <div className="bannerCard">
             <div className="bannerTextContainer">
@@ -71,4 +70,4 @@ const Carousel = (props) => {
     )
 }
 
-export default Carousel;
+export default CarouselBanner;

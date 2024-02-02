@@ -52,7 +52,7 @@
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  z-index: 999;
+  z-index: 1;
   top: 35px;
 }
 
