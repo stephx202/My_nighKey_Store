@@ -1,4 +1,6 @@
 import { useCallback, useState } from "react";
+import fadeTop from "./resources/fadeTop.png"
+import fadeBottom from "./resources/fadeBottom.png"
 
 const ImageGallery = (props) => {
     // temporary until image sources can be referenced from DB
@@ -111,6 +113,8 @@ const ImageGallery = (props) => {
                     <svg fill="#000000" width="23px" height="23px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"/></svg>
                     </div>
                 </div>
+                <img src={fadeTop} id="topFade"></img>
+                <img src={fadeBottom} id="bottomFade"></img>
             </div>
         </div>
     )
