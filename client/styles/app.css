@@ -1,13 +1,13 @@
 body {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  /* align-items: center; */
   margin: 0;
 }
 
-.main {
+/* .main {
   padding: 8px;
-}
+} */
 
 /* .task {
   display: flex;
