@@ -6,8 +6,9 @@
     justify-content: space-between;
     height: 1500px;
     width: 60vw;
-    top: 22vh;
-    /* outline: solid thin red; */
+    top: 5vh;
+    left: 20vw;
+    outline: solid thin red;
 }
 
 /* Image Gallery Component ////////////////////////////////////////////////// */
@@ -20,7 +21,7 @@
     top: 3vh;
     height: 670px;
     width: 33.5vw;
-    /* outline: thin solid blue; */
+    outline: thin solid blue;
 }
 /* scroll //////////////////////////////////////////////*/
 #imageScroll {
@@ -77,7 +78,7 @@
     top: 3vh;
     left: 7vw;
     height: 40px;
-    width: 7.2vw;
+    width: 150px;
     background-color: white;
     border-radius: 25px;
 }
@@ -125,5 +126,5 @@
     position: relative;
     height: 1400px;
     width: 50vh;
-    /* outline: thin solid blue; */
+    outline: thin solid blue;
 }
