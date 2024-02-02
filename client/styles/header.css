@@ -3,12 +3,14 @@ body{
     color: #111
 }
 
+
+/* --------------------------------------TOP HEADER----------------------------------- */
 #topHeader{
     background-color: #f5f5f5;
     display: flex;
     height: 36px;
-    width: 100%;
     padding: 0 38px 0 36px;
+    overflow: hidden;
 }
 
 .partner-brands{
@@ -22,7 +24,7 @@ body{
 div.links{
     width: fit-content;
     margin-left: auto;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     padding: 8px;
     display:inline;
 } 
@@ -92,4 +94,127 @@ div.link:hover{
         opacity: 1;
         top: 0px;
     }
+} */
+
+/*-------------------------------- Main Nav---------------------------------------- */
+
+#mainNav{
+    display: flex;
+    justify-items: flex-start;
+    /* display: inline-block; */
+    grid-column: 12;
+    height: 60px;
+    /* border: 1px red solid; */
+    padding: 0 38px 0 36px;
+    overflow: hidden;
 }
+
+.logo{
+    margin-left: 1em;
+    /* border: 1px solid blue; */
+    width:fit-content;
+    position: absolute;
+    top: 35px;
+    left: 36px;
+}
+
+.sections{
+    width: fit-content;
+    justify-self: center;
+    display: flex;
+    margin-inline-start: 3em;
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin: auto;
+}
+
+.section{
+    padding:12px 15px;
+    font-weight: 600;
+}
+
+.searchbox{
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    margin-top: 8px;
+    display: flex;
+    height:40px;
+    /* border:  1px solid black;  */
+    width: 180px;
+    position: absolute;
+    top: 35px;
+    right:150px;
+    
+}
+
+.searchbox svg{
+    /* border-radius: 100%; */
+    /* padding: 5px; */
+    /* margin-top: 8px; */
+    height:100%
+}
+
+.searchbox button:hover{
+    background-color: #707072;
+}
+
+.searchbox button{
+    width: 40px;
+    border-radius: 16px;
+    border: none;
+}
+
+.searchbox input{
+    /* height: 100%; */
+    background-color: #f5f5f5;
+    border: none;
+    font-weight: bold;
+    width:100px;
+    outline: none;
+}
+
+/* .searchbox input:hover+*{
+        background-color: 
+    } */
+    
+.input:hover button{
+    background-color: #707072; ;
+}
+
+.heart, .bag{
+    background-color: white;
+    border: none;
+    height: 35px;
+    width:35px;
+    margin-top: 12px;
+    border-radius: 50%;
+    padding:0;
+    
+}
+
+.heart{
+    position: absolute;
+    top:35px;
+    right: 100px;
+    
+}
+
+.bag{
+    position: absolute;
+    top: 35px;
+    right:55px;
+    
+}
+
+.heart:hover, .bag:hover{
+    background-color: #d1d1d1
+}
+
+svg:hover .heart{
+    background-color: red;
+}
+
+.heart svg:hover{
+    fill:#d1d1d1;
+}
+

@@ -6,7 +6,7 @@ body {
   padding: 8px;
 }
 
-.task {
+/* .task {
   display: flex;
   align-items: center;
   border: 1px solid black;
@@ -20,4 +20,4 @@ body {
 
 .task > * + * {
   margin-left: 4px;
-}
+} */
