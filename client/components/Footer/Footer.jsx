@@ -28,13 +28,13 @@ const Footer = () => {
         <div id="social_media">
           <Footer_Social_Media />
         </div>
-      </div>
-      <div id="sub_footer">
-        <div id="location_copyright">
-          <Footer_Location_Copyright />
-        </div>
-        <div id="tos_privacy">
-          <Footer_Tos_Privacy />
+        <div id="sub_footer">
+          <div id="location-copyright">
+            <Footer_Location_Copyright />
+          </div>
+          <div id="terms-of-use-&-privacy">
+            <Footer_Tos_Privacy/>
+          </div>
         </div>
       </div>
     </>
