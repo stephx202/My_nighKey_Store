@@ -13,4 +13,20 @@
   text-decoration: none;
   border-radius: 2px;
   cursor:pointer;
+  margin-top: 3rem;
+}
+
+#company_sublinks h1 {
+  color: white;
+  background-color: transparent;
+}
+
+#company_sublinks p {
+  text-align: left;
+  margin-left: 8.1rem;
+}
+
+#company_sublinks p:hover {
+  color: white;
+  background-color: transparent;
 }

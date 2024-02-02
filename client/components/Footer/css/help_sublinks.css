@@ -12,5 +12,21 @@
   text-align: center;
   text-decoration: none;
   border-radius: 2px;
-  cursor:pointer;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+#help_sublinks h1 {
+  color: white;
+  background-color: transparent;
+}
+
+#help_sublinks p {
+  text-align: left;
+  margin-left: 8.75rem;
+}
+
+#help_sublinks p:hover {
+  color: white;
+  background-color: transparent;
 }

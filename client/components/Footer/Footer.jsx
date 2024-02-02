@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./css/footer.css";
+import "./css/social_media.css";
 import Footer_Hdr_Link from "./Footer_Hdr_Link";
 import Footer_Help_Sublink from "./Footer_Help_Sublink";
 import Footer_Company_Sublink from "./Footer_Company_Sublink";
@@ -19,7 +20,7 @@ const Footer = () => {
           <Footer_Help_Sublink />
         </div>
         <div id="company_sublinks">
-        <Footer_Company_Sublink />
+          <Footer_Company_Sublink />
         </div>
         <div id="promotion_sublinks">
           <Footer_Promotion_Sublink />
@@ -27,13 +28,13 @@ const Footer = () => {
         <div id="social_media">
           <Footer_Social_Media />
         </div>
-        <div id="sub_footer">
-          <div id="location-copyright">
-            <Footer_Location_Copyright />
-          </div>
-          <div id="terms-of-use-&-privacy">
-            <Footer_Tos_Privacy/>
-          </div>
+      </div>
+      <div id="sub_footer">
+        <div id="location-copyright">
+          <Footer_Location_Copyright />
+        </div>
+        <div id="terms-of-use-&-privacy">
+          <Footer_Tos_Privacy />
         </div>
       </div>
     </>

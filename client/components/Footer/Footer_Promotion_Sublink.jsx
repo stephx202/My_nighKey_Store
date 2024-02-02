@@ -3,7 +3,7 @@ import "./css/promotion_sublinks.css";
 
 const Footer_Promotion_Sublink = () => {
   return (
-    <div className="sublinks">
+    <div className="promotion_sublinks">
       <h1>PROMOTIONS & DISCOUNTS</h1>
       <p>Student</p>
       <p>Military</p>
