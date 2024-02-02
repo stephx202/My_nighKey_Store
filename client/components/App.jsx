@@ -4,6 +4,7 @@ import Header from './Header.jsx';
 import Main from './Main.jsx';
 import Carousel from './Carousels/CarouselBanner.jsx';
 import Footer from './Footer.jsx';
+import Explorer from "./Explorer/Explorer.jsx";
 
 const App = () => {
   
@@ -22,8 +23,9 @@ const App = () => {
   return (
     <>
       <Header />
-      <Main />
+      {/* <Main /> */}
       {/* <Carousel /> */}
+      <Explorer />
       <Footer />
     </>
   );
