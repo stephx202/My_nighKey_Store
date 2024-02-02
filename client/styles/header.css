@@ -106,7 +106,7 @@ div.link:hover{
     height: 60px;
     /* border: 1px red solid; */
     padding: 0 38px 0 36px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .logo{
@@ -136,7 +136,7 @@ div.link:hover{
 .searchbox{
     background-color: #f5f5f5;
     border-radius: 16px;
-    margin-top: 8px;
+    margin-top: 10px;
     display: flex;
     height:40px;
     /* border:  1px solid black;  */
@@ -218,3 +218,70 @@ svg:hover .heart{
     fill:#d1d1d1;
 }
 
+.dropdownFeatured{
+    display: none;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 99vw;
+    min-height: 250px;
+    background-color: white;
+    z-index: 1;
+    margin-top:14px;
+    /* top: 0px; */
+    text-align: left;
+    padding: 15px;
+    /* background-color: #ca1010; */
+  }
+
+  .featuredDiv{
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(5, 3fr);
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-gap: 10px;
+    justify-content: center;
+    border: 1px solid blue;
+  } 
+
+ .featuredDiv div{
+    border:1px solid green;
+} 
+
+.featuredDiv a{
+    display: block;
+}
+
+ .vday{
+    grid-column-start: 1;
+    grid-column-end: 2;
+   
+}
+
+.limited{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.new{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.newWomen{
+    grid-column-start: 4;
+    grid-row-start:2
+}
+.newKids{
+    grid-column-start: 4;
+    grid-row-start:3
+}
+
+.section:hover{
+    border-bottom:2px solid black;
+}
+
+  .section:hover .dropdownFeatured{
+    display: block;
+  }
