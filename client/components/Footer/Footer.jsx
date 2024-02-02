@@ -30,10 +30,10 @@ const Footer = () => {
         </div>
       </div>
       <div id="sub_footer">
-        <div id="location-copyright">
+        <div id="location_copyright">
           <Footer_Location_Copyright />
         </div>
-        <div id="terms-of-use-&-privacy">
+        <div id="tos_privacy">
           <Footer_Tos_Privacy />
         </div>
       </div>

@@ -16,7 +16,7 @@ h4 {
   padding: 0;
   font-family: Helvetica, sans-serif;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  font-size: 11px;;
+  font-size: 11px;
 }
 
 #footer h1 {
@@ -37,6 +37,7 @@ h4 {
 
 #sub_footer {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #111111;
   margin-top: -12px;
   padding: 0;

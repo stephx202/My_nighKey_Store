@@ -1,15 +1,18 @@
+import React, { useEffect, useState } from "react";
+import "./css/tos_privacy.css";
+
 const Footer_Tos_Privacy = () => {
   return (
     <>
       <div className="terms-of-use">
-        <h2>Guides</h2>
-        <h2>Terms of Sale</h2>
-        <h2>Terms of Use</h2>
-        <h2>Nike Privacy Policy</h2>
+        <p>Guides</p>
+        <p>Terms of Sale</p>
+        <p>Terms of Use</p>
+        <p>Nike Privacy Policy</p>
       </div>
       <div className="privacy">
-        <h2>*Icon Here*Your Privacy Choices</h2>
-        <h2>CA Supply Chains Act</h2>
+        <p>*Icon Here*Your Privacy Choices</p>
+        <p>CA Supply Chains Act</p>
       </div>
     </>
   );

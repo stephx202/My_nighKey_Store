@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./css/location_copyright.css";
 
 const Footer_Location_Copyright = () => {
   return (
