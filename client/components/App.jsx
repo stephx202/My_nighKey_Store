@@ -25,7 +25,7 @@ const App = () => {
       <Header />
       <Main shoe={shoe}/>
       {/* <Carousel /> */}
-      <Explorer shoe ={shoe.explorationimg}/>
+      {shoe.explorationimg ? <Explorer shoe ={shoe.explorationimg} /> : <></>}
       <Footer />
     </>
   );

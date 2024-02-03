@@ -267,6 +267,7 @@ svg:hover .heart{
     grid-gap: 20px;
     justify-content: center;
     /* border: 1px solid blue; */
+    height:fit-content;
     width:fit-content;
     z-index: -10;
   } 
@@ -374,7 +375,7 @@ svg:hover .heart{
     } 
     50%{
         -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+              transform: translateY(-100px); 
         opacity: 0;
     }
     100% {

@@ -8,12 +8,31 @@ export default function ProductModal(props){
                 <div className="top" >
                   <img src={props.shoe.thumbnails[0]} />
                   <div className="title">
-                    <h4 className="title">{props.shoe.name}</h4>  
-                    <h4 className="title">$115</h4>
+                    <p className="title">{props.shoe.name}</p>  
+                    <p className="title">$115</p>
                   </div>
-                  
                 </div>
-                
+                <h4 style={{paddingTop: "13px"}}>LEGENDARY STYLE REFINED.</h4>
+                <div>{props.shoe.description}</div>
+                <h4>Benefits</h4>
+                  <ul>
+                    <li>The stitched overlays on the upper add heritage style, durability and support.</li>
+                    <li>Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.</li>
+                    <li>The low-cut silhouette adds a clean, streamlined look.</li>
+                    <li>The padded collar feels soft and comfortable.</li>
+                  </ul>
+                <h4>Product Details</h4>
+                  <ul>
+                    <li>Foam midsole</li>
+                    <li>Perforations on the toe</li>
+                    <li>Rubber sole</li>
+                    <ul>
+                      <li>Shown: {props.shoe.color}</li>
+                      <li>Style: {props.shoe.style}</li>
+                    </ul>
+                  </ul>
+                <h4>Air Force 1 Origins</h4>
+                <div>Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.</div>
             </div>
         </div>
     )
