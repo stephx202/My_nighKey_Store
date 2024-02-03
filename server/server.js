@@ -16,11 +16,11 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/api/tasks", (req, res) => {
-  client.query("SELECT * FROM tasks").then((result) => {
-    res.send(result.rows);
-  });
-});
+// app.get("/api/tasks", (req, res) => {
+//   client.query("SELECT * FROM tasks").then((result) => {
+//     res.send(result.rows);
+//   });
+// });
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
