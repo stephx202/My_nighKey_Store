@@ -5,8 +5,8 @@ import './../styles/main.css';
 const Main = (props) => {
     return (
         <div id='main'>
-            <ImageGallery />
-            <PurchaseInfo />
+            <ImageGallery shoe={props.shoe}/>
+            <PurchaseInfo shoe={props.shoe}/>
         </div>
     )
 }

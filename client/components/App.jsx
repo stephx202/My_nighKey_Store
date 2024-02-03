@@ -9,23 +9,23 @@ import Explorer from "./Explorer/Explorer.jsx";
 const App = () => {
   
   // Commented out, fossil from original template code ////////////////////
-  // const [tasks, setTasks] = useState([]);
+  const [shoe, setShoe] = useState({});
 
-  // useEffect(() => {
-  //   fetch("/api/tasks")
-  //     .then((res) => res.json())
-  //     .then((tasks) => {
-  //       setTasks(tasks);
-  //     });
-  // }, []);
+  useEffect(() => {
+    fetch("/api/shoedata")
+      .then((res) => res.json())
+      .then((shoes) => {
+        setShoe(shoes)
+      });
+  }, []);
   ////////////////////////////////////////////////////////////////////////
 
   return (
     <>
       <Header />
-      {/* <Main /> */}
+      <Main shoe={shoe}/>
       {/* <Carousel /> */}
-      <Explorer />
+      <Explorer shoe ={shoe.explorationimg}/>
       <Footer />
     </>
   );

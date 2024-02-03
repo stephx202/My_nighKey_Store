@@ -6,7 +6,9 @@
     justify-content: space-between;
     height: 1500px;
     width: 60vw;
-    top: 22vh;
+    /* top: 22vh; */
+    top: 5vh;
+    left: 20vw;
     /* outline: solid thin red; */
 }
 
@@ -127,3 +129,91 @@
     width: 50vh;
     /* outline: thin solid blue; */
 }
+
+#klarna{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    padding:10px;
+}
+
+#klarna a{
+    color: black;
+}
+
+
+/*  Big Pill Buttons ///////////////////////////////////////////////////////////////////// */
+#addBtn, #favoriteBtn{
+    display: block;
+    width: 100%;
+    padding:15px;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#addBtn{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+#addBtn:hover{
+    background-color:#707072;
+    border: 1px solid #707072;
+}
+
+#favoriteBtn{
+    background-color: white;
+    border: 1px solid #adadad
+}
+
+#favoriteBtn:hover{
+    border: 1px solid black;
+}
+
+#favoriteBtn svg{
+    vertical-align: text-bottom;
+}
+
+
+/* Text below buttons///////////////////////////////////////////////////////// */
+#shipping h4{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+#shipping p{
+    padding-left:0;
+    font-size:14px;
+    font-weight: 600;
+}
+
+#shipping a{
+    color: black;
+}
+
+.subtle{
+    display: block;
+    color:#707072
+}
+
+/* Product Details//////////////////////////////////////////////////////// */
+.details{
+    line-height: 1.75;
+    font-size: 17px;
+    /* font-weight: 400; */
+}
+
+ul.details{
+    padding-left:18px;
+    line-height: 1.75;
+    font-size: 17px;
+}
+
+a.details{
+    font-weight: 600;
+    color: black;
+}
+

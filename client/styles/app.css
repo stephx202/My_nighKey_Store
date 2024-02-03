@@ -3,8 +3,6 @@ body {
   flex-flow: column;
   /* align-items: center; */
   margin: 0;
-  top: 5vh;
-    left: 20vw;
 }
 
 /* .main {

@@ -1,0 +1,56 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    backdrop-filter:  brightness(25%);
+    top:0;
+    left:0;
+}
+
+#details{
+    background-color: white;
+    height: 750px;
+    width:850px;
+    border-radius: 16px;
+    padding:16px;
+}
+
+#details button{
+    float: right;
+    width: 24px;
+    height:24px;
+    padding: 0;
+    border: none;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+#details img{
+    height: 65px;
+    width: 65px;
+    vertical-align: top;
+    float: left;
+}
+
+.top{
+    height:55px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 55px;
+    margin-top: 10px;
+}
+
+h4.title{
+    display: block;
+    width: fit-content;
+    margin:0px;
+}
