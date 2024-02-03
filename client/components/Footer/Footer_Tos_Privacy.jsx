@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "./css/tos_privacy.css";
+import supply_icon from "./images/supply_icon.png";
 
 const Footer_Tos_Privacy = () => {
   return (
     <>
-      <div className="terms-of-use">
+      <div className="tos_privacy">
         <p>Guides</p>
         <p>Terms of Sale</p>
         <p>Terms of Use</p>
         <p>Nike Privacy Policy</p>
-      </div>
-      <div className="privacy">
-        <p>*Icon Here*Your Privacy Choices</p>
-        <p>CA Supply Chains Act</p>
+        <p>
+          {" "}
+          <img src={`${supply_icon}`} alt="" />
+          Your Privacy Choices
+        </p>
       </div>
     </>
   );

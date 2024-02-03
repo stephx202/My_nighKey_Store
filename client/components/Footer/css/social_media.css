@@ -1,24 +1,13 @@
 #social_media {
   display: flex;
-  width: 10rem;
+  width: 20rem;
   height: 10rem;
-  margin-top: 3rem;
+  margin-right: 3rem;
+  margin-top:2rem;
 }
 #social_media img {
   width: 25px;
   height: 25px;
-  margin-right: 20px;
+  margin-right:.8rem;
 }
 
-#social_media {
-  display: flex;
-  width: 10rem;
-  height: 10rem;
-  margin-top: 3rem;
-}
-#social_media img {
-  z-index: 10;
-  width: 25px;
-  height: 25px;
-  margin-right: 20px;
-}
