@@ -8,8 +8,7 @@ const Footer_Promotion_Sublink = () => {
       <p>Student</p>
       <p>Military</p>
       <p>Teacher</p>
-      <p>First Responders & Medical</p>
-      <p>Professionals</p>
+      <p>First Responders & Medical Professionals</p>
       <p>Birthday</p>
     </div>
   );

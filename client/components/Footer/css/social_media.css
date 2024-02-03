@@ -3,11 +3,34 @@
   width: 20rem;
   height: 10rem;
   margin-right: 3rem;
-  margin-top:2rem;
+  margin-top: 2rem;
+  
+}
+
+#social_media:hover {
+  color: white;
 }
 #social_media img {
   width: 25px;
   height: 25px;
-  margin-right:.8rem;
+  margin-right: 0.8rem;
 }
 
+.youtube,
+.facebook,
+.instagram,
+.twitter {
+  background-color: #7e7e7e;
+}
+
+.youtube:hover,
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+  transition-behavior: normal;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  background-color: white;
+}

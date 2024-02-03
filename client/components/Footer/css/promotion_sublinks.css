@@ -5,9 +5,7 @@
   transition-timing-function: ease;
   transition-delay: 0s;
   transition-property: all;
-  white-space: nowrap;
-  white-space-collapse: collapse;
-  text-wrap: nowrap;
+  text-wrap: wrap;
   text-align: center;
   text-decoration: none;
   border-radius: 2px;

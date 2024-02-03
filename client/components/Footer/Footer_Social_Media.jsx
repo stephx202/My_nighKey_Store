@@ -6,11 +6,11 @@ import instagram from "./images/instagram_icon.png";
 const Footer_Social_Media = () => {
   return (
     <>
-      <div className = "icons">
-        <img src={`${twitter}`} alt="twitter" />
-        <img src={`${facebook}`} alt="facebook" />
-        <img src={`${youtube}`} alt="youtube" />
-        <img src={`${instagram}`} alt="instagram" />
+      <div className="icons">
+        <img src={`${twitter}`} alt="twitter" className="twitter" />
+        <img src={`${facebook}`} alt="facebook" className="facebook" />
+        <img src={`${youtube}`} alt="youtube" className="youtube" />
+        <img src={`${instagram}`} alt="instagram" className="instagram" />
       </div>
     </>
   );
