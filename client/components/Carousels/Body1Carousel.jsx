@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './Body1Carousel.css';
 import Body1IMGs from './Body1IMGs';
-
+import Modal from './Modal.jsx';
 
 
   
@@ -17,6 +17,19 @@ import Body1IMGs from './Body1IMGs';
   );
   
   const Body1Carousel = () => {
+    const [showModal, setShowModal] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const openModal = (image) => {
+      setSelectedImage(image);
+      setShowModal(true);
+    };
+
+    const closeModal = () => {
+      setShowModal(false);
+      setSelectedImage(null);
+    };
+    
     const settings = {
       dots: false,
       infinite: false,
@@ -57,7 +70,7 @@ import Body1IMGs from './Body1IMGs';
         <div className="Body1Carousel">
           <Slider {...settings}>
             {Body1IMGs.map((image, index) => (
-              <div key={index} className="Body1IMGs">
+              <div key={index} className="Body1IMGs" onClick={() => openModal(image.image)}>
                 <div className="ImageContainer">
                   <img src={image.image} alt={image.text} />
                   <div className="Overlay">
@@ -76,6 +89,7 @@ import Body1IMGs from './Body1IMGs';
               </div>
             ))}
           </Slider>
+          <Modal showModal={showModal} closeModal={closeModal} image={selectedImage} text="shoe info will go here based on shoe" />
         </div>
       );
   }

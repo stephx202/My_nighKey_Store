@@ -57,13 +57,14 @@
  
     
 }
+
 .Body1Carousel .slick-prev{
     transform: scaleX(-1);
 }
 
 .Body1Carousel .slick-prev::before,
 .Body1Carousel .slick-next::before {
-    content: 'Arrow';
+    content: '';
     opacity: 100%;
     
 }

@@ -8,7 +8,6 @@ import './CarouselBanner.css';
 
 const CustomArrow = ({ className, onClick }) => (
     <div className={className} onClick={onClick}>
-      Arrow
     </div>
 );
 
