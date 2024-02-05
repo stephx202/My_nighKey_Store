@@ -99,6 +99,10 @@ svg:last-child:hover{
     line-height: 1px;
 }
 
+.available:hover{
+    cursor: pointer;
+}
+
 .unavailable{
     color: #c5c5c5;
 }
@@ -112,4 +116,9 @@ svg:last-child:hover{
     color: white;
     border: none;
     margin-top:2px;
+}
+
+.save:hover{
+    background-color: #707072;
+    cursor: pointer;
 }

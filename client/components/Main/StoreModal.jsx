@@ -40,7 +40,7 @@ const stores = [{id:1, name:"Nike Unite - Harlem"}, {id:2, name:"Nike Factory St
                         {selected && selected.id === store.id ? <button style={{border : "1px solid black"}} id={store.id}> 
                         <p>{store.name}</p>
                         <p style={{color:"green"}}>Available {month} {day}</p>
-                    </button> : <button key={store.id} id={store.id} onClick={()=>setSelected(store)}> 
+                    </button> : <button key={store.id} id={store.id} className="available" onClick={()=>setSelected(store)}> 
                         <p>{store.name}</p>
                         <p style={{color:"green"}}>Available {month} {day}</p>
                     </button>} </> ) : (
