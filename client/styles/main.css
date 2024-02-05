@@ -186,17 +186,18 @@
 
 #shipping p{
     padding-left:0;
-    font-size:14px;
-    font-weight: 600;
+    font-size:16px;
+    font-weight: 500;
 }
 
 #shipping a{
     color: black;
 }
 
-.subtle{
+#shipping p.subtle{
     display: block;
-    color:#707072
+    color:#707072;
+    font-size: 14px;
 }
 
 /* Product Details//////////////////////////////////////////////////////// */

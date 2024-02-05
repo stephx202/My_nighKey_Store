@@ -12,8 +12,7 @@ export default function ProductDetails(props){
         setModal(false)
     }
 
-    console.log(props.shoe)
-    return (
+      return (
         <>
         {modal ? <ProductModal shoe={props.shoe} close={closeModal}/> : <></>}
             <div className="details">{props.shoe.description}</div>
