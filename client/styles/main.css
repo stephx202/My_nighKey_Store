@@ -1,129 +1,129 @@
-
 #main {
-    position: relative;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    height: 1500px;
-    width: 60vw;
-    top: 22vh;
-    /* outline: solid thin red; */
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 1500px;
+  width: 60vw;
+  top: 22vh;
+  margin-bottom: 20rem;
+  /* outline: solid thin red; */
 }
 
 /* Image Gallery Component ////////////////////////////////////////////////// */
 #imageGallery {
-    position: -webkit-sticky;
-    position: sticky;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    top: 3vh;
-    height: 670px;
-    width: 33.5vw;
-    /* outline: thin solid blue; */
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  top: 3vh;
+  height: 670px;
+  width: 33.5vw;
+  /* outline: thin solid blue; */
 }
 /* scroll //////////////////////////////////////////////*/
 #imageScroll {
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    height: 670px;
-    width: 5vw;
-    /* outline: thin solid red; */
-    overflow: scroll;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 670px;
+  width: 5vw;
+  /* outline: thin solid red; */
+  overflow: scroll;
 }
 #imageScroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .tinyImg {
-    position: relative;
-    left: .6vw;
-    height: 65px;
-    width: 60px;
-    margin-bottom: 1vh;
-    /* outline: thin solid blue; */
-    background-color: #f5f5f5;
-    border-radius: 5px;
+  position: relative;
+  left: 0.6vw;
+  height: 65px;
+  width: 60px;
+  margin-bottom: 1vh;
+  /* outline: thin solid blue; */
+  background-color: #f5f5f5;
+  border-radius: 5px;
 }
 /* selected image ////////////////////////////////////*/
 #selectedImg {
-    position: relative;
-    height: 670px;
-    width: 28vw;
-    background-color: #f5f5f5;
-    border-radius: 10px;
+  position: relative;
+  height: 670px;
+  width: 28vw;
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
 #selectedVid {
-    position: relative;
-    height: 670px;
-    width: 28vw;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    }
+  position: relative;
+  height: 670px;
+  width: 28vw;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
 
-    /* Buttons/tags //////////////////////////////////*/
+/* Buttons/tags //////////////////////////////////*/
 #buttonOverlay {
-    position: absolute;
-    height: 670px;
-    width: 33.5vw;
-    pointer-events: none;
+  position: absolute;
+  height: 670px;
+  width: 33.5vw;
+  pointer-events: none;
 }
 #highlyRated {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 3vh;
-    left: 7vw;
-    height: 40px;
-    width: 7.2vw;
-    background-color: white;
-    border-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3vh;
+  left: 7vw;
+  height: 40px;
+  width: 7.2vw;
+  background-color: white;
+  border-radius: 25px;
 }
 .nikeFont {
-    font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
 }
 #buttonContainer {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    top: 60vh;
-    left: 28vw;
-    height: 38px;
-    width: 4.5vw;
-    border-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 60vh;
+  left: 28vw;
+  height: 38px;
+  width: 4.5vw;
+  border-radius: 25px;
 }
 #galleryButton {
-    pointer-events: all;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 38px;
-    width: 38px;
-    background-color: white;
-    border-radius: 100%;
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 38px;
+  width: 38px;
+  background-color: white;
+  border-radius: 100%;
 }
 #topFade {
-    position: absolute;
-    top: 0vh;
-    left: 1.53vw;
-    height: auto;
-    width: 60px;
+  position: absolute;
+  top: 0vh;
+  left: 1.53vw;
+  height: auto;
+  width: 60px;
 }
 #bottomFade {
-    position: absolute;
-    bottom: 0vh;
-    left: 1.53vw;
-    height: auto;
-    width: 60px;
+  position: absolute;
+  bottom: 0vh;
+  left: 1.53vw;
+  height: auto;
+  width: 60px;
 }
 
 /* Purchase Info Component ////////////////////////////////////////////////////////// */
 #purchaseInfo {
-    position: relative;
-    height: 1400px;
-    width: 50vh;
-    /* outline: thin solid blue; */
+  position: relative;
+  height: 1400px;
+  width: 50vh;
+  /* outline: thin solid blue; */
 }

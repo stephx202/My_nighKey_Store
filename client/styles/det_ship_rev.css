@@ -1,0 +1,79 @@
+#det_ship_rev {
+  font-family: Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #292929;
+  height: 20rem;
+  width: 50rem;
+  margin-left: 10rem;
+  font-size: 13px;
+  text-wrap: nowrap;
+}
+
+#details {
+  height: 1.1rem;
+  width: 8rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  height: 2rem;
+  cursor: pointer;
+}
+
+#details:hover {
+  opacity: 0.5;
+}
+
+#shipping {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 16.5px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  width: 23.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 0.4rem;
+  height: 4rem;
+  margin-top: -6.6rem;
+}
+
+.downarrow-shipping {
+  scale: 0.021 0.024;
+  position: absolute;
+  left: 42.9rem;
+  bottom: 65.3rem;
+}
+
+#reviews {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 16.5px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  height: 4.4rem;
+  width: 23.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  bottom: 79.5rem;
+}
+
+.star {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  left: 11rem;
+  scale: 1.7;
+  bottom: 1.2rem;
+}
+
+.downarrow-reviews {
+  scale: 0.021 0.024;
+  right: 9.1rem;
+  bottom: 21rem;
+  position: relative;
+}
