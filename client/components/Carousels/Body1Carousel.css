@@ -1,0 +1,70 @@
+.ImageContainer{
+    margin-top: 100px;
+    position: relative;
+}
+
+.Overlay{
+    position: absolute;
+    top: 400px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    fill: aqua;
+
+    
+}
+
+
+#SVGRepo_iconCarrier{
+    fill: transparent;
+    
+}
+
+
+
+.SearchIcon{
+    width: 36px;
+    height: 36px;
+    
+}
+
+.Body1Carousel {
+    width: 100%
+  }
+
+
+
+.Body1IMGs img {
+    width: 440px;
+    height: 440px;
+    object-fit:cover;
+    cursor: url('https://assets3.pxlecdn.com/assets/embed/glyph/mag-00cd0b12bf29f03094870ff20ba4ac98fc58024f6256b8dfc76e7c1196dafb99.png') 20 20,pointer;
+    border-radius: 7px;
+}
+
+.Body1IMGs h3 {
+    font-family: gesta, 'sans-serif !important';
+  }
+
+.Body1Carousel .slick-prev,
+.Body1Carousel .slick-next {
+    color: #111;
+    font-size: 16px;
+    background-image: url('https://assets2.pxlecdn.com/assets/embed/glyph/next-6129ae65f9752efd8b4e9e6b897a17573a8319fcbaf63c95d2276a2b51a116e8.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0);
+ 
+    
+}
+.Body1Carousel .slick-prev{
+    transform: scaleX(-1);
+}
+
+.Body1Carousel .slick-prev::before,
+.Body1Carousel .slick-next::before {
+    content: 'Arrow';
+    opacity: 100%;
+    
+}
+  
