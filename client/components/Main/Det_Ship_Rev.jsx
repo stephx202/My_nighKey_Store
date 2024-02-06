@@ -106,14 +106,39 @@ const Det_Ship_Rev = () => {
           <p>
             <img className="star" src={`${rating}`} alt="star" />
           </p>
-          <p>
+          <div>
             <img
               onClick={reviewChangeArrow}
               className="downarrow-reviews"
               src={`${currentRevArrow}`}
               alt=""
             />
-          </p>
+            {currentRevArrow === uparrow ? (
+              <div className="revPar">
+                <span>Write a Review</span><br></br><br></br> 
+                
+                
+                Awesome shoes!<br></br>
+                loretor519667877 - Jan 28, 2024
+                Perfectly awesome pair of shoes<br></br><br></br>
+
+
+                Shoes
+                Leairah52cb098261ca4e868c08b70a05c0fbd4<br></br>
+                - Jan 23, 2024<br></br>
+                I like them I also want more jordan 4's on this app<br></br>
+                and university blue.<br></br><br></br>
+
+
+                Classic like always<br></br> 
+                Michael677065232 - Jan 23, 2024<br></br>
+                Nice and clean, Classic like always<br></br><br></br>
+                
+                
+                <span>More Reviews</span>
+              </div>
+            ) : null}
+          </div>
         </div>
       </div>
     </>
