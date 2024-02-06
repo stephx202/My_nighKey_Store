@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 
+
 import Header from './Header.jsx';
 import Main from './Main.jsx';
-import Carousel from './Carousels/CarouselBanner.jsx';
-import Footer from './Footer.jsx';
 import Explorer from "./Explorer/Explorer.jsx";
+import Carousels from "./Carousels/Carousels.jsx";
+import Footer from "./Footer/Footer.jsx"
+
 
 const App = () => {
-  
   // Commented out, fossil from original template code ////////////////////
   const [shoe, setShoe] = useState({});
 
@@ -23,9 +24,11 @@ const App = () => {
   return (
     <>
       <Header />
+
       <Main shoe={shoe}/>
       {/* <Carousel /> */}
       {shoe.explorationimg ? <Explorer shoe ={shoe.explorationimg} /> : <></>}
+      <Carousels/>
       <Footer />
     </>
   );

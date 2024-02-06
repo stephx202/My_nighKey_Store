@@ -45,21 +45,21 @@
 .slick-prev,
 .slick-next {
   color: red;
-  width: 30px;  /* Adjust the width as needed */
-  height: 30px; /* Adjust the height as needed */
+  width: 30px;  
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: absolute;
   z-index: 1;
-  top: 35px;
+  top: 30px;
 }
 
 .slick-prev {
-  left: 250px; /* Adjust the left position as needed */
+  left: 450px; 
 }
 
 .slick-next {
-  right: 250px; /* Adjust the right position as needed */
+  right: 450px; 
 }

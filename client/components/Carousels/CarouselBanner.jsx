@@ -8,13 +8,12 @@ import './CarouselBanner.css';
 
 const CustomArrow = ({ className, onClick }) => (
     <div className={className} onClick={onClick}>
-      Arrow
     </div>
 );
 
 
 const CarouselBanner = (props) => {
-    var settings = {
+    const settings = {
         dots: false,
         infinite: true,
         speed: 500,
