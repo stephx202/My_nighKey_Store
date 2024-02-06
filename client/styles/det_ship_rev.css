@@ -60,7 +60,7 @@
   padding-top: 1.8rem;
   height: 4rem;
   margin-left: -3.4rem;
-  margin-top: -1rem;
+  margin-top: 8.2rem;
 }
 
 .downarrow-shipping {
@@ -74,7 +74,7 @@
   scale: 0.021 0.024;
   position: absolute;
   left: 38.4rem;
-  bottom: 19rem;
+  bottom: 15.5rem;
 }
 /* 15rem */
 #reviews {
@@ -130,7 +130,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
-  bottom: 34.8rem;
+  bottom: 30rem;
   right: -3.2rem;
 }
 
@@ -188,4 +188,36 @@
   margin-top: 1.5rem;
   margin-left: -1.5rem;
   letter-spacing: 0.1px;
+}
+
+.revPar {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  width: 26.5rem;
+  text-wrap: wrap;
+  margin-left: -1.5rem;
+  letter-spacing: 0.1px;
+  bottom: 39rem;
+  right:9.5rem;
+}
+
+.revPar span {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 2;
+  width: 26.5rem;
+  text-wrap: wrap;
+  margin-left: -1.5rem;
+  letter-spacing: 0.1px;
+  bottom: 38rem;
+  margin-left: 0.1rem;
+}
+
+.revPar span:hover {
+  opacity: 0.6;
 }
