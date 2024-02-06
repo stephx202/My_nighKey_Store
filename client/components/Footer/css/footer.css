@@ -1,0 +1,44 @@
+#main_footer {
+  font-size: 10px;
+  height: 20.5rem;
+  background-color: #111111;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+#top_footer {
+  display: grid;
+  position: relative;
+  bottom: 0vh;
+  box-sizing: inherit;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#top_footer h1 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 10px;
+  letter-spacing: -1px;
+}
+
+#footer_hdr-links {
+  color: white;
+  background-color: transparent;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  font-size: 7.5px;
+  letter-spacing: 0.2px;
+}
+
+#sub_footer {
+  padding: 0;
+  font-family: TG, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  width: 100vw;
+}
