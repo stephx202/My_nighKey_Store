@@ -53,12 +53,8 @@
     padding: 7px 5px;
 }
 
-.search svg:hover{
+.icon:hover{
     fill: none;
-}
-
-svg:last-child:hover{
-    fill:#000000;
 }
 
 .search input{
