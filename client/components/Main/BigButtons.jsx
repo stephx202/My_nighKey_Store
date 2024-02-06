@@ -16,7 +16,7 @@ export default function PaymentDiv(props){
     function closeModal(response){
         setModal(false)
     }
-    console.log(selected)
+
     return (<>
     {modal ? <StoreModal close={closeModal} select={selectStore}/> : <></>}
     <div id='klarna'>4 interest-free payments of $28.75 with <strong>Klarna</strong>. <a href='#'>Learn More</a></div>
