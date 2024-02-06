@@ -1,15 +1,17 @@
 #social_media {
   display: flex;
+  position: relative;
+  left:2.4rem;
   width: 20rem;
   height: 10rem;
-  margin-right: 3rem;
+  margin-left:2rem;
   margin-top: 2rem;
-  
 }
 
 #social_media:hover {
   color: white;
 }
+
 #social_media img {
   width: 25px;
   height: 25px;

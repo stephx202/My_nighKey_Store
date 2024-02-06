@@ -1,9 +1,9 @@
 #main_footer {
   font-size: 10px;
-  height: 20.5rem;
+  height: 22.5rem;
   background-color: #111111;
   font-family: Helvetica, sans-serif;
-  margin: 0;
+  margin-top: 40rem;
   padding: 0;
   overflow-y: hidden;
   scrollbar-width: none;
@@ -13,7 +13,7 @@
   display: grid;
   position: relative;
   bottom: 0vh;
-  box-sizing: inherit;
+  /* box-sizing: inherit; */
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -23,22 +23,28 @@
   padding: 0.5rem;
   font-size: 10px;
   letter-spacing: -1px;
+  position: relative;
 }
 
 #footer_hdr-links {
   color: white;
   background-color: transparent;
-  margin-left: 10rem;
+  margin-left: 11rem;
   margin-top: 2rem;
   font-size: 7.5px;
   letter-spacing: 0.2px;
+  position: relative;
+  text-wrap: nowrap;
 }
 
 #sub_footer {
+  display: flex;
+  position: relative;
+  left: -19rem;
   padding: 0;
-  font-family: TG, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
   font-size: 10px;
-  width: 100vw;
+  width: 80vw;
 }
