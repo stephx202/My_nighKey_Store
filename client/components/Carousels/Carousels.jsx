@@ -7,7 +7,6 @@ import Body2Carousel from "./Body2Carousel.jsx";
 const Carousels = () => {
     return (
       <>
-        <CarouselBanner />
         <Body1Carousel/>
         <Body2Carousel/>
       </>
