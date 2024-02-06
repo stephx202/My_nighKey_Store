@@ -134,23 +134,23 @@ const Size_Ship_Rev = () => {
             />
             {currentRevArrow === uparrow ? (
               <div className="revPar">
-                <span>Write a Review</span>
+                <span className = "bold">Write a Review</span>
                 <br></br>
                 <br></br>
-                Awesome shoes!<br></br>
+                <span className = "bold">Awesome shoes!</span><br></br>
                 loretor519667877 - Jan 28, 2024 Perfectly awesome pair of shoes
                 <br></br>
                 <br></br>
-                Shoes Leairah52cb098261ca4e868c08b70a05c0fbd4<br></br>- Jan 23,
+                <span className = "bold">Shoes</span>Leairah52cb098261ca4e868c08b70a05c0fbd4<br></br>- Jan 23,
                 2024<br></br>I like them I also want more jordan 4's on this app
                 <br></br>
                 and university blue.<br></br>
                 <br></br>
-                Classic like always<br></br>
+                <span className = "bold">Classic like always</span><br></br>
                 Michael677065232 - Jan 23, 2024<br></br>
                 Nice and clean, Classic like always<br></br>
                 <br></br>
-                <span>More Reviews</span>
+                <span className = "bold">More Reviews</span>
                 <br></br>
                 <br></br>
                 <div className="bottom-border"></div>
