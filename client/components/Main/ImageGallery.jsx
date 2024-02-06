@@ -65,7 +65,7 @@ const ImageGallery = ({shoe}) => {
             buttonRender(current);
         }
     }
-    
+    console.log(shoe.howotherscarousel)
     if (!shoe.thumbnails) {
         return null;
     } else {
