@@ -14,12 +14,12 @@ const Size_Ship_Rev = () => {
   const [isShipParagraphVisible, setShipParagraphVisibility] = useState(false);
   const [isReviewParagraphVisible, setReviewParagraphVisibility] =
     useState(false);
-  const [currentSizingClass, setSizingClass] =
-    useState("downarrow-sizing");
+  const [currentSizingClass, setSizingClass] = useState("downarrow-sizing");
   const [currentShippingClass, setShippingClass] =
     useState("downarrow-shipping");
-  const [currentReviewingClass, setReviewingClass] =
-    useState("downarrow-reviewing");
+  const [currentReviewingClass, setReviewingClass] = useState(
+    "downarrow-reviewing"
+  );
 
   const sizeChangeArrow = () => {
     setSizeArrow((prevArrow) =>
@@ -51,20 +51,24 @@ const Size_Ship_Rev = () => {
       prevID === "normalReviewing" ? "shipReviewing" : "normalReviewing"
     );
     setShippingClass((prevClass) =>
-    prevClass === "downarrow-shipping"
-      ? "expanded-downarrow-shipping"
-      : "downarrow-shipping"
-  );
+      prevClass === "downarrow-shipping"
+        ? "expanded-downarrow-shipping"
+        : "downarrow-shipping"
+    );
   };
   const reviewChangeArrow = () => {
     setRevArrow((prevArrow) => (prevArrow === downarrow ? uparrow : downarrow));
     setReviewParagraphVisibility((prevVisibility) => !prevVisibility);
 
     setReviewingClass((prevClass) =>
-    prevClass === "downarrow-reviewing"
-      ? "expanded-downarrow-reviewing"
-      : "downarrow-reviewing"
-  );
+      prevClass === "downarrow-reviewing"
+        ? "expanded-downarrow-reviewing"
+        : "downarrow-reviewing"
+    );
+
+    setReviewing((prevID) =>
+      prevID === "normalReviewing" ? "lastReviewing" : "normalReviewing"
+    );
   };
   return (
     <>
@@ -147,6 +151,9 @@ const Size_Ship_Rev = () => {
                 Nice and clean, Classic like always<br></br>
                 <br></br>
                 <span>More Reviews</span>
+                <br></br>
+                <br></br>
+                <div className="bottom-border"></div>
               </div>
             ) : null}
           </div>

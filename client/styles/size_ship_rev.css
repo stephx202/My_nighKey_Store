@@ -152,11 +152,28 @@
   right: 6.2rem;
 }
 
+#lastReviewing {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 17px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  height: 3rem;
+  width: 22.4rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  bottom: 9rem;
+  right: 6.2rem;
+}
+
 .star {
   width: 4rem;
   height: 4rem;
   position: relative;
-  left: 8.5rem;
+  left: 8.7rem;
   scale: 1.7;
   bottom: 2.9rem;
 }
@@ -167,6 +184,14 @@
   scale: 0.14 0.16;
   left: 3.2rem;
   bottom: 3rem;
+}
+
+.expanded-downarrow-reviewing {
+  display: flex;
+  position: relative;
+  scale: 0.045 0.055;
+  left: -2.2rem;
+  bottom: 12rem;
 }
 
 .shipPar {
@@ -225,7 +250,7 @@
   text-wrap: wrap;
   margin-left: -1.5rem;
   letter-spacing: 0.1px;
-  bottom: 39rem;
+  bottom: 20rem;
   right: 9.5rem;
 }
 
@@ -245,4 +270,10 @@
 
 .revPar span:hover {
   opacity: 0.6;
+}
+
+.bottom-border {
+  width:22.4rem;
+  height:1rem;
+  border-bottom:1px rgba(0, 0, 0, 0.1) solid;
 }
