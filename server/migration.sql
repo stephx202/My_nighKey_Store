@@ -30,7 +30,7 @@ INSERT INTO shoeData(
     purchased,
     thumbnails,
     expandedImg,
-    -- shoeSize,
+    shoeSize,
     howOthersCarousel,
     ExplorationImg
 ) VALUES(
@@ -70,9 +70,30 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0a0e1b96-043c-46d4-96a0-22408b6c771d/air-force-1-07-mens-shoes-jBrhbr.png'
     ],
     /* Sizing /////////////////////////////////////////////////////////////////////////////// */
-    -- '{
-
-    -- }',
+    '{
+        'M 5 / W 6.5': false,
+        'M 5.5 / W 7': false,
+        'M 6 / W 7.5': true,
+        'M 6.5 / W 8': true,
+        'M 7 / W 8.5': true,
+        'M 7.5 / W 9': true,
+        'M 8 / W 9.5': true,
+        'M 8.5 / W 10': true,
+        'M 9 / W 10.5': true,
+        'M 9.5 / W 11': true,
+        'M 10 / W 11.5': true,
+        'M 10.5 / W 12': true,
+        'M 11 / W 12.5': true,
+        'M 11.5 / W 13': true,
+        'M 12 / W 13.5': true,
+        'M 12.5 / W 14': true,
+        'M 13 / W 14.5': true,
+        'M 14 / W 15.5': true,
+        'M 15 / W 16.5': true,
+        'M 16 / W 17.5': true,
+        'M 17 / W 18.5': true,
+        'M 18 / W 19.5': true
+    }',
     /* Carousels //////////////////////////////////////////////////////////////////////////// */
     ARRAY[
         '{
