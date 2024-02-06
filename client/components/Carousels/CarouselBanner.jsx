@@ -43,7 +43,6 @@ const CarouselBanner = (props) => {
     };
     return (
         <div>
-        <h2></h2>
         <Slider {...settings}>
           <div className="bannerCard">
             <div className="bannerTextContainer">
