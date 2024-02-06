@@ -75,7 +75,7 @@ export default function ShoeSizes(props) {
                     </>
                 ) : (
                     <></>
-                )}
+                )}<div ><img src="https://static.nike.com/nike-prod-cld/images/t_PDP_144_v1/f_auto/static/en_us-DYO/DYO.png" /></div>
             </div>
             <div className="shoeSizes">
                 <p>Select Size</p>

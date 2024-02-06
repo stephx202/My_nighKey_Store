@@ -257,6 +257,13 @@ a.details{
   background-color: #f5f5f5;
   border-radius: 8px;
   margin-right: 4px;
+  border: 1px solid #f5f5f5;
+  overflow: hidden;
+}
+
+.shoeSelection div:hover{
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .shoeSelection img{
