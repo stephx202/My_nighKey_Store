@@ -44,6 +44,8 @@
 
 .Body1IMGs h3 {
     font-family: gesta, 'sans-serif !important';
+    font-weight: lighter;
+    font-size: 17px ;
   }
 
 .Body1Carousel .slick-prev,
