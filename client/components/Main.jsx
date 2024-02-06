@@ -8,7 +8,7 @@ const Main = (props) => {
     return (
         <div id='main'>
             <ImageGallery shoe={props.shoe}/>
-            <PurchaseInfo shoe={props.shoe}/>
+            <PurchaseInfo shoe={props.shoe} allShoes={props.allShoes} selectShoe={props.selectShoe}/>
               <Det_Ship_Rev /> {/*creates side product/shipping/review section inside main*/}
         </div>
     )

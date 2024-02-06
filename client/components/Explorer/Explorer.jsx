@@ -2,7 +2,7 @@ import '../../styles/Explorer.css'
 
 export default function Explorer(props){
 
-    console.log(props.shoe)
+    // console.log(props.shoe)
 
     return (
         <div className='container'>
