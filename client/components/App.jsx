@@ -37,7 +37,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <Main shoe={shoe} allShoes={allShoes} selectShoe={selectShoe}/>
+      <Main shoe={shoe} allShoes={allShoes} selectShoe={selectShoe} currentShoe={currentShoe}/>
       {/* <Carousel /> */}
       {shoe.explorationimg ? <Explorer shoe={shoe.explorationimg} /> : <></>}
       <Carousels />

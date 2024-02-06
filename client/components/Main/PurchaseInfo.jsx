@@ -7,7 +7,7 @@ const PurchaseInfo = (props) => {
     
     return (
         <div id="purchaseInfo" >
-            <ShoeSizes shoe={props.shoe} allShoes = {props.allShoes} selectShoe={props.selectShoe}/>
+            <ShoeSizes shoe={props.shoe} allShoes = {props.allShoes} selectShoe={props.selectShoe} currentShoe={props.currentShoe}/>
             <PaymentDiv />
             <ProductDetails shoe={props.shoe} />
         </div>

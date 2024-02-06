@@ -9,7 +9,7 @@ export default function StoreModal(props){
         props.select({...selected, date: month + " " +day })
         props.close(false)
     }
-    console.log(selected)
+    // console.log(selected)
 
     const date = new Date();
     let day = date.getDate()
