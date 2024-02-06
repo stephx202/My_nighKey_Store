@@ -7,24 +7,37 @@ import Carousels from "./Carousels/Carousels.jsx";
 import Footer from "./Footer/Footer.jsx";
 
 const App = () => {
-  // Commented out, fossil from original template code ////////////////////
+  
   const [shoe, setShoe] = useState({});
+  const [allShoes, setAllShoes] = useState([])
+  const [currentShoe, setCurrentShoe] = useState(1)
 
   useEffect(() => {
-    fetch("/api/shoedata")
+    fetch('/api/shoedata')
       .then((res) => res.json())
       .then((shoes) => {
-        setShoe(shoes);
+        setAllShoes(shoes)
       });
   }, []);
-  console.log(shoe)
+
+  useEffect(() => {
+    fetch(`/api/shoedata/${currentShoe}`)
+      .then((res) => res.json())
+      .then((shoes) => {
+        setShoe(shoes)
+      });
+  }, [currentShoe]);
   ////////////////////////////////////////////////////////////////////////
-  
+
+  function selectShoe(response){
+    setCurrentShoe(response)
+  }
+
+
   return (
     <>
       <Header />
-
-      <Main shoe={shoe} />
+      <Main shoe={shoe} allShoes={allShoes} selectShoe={selectShoe}/>
       {/* <Carousel /> */}
       {shoe.explorationimg ? <Explorer shoe={shoe.explorationimg} /> : <></>}
       <Carousels />
