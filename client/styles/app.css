@@ -2,20 +2,23 @@ html,
 h1,
 h2,
 h3,
-h4,
-body {
-  /* display: flex; */
-  /* flex-flow: column; */
-  /* align-items: center; */
+h4 {
   margin: 0;
   padding: 0;
 }
 
-.main {
-  padding: 8px;
+body {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
 }
 
-.task {
+/* .main {
+  padding: 8px;
+} */
+
+/* .task {
   display: flex;
   align-items: center;
   border: 1px solid black;
@@ -29,4 +32,4 @@ body {
 
 .task > * + * {
   margin-left: 4px;
-}
+} */
