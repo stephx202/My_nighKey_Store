@@ -168,7 +168,7 @@ INSERT INTO shoeData(
     'CW2288-001',
     'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
     115,
-    3220,
+    878,
     /* Image Gallery //////////////////////////////////////////////////////////////////// */ 
     ARRAY[
         'https://static.nike.com/a/images/t_default/21d38052-598b-44f6-a857-123c9f72b015/air-force-1-07-mens-shoes-jBrhbr.png',
@@ -296,7 +296,7 @@ INSERT INTO shoeData(
     'CT2302-002',
     'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
     115,
-    3220,
+    139,
     /* Image Gallery //////////////////////////////////////////////////////////////////// */ 
     ARRAY[
         'https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-mens-shoes-jBrhbr.png',
@@ -339,11 +339,11 @@ INSERT INTO shoeData(
         "M 11 / W 12.5": true,
         "M 11.5 / W 13": true,
         "M 12 / W 13.5": true,
-        "M 12.5 / W 14": true,
+        "M 12.5 / W 14": false,
         "M 13 / W 14.5": true,
         "M 14 / W 15.5": true,
-        "M 15 / W 16.5": true,
-        "M 16 / W 17.5": true,
+        "M 15 / W 16.5": false,
+        "M 16 / W 17.5": false,
         "M 17 / W 18.5": true,
         "M 18 / W 19.5": true
      }'::JSONB,
@@ -420,7 +420,7 @@ INSERT INTO shoeData(
     'CT2302-100',
     'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
     115,
-    3220,
+    172,
     /* Image Gallery //////////////////////////////////////////////////////////////////// */ 
     ARRAY[
         'https://static.nike.com/a/images/t_default/a42a5d53-2f99-4e78-a081-9d07a2d0774a/air-force-1-07-mens-shoes-jBrhbr.png',
@@ -436,23 +436,23 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_default/078c59c7-7919-4a3b-90f9-06faab2e91cc/air-force-1-07-mens-shoes-jBrhbr.png'
     ],
     ARRAY[
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d762c5e2-ae49-4208-99df-484594b51e5f/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/videos/q_90/a91adb2a-77f4-4e15-811b-4847a3768ac0/video.mp4',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e87d1e-4063-4a25-ac40-d38bb4c8f5da/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fcfed7da-5ef1-4949-a969-bf67c97d9fb8/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b20b924a-e1e9-4822-976c-a9ea8411f84c/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3570fc97-5d2c-4c92-a71d-194fa93884f4/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/af5509b3-1389-4526-9087-73e2e05aa51e/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/eb2488fe-1b41-4edb-8112-c78c167db8ed/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4f1b60e-88a9-4166-acfc-75643da730e3/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8c9662a3-cb63-4af1-b15f-363b865400dc/air-force-1-07-mens-shoes-jBrhbr.png',
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ea266a57-5f91-4b2c-9b19-bef27655015a/air-force-1-07-mens-shoes-jBrhbr.png'
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/350e7f3a-979a-402b-9396-a8a998dd76ab/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/videos/q_90/2f8c2650-733c-4b0d-86f5-2626f4a36db4/video.mp4',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/354e209b-f9f2-42c4-9130-d57f49bd77c0/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/52f79949-3584-4800-899c-0d5ff828f5e4/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f2e2833a-49e2-4088-b77e-4e4a5be53ae7/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/15b85bdb-aa12-4060-83d0-5163d11b314e/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dce93a1d-ebcb-4300-b8cf-f71da0820ea1/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/619f4371-99ff-44cd-8b13-6c2e699e90c1/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/04c4cb92-0272-4c0f-bb53-30b833f044e0/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4eb3370f-c1ca-47d1-927f-49b4e1545dc9/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2fce110e-7613-485a-8f17-9ea267f121e6/air-force-1-07-mens-shoes-jBrhbr.png'
     ],
     /* Sizing /////////////////////////////////////////////////////////////////////////////// */
     '{
-        "M 6 / W 7.5": true,
+        "M 6 / W 7.5": false,
         "M 6.5 / W 8": true,
-        "M 7 / W 8.5": true,
+        "M 7 / W 8.5": false,
         "M 7.5 / W 9": true,
         "M 8 / W 9.5": true,
         "M 8.5 / W 10": true,
