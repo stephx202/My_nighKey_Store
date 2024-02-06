@@ -18,8 +18,7 @@ export default function StoreModal(props){
     day+=5;
     month = months[month]
     
-const stores = [{id:1, name:"Nike Unite - Harlem"}, {id:2, name:"Nike Factory Store - Paramus"}, {id:3, name:"Nike Soho"}, {id:4, name:"Nike Well Collective - Battery Park"}, {id:5, name:"Nike Well Collective -Williamsburg"}, {id:6, name:"Nike Unite - East New York"}, {id:7, name:"Nike Well Collective - Shrewsbury"}, {id:8, name:"Nike Factory Store - Staten Island"},  {id:9, name:"Nike Unite - North Bronx"}, {id:10, name:"Nike Factory Store - Newark"}]
-    const availableStores = ["Nike Factory Store - Paramus", "Nike Factory Store - Staten Island"]
+const stores = [{id:1, name:"Nike Unite - Harlem"}, {id:2, name:"Nike Factory Store - Paramus"}, {id:3, name:"Nike Soho"}, {id:4, name:"Nike Well Collective - Battery Park"}, {id:5, name:"Nike Well Collective - Williamsburg"}, {id:6, name:"Nike Unite - East New York"}, {id:7, name:"Nike Well Collective - Shrewsbury"}, {id:8, name:"Nike Factory Store - Staten Island"},  {id:9, name:"Nike Unite - North Bronx"}, {id:10, name:"Nike Factory Store - Newark"}]
 
     return (
         <div className="modal">
@@ -36,7 +35,7 @@ const stores = [{id:1, name:"Nike Unite - Harlem"}, {id:2, name:"Nike Factory St
                     {stores.map(store => (
                         
                       <div key={store.id} >
-                       {availableStores.includes(store.name) ? (<>
+                       {props.stores.includes(store.name) ? (<>
                         {selected && selected.id === store.id ? <button style={{border : "1px solid black"}} id={store.id}> 
                         <p>{store.name}</p>
                         <p style={{color:"green"}}>Available {month} {day}</p>

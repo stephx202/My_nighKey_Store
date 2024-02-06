@@ -17,7 +17,15 @@ CREATE TABLE shoeData (
     /* For "How Others Are Wearing It" Carousel */
     howOthersCarousel JSONB[],
     /* For "Exploration" Images */
-    ExplorationImg text[]
+    ExplorationImg text[],
+    -- For comparing the stores that are available
+    stores text[],
+    -- Benefits for product modal and exploration,
+    benefits text[],
+    --  Details for product modal
+    details text[],
+    -- origing on shoe
+    origin text
 );
 
 /* White on White */
@@ -33,7 +41,11 @@ INSERT INTO shoeData(
     expandedImg,
     shoeSize,
     howOthersCarousel,
-    ExplorationImg
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -207,7 +219,27 @@ ARRAY[
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/243a7c32-0aa7-4c0c-a238-c2b91b91d67e/pdp-replace.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/b2f8e5b8-ffe4-45e1-8b70-ed502fcf6243/pdp-replace.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/d5ff67b4-6bb1-47ec-ae67-3484c21ac5de/pdp-replace.jpg'
-    ]
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Factory Store - Paramus',
+        'Nike Factory Store - Staten Island'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'The stitched overlays on the upper add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'The padded collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on the toe',
+        'Rubber sole'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -228,7 +260,11 @@ INSERT INTO shoeData(
     expandedImg,
     shoeSize,
     howOthersCarousel,
-    ExplorationImg
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -404,7 +440,28 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/bf03cb63-a736-4557-95bd-49e9d8714a05/pdp-cw2288-001.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/b16130df-9129-4334-824e-95bc7758ae34/pdp-cw2288-001.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/ce585162-01c8-47b7-a574-fb180854e324/pdp-cw2288-001.jpg'
-    ]
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Unite - Harlem',
+        'Nike Well Collective - Williamsburg',
+        'Nike Factory Store - Staten Island'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'The stitched overlays on the upper add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'The padded collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on the toe',
+        'Rubber sole'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -425,14 +482,18 @@ INSERT INTO shoeData(
     expandedImg,
     shoeSize,
     howOthersCarousel,
-    ExplorationImg
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
     'Men''s Shoes',
     'Black/White',
     'CT2302-002',
-    'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
+    'The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colors and the perfect amount of flash to make you shine.',
     115,
     139,
     /* Image Gallery //////////////////////////////////////////////////////////////////// */ 
@@ -617,7 +678,28 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/edac202b-5742-47db-82a7-601b950abcfb/image.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/e1b5af2b-2bf2-44ff-b696-11b49e4547e0/image.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/db7fba46-21e9-4167-a4e1-37d828a03a47/image.jpg'
-    ]
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Factory Store - Paramus',
+        'Nike Soho',
+        'Nike Factory Store - Staten Island',
+        'Nike Unite - North Bronx'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'Smoother than backboard glass and featuring a slight sheen, the stitched leather overlays add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'Padded, low-cut collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on toe'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -638,14 +720,18 @@ INSERT INTO shoeData(
     expandedImg,
     shoeSize,
     howOthersCarousel,
-    ExplorationImg
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
     'Men''s Shoes',
     'White/Black',
     'CT2302-100',
-    'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
+    'The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colors and the perfect amount of flash to make you shine.',
     115,
     172,
     /* Image Gallery ///////////////////////////////////////////////////////////////////////// */ 
@@ -830,5 +916,26 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/edac202b-5742-47db-82a7-601b950abcfb/image.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/e1b5af2b-2bf2-44ff-b696-11b49e4547e0/image.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/db7fba46-21e9-4167-a4e1-37d828a03a47/image.jpg'
-    ]
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Factory Store - Paramus',
+        'Nike Well Collective - Battery Park',
+        'Nike Unite - East New York',
+        'Nike Factory Store - Newark'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'Smoother than backboard glass and featuring a slight sheen, the stitched leather overlays add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'Padded, low-cut collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on toe'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
 );

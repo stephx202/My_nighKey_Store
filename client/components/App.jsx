@@ -39,7 +39,7 @@ const App = () => {
       <Header />
       <Main shoe={shoe} allShoes={allShoes} selectShoe={selectShoe} currentShoe={currentShoe}/>
       {/* <Carousel /> */}
-      {shoe.explorationimg ? <Explorer shoe={shoe.explorationimg} /> : <></>}
+      {shoe.explorationimg ? <Explorer shoe={shoe} /> : <></>}
       <Carousels />
       <Footer />
     </>
