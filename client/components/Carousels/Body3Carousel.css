@@ -8,5 +8,20 @@
 }
 
 .shoeName{
-    color: red;
+    color: #111111;
+    font-size: 16px;
+    font-family: Helvetica;
 }
+
+.smallerText{
+    color: #707072;
+    font-size: 16px
+
+}
+
+.Body3Carousel .slick-slider {
+    margin-right: -10px; /* Adjust the negative margin to reduce space */
+    }
+
+
+    
