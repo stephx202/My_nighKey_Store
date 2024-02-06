@@ -1,3 +1,6 @@
 **/node_modules/
 **/.env
 /client/dist
+
+
+# PGPASSWORD=7uq0h9pm2nmfe3kRW9qH8tIXacRNz5xc psql -h dpg-cmtdicf109ks73a5bcjg-a.oregon-postgres.render.com -U nighkey_db_user nighkey_db

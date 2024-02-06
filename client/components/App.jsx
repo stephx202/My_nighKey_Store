@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 
+
 import Header from './Header.jsx';
 import Main from './Main.jsx';
 import Carousel from './Carousels/CarouselBanner.jsx';
-import Footer from './Footer.jsx';
+import Footer from "./Footer/Footer.jsx"
+
 
 const App = () => {
-  
   // Commented out, fossil from original template code ////////////////////
   // const [tasks, setTasks] = useState([]);
 
