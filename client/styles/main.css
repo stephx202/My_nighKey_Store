@@ -5,7 +5,6 @@
     justify-content: space-between;
     height: 1500px;
     width: 60vw;
-    /* top: 22vh; */
     top: 5vh;
     left: 20vw;
     /* outline: solid thin red; */
@@ -71,16 +70,16 @@
   pointer-events: none;
 }
 #highlyRated {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 3vh;
-  left: 7vw;
-  height: 40px;
-  width: 7.2vw;
-  background-color: white;
-  border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3vh;
+    left: 7vw;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border-radius: 25px;
 }
 .nikeFont {
   font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
@@ -216,4 +215,3 @@ a.details{
     font-weight: 600;
     color: black;
 }
-
