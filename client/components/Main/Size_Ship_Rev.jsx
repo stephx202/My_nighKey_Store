@@ -5,6 +5,8 @@ import uparrow from "../../../images/up_arrow.png";
 import rating from "../../../images/4.8_star_rating.png";
 
 const Size_Ship_Rev = () => {
+  const [currentShipping, setShipping] = useState("normalShipping");
+  const [currentReviewing, setReviewing] = useState("normalReviewing");
   const [currentSizeArrow, setSizeArrow] = useState(downarrow);
   const [currentShipArrow, setShipArrow] = useState(downarrow);
   const [currentRevArrow, setRevArrow] = useState(downarrow);
@@ -12,25 +14,30 @@ const Size_Ship_Rev = () => {
   const [isShipParagraphVisible, setShipParagraphVisibility] = useState(false);
   const [isReviewParagraphVisible, setReviewParagraphVisibility] =
     useState(false);
+  const [currentSizingClass, setSizingClass] =
+    useState("downarrow-sizing");
   const [currentShippingClass, setShippingClass] =
     useState("downarrow-shipping");
-  const [currentSizeID, setSizeID] = useState("normalSize");
-  const [currentShippingID, setShippingID] = useState("normalShipping");
-  const [currentReviewID, setReviewID] = useState("normalReview");
+  const [currentReviewingClass, setReviewingClass] =
+    useState("downarrow-reviewing");
 
   const sizeChangeArrow = () => {
     setSizeArrow((prevArrow) =>
       prevArrow === downarrow ? uparrow : downarrow
     );
-    setShippingClass((prevClass) =>
-      prevClass === "downarrow-shipping"
-        ? "expDownarrow-shipping"
-        : "downarrow-shipping"
+    setSizingClass((prevClass) =>
+      prevClass === "downarrow-sizing"
+        ? "expanded-downarrow-sizing"
+        : "downarrow-sizing"
     );
 
-    setReviewID((prevID) =>
-      prevID === normalReview ? expandedReview2 : normalReview
-    );
+    setShipping((prevID) => {
+      return prevID === "normalShipping" ? "sizeShipping" : "normalShipping";
+    });
+
+    setReviewing((prevID) => {
+      return prevID === "normalReviewing" ? "sizeReviewing" : "normalReviewing";
+    });
 
     setSizeParagraphVisibility((prevVisibility) => !prevVisibility);
   };
@@ -40,23 +47,34 @@ const Size_Ship_Rev = () => {
       prevArrow === downarrow ? uparrow : downarrow
     );
     setShipParagraphVisibility((prevVisibility) => !prevVisibility);
-    setReviewID((prevID) =>
-      prevID === normalReview ? expandedReview : normalReview
+    setReviewing((prevID) =>
+      prevID === "normalReviewing" ? "shipReviewing" : "normalReviewing"
     );
+    setShippingClass((prevClass) =>
+    prevClass === "downarrow-shipping"
+      ? "expanded-downarrow-shipping"
+      : "downarrow-shipping"
+  );
   };
   const reviewChangeArrow = () => {
     setRevArrow((prevArrow) => (prevArrow === downarrow ? uparrow : downarrow));
     setReviewParagraphVisibility((prevVisibility) => !prevVisibility);
+
+    setReviewingClass((prevClass) =>
+    prevClass === "downarrow-reviewing"
+      ? "expanded-downarrow-reviewing"
+      : "downarrow-reviewing"
+  );
   };
   return (
     <>
       <div id="size_ship_rev">
-        <div id= {currentSizeID}>
+        <div id="normalSizing">
           <div>Size & Fit</div>
           <div>
             <img
               onClick={sizeChangeArrow}
-              className="downarrow-size"
+              className={currentSizingClass}
               src={`${currentSizeArrow}`}
               alt=""
             />
@@ -75,7 +93,7 @@ const Size_Ship_Rev = () => {
           </div>
         </div>
 
-        <div id={currentShippingID}>
+        <div id={currentShipping}>
           <div>Shipping & Returns</div>
           <div>
             <img
@@ -98,7 +116,7 @@ const Size_Ship_Rev = () => {
           </div>
         </div>
 
-        <div id={currentReviewID}>
+        <div id={currentReviewing}>
           <div>Reviews (173)</div>
           <p>
             <img className="star" src={`${rating}`} alt="star" />
@@ -106,7 +124,7 @@ const Size_Ship_Rev = () => {
           <div>
             <img
               onClick={reviewChangeArrow}
-              className="downarrow-reviews"
+              className={currentReviewingClass}
               src={`${currentRevArrow}`}
               alt=""
             />
