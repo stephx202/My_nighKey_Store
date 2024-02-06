@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-
-import Header from './Header.jsx';
-import Main from './Main.jsx';
+import Header from "./Header.jsx";
+import Main from "./Main.jsx";
 import Explorer from "./Explorer/Explorer.jsx";
 import Carousels from "./Carousels/Carousels.jsx";
-import Footer from "./Footer/Footer.jsx"
-
+import Footer from "./Footer/Footer.jsx";
 
 const App = () => {
   
@@ -35,16 +33,14 @@ const App = () => {
     setCurrentShoe(response)
   }
 
-  console.log(currentShoe)
-  console.log(shoe);
+
   return (
     <>
       <Header />
-
       <Main shoe={shoe} allShoes={allShoes} selectShoe={selectShoe}/>
       {/* <Carousel /> */}
-      {shoe.explorationimg ? <Explorer shoe ={shoe.explorationimg} /> : <></>}
-      <Carousels/>
+      {shoe.explorationimg ? <Explorer shoe={shoe.explorationimg} /> : <></>}
+      <Carousels />
       <Footer />
     </>
   );

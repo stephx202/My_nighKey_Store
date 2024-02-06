@@ -29,6 +29,14 @@ app.get("/api/shoedata/:id", (req, res) => {
   });
 });
 
+app.get("/api/shoedata/:id", (req, res) => {
+  let id = req.params.id;
+
+  client.query("SELECT * FROM shoedata WHERE id = $1;", [id]).then((result) => {
+    res.send(result.rows[0]);
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });

@@ -1,4 +1,6 @@
 #location_supply {
+  display: flex;
+  position: relative;
   color: #5f5f5f;
   transition-behavior: normal;
   transition-duration: 0.2s;
@@ -12,8 +14,8 @@
   text-decoration: none;
   border-radius: 2px;
   cursor: pointer;
-  margin-top: 1.6rem;
-  margin-right: 10rem;
+  margin-top: 1.8rem;
+  right:13.6rem;
 }
 
 .location_supply {
@@ -23,9 +25,9 @@
 }
 
 .location_supply p {
-  margin-right: 2rem;
+  margin-right: 3.5rem;
   font-size: 9.5px;
-  margin-top: -1rem;
+  margin-top: .5rem;
 }
 
 .location_supply p:hover {
@@ -38,6 +40,8 @@
   width: 64rem;
   color: white;
   height: 3rem;
+  display: flex;
+  position: relative;
 }
 
 .copyright span {

@@ -8,17 +8,21 @@
   text-decoration: none;
   border-radius: 2px;
   cursor: pointer;
-  margin-right: 11rem;
-  margin-top:2rem;
+  margin-right: 12.9rem;
+  margin-top: 2rem;
 }
 
 .tos_privacy {
   display: flex;
-  justify-content: end;
+  position: relative;
+  margin-top:1.5rem;
+  bottom:4rem;
+  left:75.6rem;
+  text-wrap: nowrap;
 }
 
 .tos_privacy p {
-  margin-right: 1.5rem;
+  margin-right: .7rem;
   font-size: 9.5px;
 }
 
