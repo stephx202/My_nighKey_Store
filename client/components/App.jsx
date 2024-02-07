@@ -30,9 +30,11 @@ const App = () => {
       .then((res) => res.json())
       .then((shoes) => {
         setShoe(shoes)
+        console.log("something", shoes.howotherscarousel)
       });
   }, [currentShoe]);
   ////////////////////////////////////////////////////////////////////////
+
 
   function selectShoe(response){
     setCurrentShoe(response)
@@ -43,7 +45,7 @@ const App = () => {
     <>
       <Header />
       <Main shoe={shoe} allShoes={allShoes} selectShoe={selectShoe} currentShoe={currentShoe}/>
-      <Body1Carousel/>
+      <Body1Carousel howotherscarousel={shoe.howotherscarousel}/>
       <Body2Carousel/>
       {shoe.explorationimg ? <Explorer shoe={shoe} /> : <></>}
       <Body3Carousel/>
