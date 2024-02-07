@@ -6,6 +6,7 @@ import rating from "../../../images/4.8_star_rating.png";
 
 const Size_Ship_Rev = () => {
   const [currentShipping, setShipping] = useState("normalShipping");
+  const [currentStarClass, setStarClass] = useState("star");
   const [currentReviewing, setReviewing] = useState("normalReviewing");
   const [currentSizeArrow, setSizeArrow] = useState(downarrow);
   const [currentShipArrow, setShipArrow] = useState(downarrow);
@@ -66,6 +67,12 @@ const Size_Ship_Rev = () => {
       prevClass === "downarrow-reviewing"
         ? "expanded-downarrow-reviewing"
         : "downarrow-reviewing"
+    );
+
+    setStarClass((prevClass) =>
+      prevClass === "star"
+        ? "star-expanded"
+        : "star"
     );
   };
   useEffect(() => {
@@ -139,7 +146,7 @@ const Size_Ship_Rev = () => {
         <div id={currentReviewing}>
           <div>Reviews (173)</div>
           <p>
-            <img className="star" src={`${rating}`} alt="star" />
+            <img className={currentStarClass} src={`${rating}`} alt="star" />
           </p>
           <div>
             <img
