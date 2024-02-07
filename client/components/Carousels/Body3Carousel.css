@@ -1,0 +1,53 @@
+#body3Heading{
+    font-family:Helvetica;
+    font-size: 30px;
+    font-weight:500;
+    padding-left: 58px;
+    padding-bottom: 60px;
+
+}
+
+#Body3Carousel{
+    padding-top: 25px;
+}
+
+
+#Body3Carousel .slick-track {
+    height: 100%;
+    padding: 58px;
+
+    
+}
+.Body3IMGs{
+    width: 92%;
+    height: 90%;
+    position: relative
+}
+
+.Body3IMGs img{
+    width: 92%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+#Body3Carousel .slick-slide{
+    margin-right: -36px;
+}
+
+.shoeName{
+    color: #111111;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.smallerText{
+    color: #707072;
+    font-size: 16px
+
+}
+
+
+
+
+    
