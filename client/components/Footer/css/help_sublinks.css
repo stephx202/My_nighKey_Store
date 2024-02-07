@@ -21,16 +21,19 @@
   background-color: transparent;
   margin-bottom: -0.4rem;
   width: 1.5rem;
-  left: 8rem;
+  left: 7rem;
   margin-bottom: 18px;
+  font-size: 13px;
+  letter-spacing: -1.15px;
 }
 
 #help_sublinks p {
   text-align: left;
-  margin-left: 8.2rem;
+  margin-left: 7.2rem;
   display: flex;
-  font-size: 11px;
+  font-size: 12px;
   margin-top: -1.3rem;
+  width:7.5rem;
 }
 
 #help_sublinks p:hover {
