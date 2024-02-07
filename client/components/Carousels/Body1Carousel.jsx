@@ -8,13 +8,13 @@ import Modal from './Modal.jsx';
 
 
   
-  const Body1Arrows = ({ className, onClick }) => (
-    <button
-    className={className}
-    onClick={onClick}
-  >
-  </button>
-  );
+  // const Body1Arrows = ({ className, onClick }) => (
+  //   <button
+  //   className={className}
+  //   onClick={onClick}
+  // >
+  // </button>
+  // );
   
   const Body1Carousel = () => {
     const [showModal, setShowModal] = useState(false);
@@ -39,8 +39,8 @@ import Modal from './Modal.jsx';
       initialSlide: 0,
     //   autoplay: true,
       autoplaySpeed: 3000,
-      prevArrow: <Body1Arrows className="slick-prev" />,
-      nextArrow: <Body1Arrows className="slick-next" />,
+      // prevArrow: <Body1Arrows className="slick-prev" />,
+      // nextArrow: <Body1Arrows className="slick-next" />,
       responsive: [
         {
             breakpoint: 1024,

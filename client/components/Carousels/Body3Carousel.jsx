@@ -55,8 +55,8 @@ const Body3Carousel = () => {
                     <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/0131c14e-bfcd-4631-bc9b-610825ae2af0/air-force-1-07-easyon-womens-shoes-q2Nz01.png"/>
                     <h2 className="shoeName">Nike Air Force 1 '07 EasyOn</h2>
                     <h3 className="smallerText">Women's Shoes</h3>
-                    <h2>$97.97</h2>
-                    <h2 className="shoeName">$115.00</h2>
+                    <h2 className="shoeName">$97.97</h2>
+                    <h2 id="crossedOffText">$115.00</h2>
                 </div>
                 <div className="Body3IMGs">
                     <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/fd17b420-b388-4c8a-aaaa-e0a98ddf175f/dunk-high-retro-mens-shoe-dTVTCk.png"/>
