@@ -389,10 +389,20 @@ const Body2Carousel = () => {
       <div key={index} className='modalItems'>
         <img className="itemImage" src={looks[theLook].items[index].img}></img>
         <div className='itemDesc'>
-          
+          <h className='textBold'>{looks[theLook].items[index].name}</h>
+          <h className='textNormal'>{looks[theLook].items[index].type}</h>
+          <h className='textNormal'>{looks[theLook].items[index].colors}</h>
+          <h className='textBold'>{looks[theLook].items[index].price}</h>
+          <h className='shopText'>SHOP</h>
         </div>
       </div>
     ))
+  }
+  let goBack = () => {
+    theLook === '0' ? setTheLook('9') : setTheLook(JSON.stringify(+theLook - 1));
+  }
+  let goForward = () => {
+    theLook === '9' ? setTheLook('0') : setTheLook(JSON.stringify(+theLook + 1));
   }
 
   let clickModalHandler = (event) => {
@@ -407,11 +417,20 @@ const Body2Carousel = () => {
           <div id='theLookModal'>
             <div id='lookModalLeft'>
               <img id="modalImg" src={images[theLook]}></img>
+              <div id='currentSet'>{(+theLook + 1)}/10</div>
+              <div id='backButton' onClick={goBack}>
+              <svg fill="#000000" width="23px" height="23px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M14.19 16.005l7.869 7.868-2.129 2.129-9.996-9.997L19.937 6.002l2.127 2.129z"/></svg>
+              </div>
+              <div id='forwardButton' onClick={goForward}>
+              <svg fill="#000000" width="23px" height="23px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"/></svg>
+              </div>
+              <div id='cheats'></div>
             </div>
             <div id='lookModalRight'>
               <div id='closeButton' onClick={modalClose}>
                 <svg fill="#000000" width="800px" height="800px" viewBox="-8 0 47 32" xmlns="http://www.w3.org/2000/svg"><path d="M7.004 23.087l7.08-7.081-7.07-7.071L8.929 7.02l7.067 7.069L23.084 7l1.912 1.913-7.089 7.093 7.075 7.077-1.912 1.913-7.074-7.073L8.917 25z"/></svg>
               </div>
+              <div id='cheats2'></div>
               {renderModalScroll()}
             </div>
           </div>
