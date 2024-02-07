@@ -3,7 +3,10 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header.jsx";
 import Main from "./Main.jsx";
 import Explorer from "./Explorer/Explorer.jsx";
-import Carousels from "./Carousels/Carousels.jsx";
+import Body1Carousel from "./Carousels/Body1Carousel.jsx";
+import Body2Carousel from "./Carousels/Body2Carousel.jsx";
+import Body3Carousel from "./Carousels/Body3Carousel.jsx";
+
 
 
 import Footer from "./Footer/Footer.jsx";
@@ -40,9 +43,10 @@ const App = () => {
     <>
       <Header />
       <Main shoe={shoe} allShoes={allShoes} selectShoe={selectShoe} currentShoe={currentShoe}/>
-      {/* <Carousel /> */}
+      <Body1Carousel/>
+      <Body2Carousel/>
       {shoe.explorationimg ? <Explorer shoe={shoe} /> : <></>}
-      <Carousels />
+      <Body3Carousel/>
       <Footer />
     </>
   );
