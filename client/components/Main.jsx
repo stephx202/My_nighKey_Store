@@ -7,8 +7,9 @@ const Main = (props) => {
     return (
         <div id='main'>
             <ImageGallery shoe={props.shoe}/>
-            <PurchaseInfo shoe={props.shoe} allShoes={props.allShoes} selectShoe={props.selectShoe}/>
-             
+
+            <PurchaseInfo shoe={props.shoe} allShoes={props.allShoes} selectShoe={props.selectShoe} currentShoe={props.currentShoe}/>
+
         </div>
     )
 }
