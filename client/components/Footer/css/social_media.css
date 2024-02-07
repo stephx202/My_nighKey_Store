@@ -1,10 +1,9 @@
 #social_media {
   display: flex;
   position: relative;
-  left:2.4rem;
   width: 20rem;
   height: 10rem;
-  margin-left:2rem;
+  margin-left:3rem;
   margin-top: 2rem;
 }
 
@@ -15,7 +14,8 @@
 #social_media img {
   width: 25px;
   height: 25px;
-  margin-right: 0.8rem;
+  margin-right: 1.4rem;
+  scale:1.2;
 }
 
 .youtube,

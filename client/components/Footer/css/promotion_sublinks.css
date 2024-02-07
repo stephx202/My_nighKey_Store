@@ -17,8 +17,11 @@
 #promotion_sublinks h1 {
   color: white;
   background-color: transparent;
-  margin-right: 9rem;
+  margin-right: 11rem;
   margin-bottom: 18px;
+  font-size: 13px;
+  letter-spacing: -1.15px;
+  right: 1rem;
 }
 
 #promotion_sublinks p {
@@ -26,10 +29,11 @@
   margin-left: 3rem;
   display: flex;
   position: relative;
-  right:1.5rem;
-  font-size:11px;
-  margin-top:-1.3rem;
+  right: 3.8rem;
+  font-size: 12px;
+  margin-top: -1.3rem;
   text-wrap: nowrap;
+  width: 3rem;
 }
 
 #promotion_sublinks p:hover {
