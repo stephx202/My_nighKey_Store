@@ -7,6 +7,21 @@
 
 }
 
+#Body3Carousel{
+    padding-top: 25px;
+}
+
+
+.Body3Carousel .slick-track {
+    height: 100%;
+    padding: 0 58px;
+
+    
+}
+
+.carousel-item
+
+
 .shoeName{
     color: #111111;
     font-size: 16px;
@@ -19,9 +34,7 @@
 
 }
 
-.Body3Carousel .slick-slider {
-    margin-right: -10px; /* Adjust the negative margin to reduce space */
-    }
+
 
 
     

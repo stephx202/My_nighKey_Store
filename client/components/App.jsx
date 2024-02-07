@@ -4,9 +4,9 @@ import Header from "./Header.jsx";
 import Main from "./Main.jsx";
 import Explorer from "./Explorer/Explorer.jsx";
 import Carousels from "./Carousels/Carousels.jsx";
-import Body1Carousel from "./Carousels/Body1Carousel.jsx";
+
+
 import Footer from "./Footer/Footer.jsx";
-import Body3Carousel from "./Carousels/Body3Carousel.jsx";
 
 const App = () => {
   
@@ -43,7 +43,6 @@ const App = () => {
       {/* <Carousel /> */}
       {shoe.explorationimg ? <Explorer shoe={shoe.explorationimg} /> : <></>}
       <Carousels />
-      <Body3Carousel/>
       <Footer />
     </>
   );

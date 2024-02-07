@@ -17,7 +17,7 @@ const Body3Carousel = () => {
     };
 
     return (
-        <div className="Body3Carousel">
+        <div id="Body3Carousel">
             <h2 id="body3Heading">You Might Also Like</h2>
             <Slider {...settings}>
                 <div>
