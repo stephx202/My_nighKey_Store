@@ -15,23 +15,29 @@
 .tos_privacy {
   display: flex;
   position: relative;
-  margin-top:1.5rem;
-  bottom:4rem;
-  left:91.6rem;
-  text-wrap: nowrap;
+  bottom: 2rem;
+  left: 89.8rem;
+  white-space: nowrap;
+  height: 4rem;
+  padding: none;
+  margin: none;
 }
 
 .tos_privacy p {
-  margin-right: .7rem;
-  font-size: 9.5px;
+  display: flex;
+  offset-position: bottom;
+  margin-right: 0.7rem;
+  font-size: 13px;
+  height: 0.7rem;
+  align-items: end;
 }
 
 .tos_privacy p:hover {
   color: white;
-  background-color: transparent;
 }
 
 .tos_privacy img {
   width: 12px;
   margin-right: 5px;
+  margin-bottom: 2.5px;
 }

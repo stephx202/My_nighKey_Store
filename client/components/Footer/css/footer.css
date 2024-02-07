@@ -1,6 +1,5 @@
 #main_footer {
-  font-size: 10px;
-  height: 22.5rem;
+  height: 26rem;
   background-color: #111111;
   font-family: Helvetica, sans-serif;
   margin-top: 40rem;
@@ -13,7 +12,6 @@
   display: grid;
   position: relative;
   bottom: 0vh;
-  /* box-sizing: inherit; */
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -21,9 +19,10 @@
 #top_footer h1 {
   margin: 0;
   padding: 0.5rem;
-  font-size: 10px;
-  letter-spacing: -1px;
+  font-size: 13px;
+  letter-spacing: -1.15px;
   position: relative;
+  text-wrap: nowrap;
 }
 
 #footer_hdr-links {
@@ -31,8 +30,6 @@
   background-color: transparent;
   margin-left: 11rem;
   margin-top: 2rem;
-  font-size: 7.5px;
-  letter-spacing: 0.2px;
   position: relative;
   text-wrap: nowrap;
 }
@@ -44,17 +41,69 @@
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
-  letter-spacing: 0.5px;
-  font-size: 10px;
+  letter-spacing: 0.2px;
 }
 
 .guideDiv {
   display: grid;
   position: absolute;
-  width: 37rem;
-  height: 9.5rem;
+  width: 45rem;
+  height: 12rem;
   border: 2px solid white;
   bottom: 5rem;
-  left: 89rem;
+  left: 81rem;
+  color: #5f5f5f;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: #111111;
+}
+
+.guide-div1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 9.3rem;
+}
+
+.guide-div1 p {
+  position: relative;
+  top: 0.5rem;
+  left: 2rem;
+  margin-bottom: -25px;
+}
+
+.guide-div1 p:hover {
+  color: white;
+}
+
+.guide-div2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 7rem;
+}
+
+.guide-div2 p {
+  position: relative;
+  top: 0.6rem;
+  left: 1.4rem;
+  margin-bottom: -25px;
+}
+
+.guide-div2 p:hover {
+  color: white;
+}
+
+.guide-div3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 7rem;
+}
+
+.guide-div3 p {
+  position: relative;
+  top: 0.6rem;
+  left: 0.5rem;
+  margin-bottom: -25px;
+}
+
+.guide-div3 p:hover {
+  color: white;
 }
