@@ -13,11 +13,19 @@ CREATE TABLE shoeData (
     thumbnails text[],
     expandedImg text[],
     /* For shoe sizes */
-    shoeSize JSONB,
+    shoeSize JSONB[],
     /* For "How Others Are Wearing It" Carousel */
     howOthersCarousel JSONB[],
     /* For "Exploration" Images */
-    ExplorationImg text[]
+    ExplorationImg text[],
+    -- For comparing the stores that are available
+    stores text[],
+    -- Benefits for product modal and exploration,
+    benefits text[],
+    --  Details for product modal
+    details text[],
+    -- origing on shoe
+    origin text
 );
 
 /* White on White */
@@ -33,7 +41,11 @@ INSERT INTO shoeData(
     expandedImg,
     shoeSize,
     howOthersCarousel,
-    ExplorationImg
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -71,74 +83,163 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0a0e1b96-043c-46d4-96a0-22408b6c771d/air-force-1-07-mens-shoes-jBrhbr.png'
     ],
     /* Sizing /////////////////////////////////////////////////////////////////////////////// */
-    '{
-        "M 5 / W 6.5": false,
-        "M 5.5 / W 7": false,
-        "M 6 / W 7.5": true,
-        "M 6.5 / W 8": true,
-        "M 7 / W 8.5": true,
-        "M 7.5 / W 9": true,
-        "M 8 / W 9.5": true,
-        "M 8.5 / W 10": true,
-        "M 9 / W 10.5": true,
-        "M 9.5 / W 11": true,
-        "M 10 / W 11.5": true,
-        "M 10.5 / W 12": true,
-        "M 11 / W 12.5": true,
-        "M 11.5 / W 13": true,
-        "M 12 / W 13.5": true,
-        "M 12.5 / W 14": true,
-        "M 13 / W 14.5": true,
-        "M 14 / W 15.5": true,
-        "M 15 / W 16.5": true,
-        "M 16 / W 17.5": true,
-        "M 17 / W 18.5": true,
-        "M 18 / W 19.5": true
-     }'::JSONB,
+ARRAY[
+    '{"size": "M 5 / W 6.5", "inStock": false}'::JSONB,
+    '{"size": "M 5.5 / W 7", "inStock": false}'::JSONB,
+    '{"size": "M 6 / W 7.5", "inStock": true}'::JSONB,
+    '{"size": "M 6.5 / W 8", "inStock": true}'::JSONB,
+    '{"size": "M 7 / W 8.5", "inStock": true}'::JSONB,
+    '{"size": "M 7.5 / W 9", "inStock": true}'::JSONB,
+    '{"size": "M 8 / W 9.5", "inStock": true}'::JSONB,
+    '{"size": "M 8.5 / W 10", "inStock": true}'::JSONB,
+    '{"size": "M 9 / W 10.5", "inStock": true}'::JSONB,
+    '{"size": "M 9.5 / W 11", "inStock": true}'::JSONB,
+    '{"size": "M 10 / W 11.5", "inStock": true}'::JSONB,
+    '{"size": "M 10.5 / W 12", "inStock": true}'::JSONB,
+    '{"size": "M 11 / W 12.5", "inStock": true}'::JSONB,
+    '{"size": "M 11.5 / W 13", "inStock": true}'::JSONB,
+    '{"size": "M 12 / W 13.5", "inStock": true}'::JSONB,
+    '{"size": "M 12.5 / W 14", "inStock": true}'::JSONB,
+    '{"size": "M 13 / W 14.5", "inStock": true}'::JSONB,
+    '{"size": "M 14 / W 15.5", "inStock": true}'::JSONB,
+    '{"size": "M 15 / W 16.5", "inStock": true}'::JSONB,
+    '{"size": "M 16 / W 17.5", "inStock": true}'::JSONB,
+    '{"size": "M 17 / W 18.5", "inStock": true}'::JSONB,
+    '{"size": "M 18 / W 19.5", "inStock": true}'::JSONB
+],
     /* Carousels //////////////////////////////////////////////////////////////////////////// */
     ARRAY[
         '{
             "image": "https://static.pxlecdn.com/photos/559121339/original/4f0eec324b8270cb583d.jpg",
-            "text": "@anier_888"
+            "text": "@anier_888",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/522355164/original/dfad24671f909b4590b4.jpg",
-            "text": "@rawww.af"
+            "text": "@rawww.af",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/522953445/original/b5bcb2294415960fae67.jpg",
-            "text": "@nastyflemme"
+            "text": "@nastyflemme",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/514663663/original/d399fc5b1a6f958f6a7e.jpg",
-            "text": "@blackthacreator"
+            "text": "@blackthacreator",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                },
+                {
+                    "name":"Nike Air Force 1 ''07 EasyOn",
+                    "type":"Shoes",
+                    "image":"https://static.pxlecdn.com/products/64908515/primary/thumb/90c7f8420224a15d0d9ce335d70b7bf7.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/492122397/original/4b0c317911f240d04f8f",
-            "text": "@kackey_mickey"
+            "image": "https://static.pxlecdn.com/photos/460294486/original/52ec21038e50472a3496",
+            "text": "@otb_stro",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/460293780/original/ae6c7c100f2550dae1f7",
-            "text": "@trelltheplug"
+            "text": "@trelltheplug",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/537632132/original/61d22c9a154bf6e9e2e9.jpg",
-            "text": "@mailys.chv"
+            "text": "@mailys.chv",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/460292737/original/e0e172192f29679b725b",
-            "text": "@reda_fegrouch"
+            "text": "@reda_fegrouch",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/564948243/original/95013837de9c8485486a.jpg",
-            "text": "@don.y47"
+            "text": "@don.y47",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB
     ],
+    /* Explorer Images ////////////////////////////////////////////////////////////////// */
     ARRAY[
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/243a7c32-0aa7-4c0c-a238-c2b91b91d67e/pdp-replace.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/b2f8e5b8-ffe4-45e1-8b70-ed502fcf6243/pdp-replace.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/d5ff67b4-6bb1-47ec-ae67-3484c21ac5de/pdp-replace.jpg'
-    ]
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Factory Store - Paramus',
+        'Nike Factory Store - Staten Island'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'The stitched overlays on the upper add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'The padded collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on the toe',
+        'Rubber sole'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -159,7 +260,11 @@ INSERT INTO shoeData(
     expandedImg,
     shoeSize,
     howOthersCarousel,
-    ExplorationImg
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -168,7 +273,7 @@ INSERT INTO shoeData(
     'CW2288-001',
     'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
     115,
-    3220,
+    878,
     /* Image Gallery //////////////////////////////////////////////////////////////////// */ 
     ARRAY[
         'https://static.nike.com/a/images/t_default/21d38052-598b-44f6-a857-123c9f72b015/air-force-1-07-mens-shoes-jBrhbr.png',
@@ -197,76 +302,166 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/89a2cdd6-992b-4224-aab3-e49681f01e00/air-force-1-07-mens-shoes-jBrhbr.png'
     ],
     /* Sizing /////////////////////////////////////////////////////////////////////////////// */
-    '{
-        "M 4 / W 5.5": false,
-        "M 4.5 / W 6": false,
-        "M 5 / W 6.5": false,
-        "M 5.5 / W 7": false,
-        "M 6 / W 7.5": true,
-        "M 6.5 / W 8": true,
-        "M 7 / W 8.5": true,
-        "M 7.5 / W 9": true,
-        "M 8 / W 9.5": true,
-        "M 8.5 / W 10": true,
-        "M 9 / W 10.5": true,
-        "M 9.5 / W 11": true,
-        "M 10 / W 11.5": true,
-        "M 10.5 / W 12": true,
-        "M 11 / W 12.5": true,
-        "M 11.5 / W 13": true,
-        "M 12 / W 13.5": true,
-        "M 12.5 / W 14": true,
-        "M 13 / W 14.5": true,
-        "M 14 / W 15.5": true,
-        "M 15 / W 16.5": true,
-        "M 16 / W 17.5": true,
-        "M 17 / W 18.5": true,
-        "M 18 / W 19.5": true
-     }'::JSONB,
+    ARRAY[
+        '{"size": "M 4 / W 5.5", "inStock": false}'::JSONB,
+        '{"size": "M 4.5 / W 6", "inStock": false}'::JSONB,
+        '{"size": "M 5 / W 6.5", "inStock": false}'::JSONB,
+        '{"size": "M 5.5 / W 7", "inStock": false}'::JSONB,
+        '{"size": "M 6 / W 7.5", "inStock": true}'::JSONB,
+        '{"size": "M 6.5 / W 8", "inStock": true}'::JSONB,
+        '{"size": "M 7 / W 8.5", "inStock": true}'::JSONB,
+        '{"size": "M 7.5 / W 9", "inStock": true}'::JSONB,
+        '{"size": "M 8 / W 9.5", "inStock": true}'::JSONB,
+        '{"size": "M 8.5 / W 10", "inStock": true}'::JSONB,
+        '{"size": "M 9 / W 10.5", "inStock": true}'::JSONB,
+        '{"size": "M 9.5 / W 11", "inStock": true}'::JSONB,
+        '{"size": "M 10 / W 11.5", "inStock": true}'::JSONB,
+        '{"size": "M 10.5 / W 12", "inStock": true}'::JSONB,
+        '{"size": "M 11 / W 12.5", "inStock": true}'::JSONB,
+        '{"size": "M 11.5 / W 13", "inStock": true}'::JSONB,
+        '{"size": "M 12 / W 13.5", "inStock": true}'::JSONB,
+        '{"size": "M 12.5 / W 14", "inStock": true}'::JSONB,
+        '{"size": "M 13 / W 14.5", "inStock": true}'::JSONB,
+        '{"size": "M 14 / W 15.5", "inStock": true}'::JSONB,
+        '{"size": "M 15 / W 16.5", "inStock": true}'::JSONB,
+        '{"size": "M 16 / W 17.5", "inStock": true}'::JSONB,
+        '{"size": "M 17 / W 18.5", "inStock": true}'::JSONB,
+        '{"size": "M 18 / W 19.5", "inStock": true}'::JSONB
+    ],
     /* Carousels //////////////////////////////////////////////////////////////////////////// */
     ARRAY[
         '{
             "image": "https://static.pxlecdn.com/photos/559121339/original/4f0eec324b8270cb583d.jpg",
-            "text": "@anier_888"
+            "text": "@anier_888",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/522355164/original/dfad24671f909b4590b4.jpg",
-            "text": "@rawww.af"
+            "text": "@rawww.af",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/522953445/original/b5bcb2294415960fae67.jpg",
-            "text": "@nastyflemme"
+            "text": "@nastyflemme",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/514663663/original/d399fc5b1a6f958f6a7e.jpg",
-            "text": "@blackthacreator"
+            "text": "@blackthacreator",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                },
+                {
+                    "name":"Nike Air Force 1 ''07 EasyOn",
+                    "type":"Shoes",
+                    "image":"https://static.pxlecdn.com/products/64908515/primary/thumb/90c7f8420224a15d0d9ce335d70b7bf7.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/492122397/original/4b0c317911f240d04f8f",
-            "text": "@kackey_mickey"
+            "image": "https://static.pxlecdn.com/photos/460294486/original/52ec21038e50472a3496",
+            "text": "@otb_stro",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/460293780/original/ae6c7c100f2550dae1f7",
-            "text": "@trelltheplug"
+            "text": "@trelltheplug",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/537632132/original/61d22c9a154bf6e9e2e9.jpg",
-            "text": "@mailys.chv"
+            "text": "@mailys.chv",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/460292737/original/e0e172192f29679b725b",
-            "text": "@reda_fegrouch"
+            "text": "@reda_fegrouch",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB,
         '{
             "image": "https://static.pxlecdn.com/photos/564948243/original/95013837de9c8485486a.jpg",
-            "text": "@don.y47"
+            "text": "@don.y47",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43622393/primary/thumb/dae886d50aaf603bbf8b9367f7578464.png"
+                }
+            ]
         }'::JSONB
     ],
+    /* Explorer Images ////////////////////////////////////////////////////////////////// */
     ARRAY[
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/bf03cb63-a736-4557-95bd-49e9d8714a05/pdp-cw2288-001.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/b16130df-9129-4334-824e-95bc7758ae34/pdp-cw2288-001.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/ce585162-01c8-47b7-a574-fb180854e324/pdp-cw2288-001.jpg'
-    ]
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Unite - Harlem',
+        'Nike Well Collective - Williamsburg',
+        'Nike Factory Store - Staten Island'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'The stitched overlays on the upper add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'The padded collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on the toe',
+        'Rubber sole'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -287,16 +482,20 @@ INSERT INTO shoeData(
     expandedImg,
     shoeSize,
     howOthersCarousel,
-    ExplorationImg
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
     'Men''s Shoes',
     'Black/White',
     'CT2302-002',
-    'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
+    'The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colors and the perfect amount of flash to make you shine.',
     115,
-    3220,
+    139,
     /* Image Gallery //////////////////////////////////////////////////////////////////// */ 
     ARRAY[
         'https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-mens-shoes-jBrhbr.png',
@@ -325,72 +524,182 @@ INSERT INTO shoeData(
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ea266a57-5f91-4b2c-9b19-bef27655015a/air-force-1-07-mens-shoes-jBrhbr.png'
     ],
     /* Sizing /////////////////////////////////////////////////////////////////////////////// */
-    '{
-        "M 6 / W 7.5": true,
-        "M 6.5 / W 8": true,
-        "M 7 / W 8.5": true,
-        "M 7.5 / W 9": true,
-        "M 8 / W 9.5": true,
-        "M 8.5 / W 10": true,
-        "M 9 / W 10.5": true,
-        "M 9.5 / W 11": true,
-        "M 10 / W 11.5": true,
-        "M 10.5 / W 12": true,
-        "M 11 / W 12.5": true,
-        "M 11.5 / W 13": true,
-        "M 12 / W 13.5": true,
-        "M 12.5 / W 14": true,
-        "M 13 / W 14.5": true,
-        "M 14 / W 15.5": true,
-        "M 15 / W 16.5": true,
-        "M 16 / W 17.5": true,
-        "M 17 / W 18.5": true,
-        "M 18 / W 19.5": true
-     }'::JSONB,
+    ARRAY[
+        '{"size": "M 6 / W 7.5", "inStock": true}'::JSONB,
+        '{"size": "M 6.5 / W 8", "inStock": true}'::JSONB,
+        '{"size": "M 7 / W 8.5", "inStock": true}'::JSONB,
+        '{"size": "M 7.5 / W 9", "inStock": true}'::JSONB,
+        '{"size": "M 8 / W 9.5", "inStock": true}'::JSONB,
+        '{"size": "M 8.5 / W 10", "inStock": true}'::JSONB,
+        '{"size": "M 9 / W 10.5", "inStock": true}'::JSONB,
+        '{"size": "M 9.5 / W 11", "inStock": true}'::JSONB,
+        '{"size": "M 10 / W 11.5", "inStock": true}'::JSONB,
+        '{"size": "M 10.5 / W 12", "inStock": true}'::JSONB,
+        '{"size": "M 11 / W 12.5", "inStock": true}'::JSONB,
+        '{"size": "M 11.5 / W 13", "inStock": true}'::JSONB,
+        '{"size": "M 12 / W 13.5", "inStock": true}'::JSONB,
+        '{"size": "M 12.5 / W 14", "inStock": false}'::JSONB,
+        '{"size": "M 13 / W 14.5", "inStock": true}'::JSONB,
+        '{"size": "M 14 / W 15.5", "inStock": true}'::JSONB,
+        '{"size": "M 15 / W 16.5", "inStock": false}'::JSONB,
+        '{"size": "M 16 / W 17.5", "inStock": false}'::JSONB,
+        '{"size": "M 17 / W 18.5", "inStock": true}'::JSONB,
+        '{"size": "M 18 / W 19.5", "inStock": true}'::JSONB
+    ],
     /* Carousels //////////////////////////////////////////////////////////////////////////// */
     ARRAY[
         '{
-            "image": "https://static.pxlecdn.com/photos/559121339/original/4f0eec324b8270cb583d.jpg",
-            "text": "@anier_888"
+            "image": "https://static.pxlecdn.com/photos/584393865/original/7fed2411cf2668ec98b4.jpg",
+            "text": "@i_am_udee",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"Nike Everyday Max Cushioned",
+                    "type":"Training Ankle Socks (3 Pairs)",
+                    "image":"https://static.pxlecdn.com/products/43606110/primary/thumb/52c88bf2efdb48f2039578ae2a7c1227.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/522355164/original/dfad24671f909b4590b4.jpg",
-            "text": "@rawww.af"
+            "image": "https://static.pxlecdn.com/photos/460291174/original/43fba61e4455e587b4d1",
+            "text": "@sinalomcetywa",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"NikeCourt Dri-FIT",
+                    "type":"Women''s Short-Sleeve Tennis Top",
+                    "image":"https://static.nike.com/a/images/c_limit,h_2500,w_2500,b_rgb:F5F5F5,f_png/o2w4fx8brljzqlnrvmss/image.png"
+                },
+                {
+                    "name":"Nike Sportswear Heritage 86",
+                    "type":"Cap",
+                    "image":"https://static.pxlecdn.com/products/43613804/primary/thumb/20c6d10b120c194192e773793f171fd3.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/522953445/original/b5bcb2294415960fae67.jpg",
-            "text": "@nastyflemme"
+            "image": "https://static.pxlecdn.com/photos/460294438/original/7a3ea69740730a61fda3",
+            "text": "@sabon_kudii",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/514663663/original/d399fc5b1a6f958f6a7e.jpg",
-            "text": "@blackthacreator"
+            "image": "https://static.pxlecdn.com/photos/460293016/original/a172f313622f4c5a37a0",
+            "text": "@jordankenney",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/492122397/original/4b0c317911f240d04f8f",
-            "text": "@kackey_mickey"
+            "image": "https://static.pxlecdn.com/photos/532966617/original/3760a4d1ab9933c47191.jpg",
+            "text": "@macmanila13",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"Nike Sportswear Tech Fleece",
+                    "type":"Men''s Pants",
+                    "image":"https://static.nike.com/a/images/c_limit,h_2500,w_2500,b_rgb:F5F5F5,f_png/c487b2c5-2fc5-4e59-a8bf-f8c78ddb4287/image.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/460293780/original/ae6c7c100f2550dae1f7",
-            "text": "@trelltheplug"
+            "image": "https://static.pxlecdn.com/photos/460294629/original/5b88eeb96cd6da871e45",
+            "text": "@joel.reis88",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/537632132/original/61d22c9a154bf6e9e2e9.jpg",
-            "text": "@mailys.chv"
+            "image": "https://static.pxlecdn.com/photos/512050698/original/5bf0e6e6f264be61e885.jpg",
+            "text": "@mamogolo",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"Nike One",
+                    "type":"Women''s Mid-Rise Leggings (Plus Size)",
+                    "image":"https://static.pxlecdn.com/products/43622162/primary/thumb/172f93dfe16852ea030642d4643988c2.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/460292737/original/e0e172192f29679b725b",
-            "text": "@reda_fegrouch"
+            "image": "https://static.pxlecdn.com/photos/546016134/original/6747f264e2bb14b7a1fb.jpg",
+            "text": "@chetalinarula",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
         }'::JSONB,
         '{
-            "image": "https://static.pxlecdn.com/photos/564948243/original/95013837de9c8485486a.jpg",
-            "text": "@don.y47"
+            "image": "https://static.pxlecdn.com/photos/552108247/original/c303f7c79babacf32ff0.jpg",
+            "text": "@macmanila13",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
         }'::JSONB
     ],
+    /* Explorer Images ////////////////////////////////////////////////////////////////////// */
     ARRAY[
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/edac202b-5742-47db-82a7-601b950abcfb/image.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/e1b5af2b-2bf2-44ff-b696-11b49e4547e0/image.jpg',
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/db7fba46-21e9-4167-a4e1-37d828a03a47/image.jpg'
-    ]
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Factory Store - Paramus',
+        'Nike Soho',
+        'Nike Factory Store - Staten Island',
+        'Nike Unite - North Bronx'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'Smoother than backboard glass and featuring a slight sheen, the stitched leather overlays add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'Padded, low-cut collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on toe'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -399,120 +708,234 @@ INSERT INTO shoeData(
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* White on Black */
 
--- INSERT INTO shoeData(
---     name,
---     type,
---     color,
---     style,
---     description,
---     price,
---     purchased,
---     thumbnails,
---     expandedImg,
---     shoeSize,
---     howOthersCarousel,
---     ExplorationImg
--- ) VALUES(
---     /* Details */
---     'Nike Air Force 1 ''07',
---     'Men''s Shoes',
---     'White/Black',
---     'CT2302-100',
---     'The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
---     115,
---     3220,
---     /* Image Gallery //////////////////////////////////////////////////////////////////// */ 
---     ARRAY[
---         'https://static.nike.com/a/images/t_default/a42a5d53-2f99-4e78-a081-9d07a2d0774a/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/videos/so_3.82/2f8c2650-733c-4b0d-86f5-2626f4a36db4/air-force-1-07-mens-shoes-jBrhbr.jpg',
---         'https://static.nike.com/a/images/t_default/deec30c7-92b4-46c9-8a7f-39a73eccdffa/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/6363d086-10e5-4892-adf0-182acd58d116/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/f65792df-0c9a-45a6-a54a-0f5e9ba2396f/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/6363d086-10e5-4892-adf0-182acd58d116/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/973de232-7836-4315-89f6-61c42ae8ef7d/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/57eb2056-db31-4d64-a867-33b5c6d3ed90/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/24499fd8-1ad2-4098-a20d-6fc2e59f7bba/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/10597866-c2a8-4b54-8d52-df2bec50a6e4/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_default/078c59c7-7919-4a3b-90f9-06faab2e91cc/air-force-1-07-mens-shoes-jBrhbr.png'
---     ],
---     ARRAY[
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d762c5e2-ae49-4208-99df-484594b51e5f/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/videos/q_90/a91adb2a-77f4-4e15-811b-4847a3768ac0/video.mp4',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e87d1e-4063-4a25-ac40-d38bb4c8f5da/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fcfed7da-5ef1-4949-a969-bf67c97d9fb8/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b20b924a-e1e9-4822-976c-a9ea8411f84c/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3570fc97-5d2c-4c92-a71d-194fa93884f4/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/af5509b3-1389-4526-9087-73e2e05aa51e/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/eb2488fe-1b41-4edb-8112-c78c167db8ed/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4f1b60e-88a9-4166-acfc-75643da730e3/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8c9662a3-cb63-4af1-b15f-363b865400dc/air-force-1-07-mens-shoes-jBrhbr.png',
---         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ea266a57-5f91-4b2c-9b19-bef27655015a/air-force-1-07-mens-shoes-jBrhbr.png'
---     ],
---     /* Sizing /////////////////////////////////////////////////////////////////////////////// */
---     '{
---         "M 6 / W 7.5": true,
---         "M 6.5 / W 8": true,
---         "M 7 / W 8.5": true,
---         "M 7.5 / W 9": true,
---         "M 8 / W 9.5": true,
---         "M 8.5 / W 10": true,
---         "M 9 / W 10.5": true,
---         "M 9.5 / W 11": true,
---         "M 10 / W 11.5": true,
---         "M 10.5 / W 12": true,
---         "M 11 / W 12.5": true,
---         "M 11.5 / W 13": true,
---         "M 12 / W 13.5": true,
---         "M 12.5 / W 14": true,
---         "M 13 / W 14.5": true,
---         "M 14 / W 15.5": true,
---         "M 15 / W 16.5": true,
---         "M 16 / W 17.5": true,
---         "M 17 / W 18.5": true,
---         "M 18 / W 19.5": true
---      }'::JSONB,
---     /* Carousels //////////////////////////////////////////////////////////////////////////// */
---     ARRAY[
---         '{
---             "image": "https://static.pxlecdn.com/photos/559121339/original/4f0eec324b8270cb583d.jpg",
---             "text": "@anier_888"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/522355164/original/dfad24671f909b4590b4.jpg",
---             "text": "@rawww.af"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/522953445/original/b5bcb2294415960fae67.jpg",
---             "text": "@nastyflemme"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/514663663/original/d399fc5b1a6f958f6a7e.jpg",
---             "text": "@blackthacreator"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/492122397/original/4b0c317911f240d04f8f",
---             "text": "@kackey_mickey"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/460293780/original/ae6c7c100f2550dae1f7",
---             "text": "@trelltheplug"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/537632132/original/61d22c9a154bf6e9e2e9.jpg",
---             "text": "@mailys.chv"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/460292737/original/e0e172192f29679b725b",
---             "text": "@reda_fegrouch"
---         }'::JSONB,
---         '{
---             "image": "https://static.pxlecdn.com/photos/564948243/original/95013837de9c8485486a.jpg",
---             "text": "@don.y47"
---         }'::JSONB
---     ],
---     ARRAY[
---         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/edac202b-5742-47db-82a7-601b950abcfb/image.jpg',
---         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/e1b5af2b-2bf2-44ff-b696-11b49e4547e0/image.jpg',
---         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/db7fba46-21e9-4167-a4e1-37d828a03a47/image.jpg'
---     ]
--- );
+INSERT INTO shoeData(
+    name,
+    type,
+    color,
+    style,
+    description,
+    price,
+    purchased,
+    thumbnails,
+    expandedImg,
+    shoeSize,
+    howOthersCarousel,
+    ExplorationImg,
+    stores,
+    benefits,
+    details,
+    origin
+) VALUES(
+    /* Details */
+    'Nike Air Force 1 ''07',
+    'Men''s Shoes',
+    'White/Black',
+    'CT2302-100',
+    'The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colors and the perfect amount of flash to make you shine.',
+    115,
+    172,
+    /* Image Gallery ///////////////////////////////////////////////////////////////////////// */ 
+    ARRAY[
+        'https://static.nike.com/a/images/t_default/a42a5d53-2f99-4e78-a081-9d07a2d0774a/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/videos/so_3.82/2f8c2650-733c-4b0d-86f5-2626f4a36db4/air-force-1-07-mens-shoes-jBrhbr.jpg',
+        'https://static.nike.com/a/images/t_default/deec30c7-92b4-46c9-8a7f-39a73eccdffa/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/6363d086-10e5-4892-adf0-182acd58d116/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/f65792df-0c9a-45a6-a54a-0f5e9ba2396f/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/6363d086-10e5-4892-adf0-182acd58d116/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/973de232-7836-4315-89f6-61c42ae8ef7d/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/57eb2056-db31-4d64-a867-33b5c6d3ed90/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/24499fd8-1ad2-4098-a20d-6fc2e59f7bba/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/10597866-c2a8-4b54-8d52-df2bec50a6e4/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_default/078c59c7-7919-4a3b-90f9-06faab2e91cc/air-force-1-07-mens-shoes-jBrhbr.png'
+    ],
+    ARRAY[
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/350e7f3a-979a-402b-9396-a8a998dd76ab/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/videos/q_90/2f8c2650-733c-4b0d-86f5-2626f4a36db4/video.mp4',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/354e209b-f9f2-42c4-9130-d57f49bd77c0/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/52f79949-3584-4800-899c-0d5ff828f5e4/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f2e2833a-49e2-4088-b77e-4e4a5be53ae7/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/15b85bdb-aa12-4060-83d0-5163d11b314e/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dce93a1d-ebcb-4300-b8cf-f71da0820ea1/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/619f4371-99ff-44cd-8b13-6c2e699e90c1/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/04c4cb92-0272-4c0f-bb53-30b833f044e0/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4eb3370f-c1ca-47d1-927f-49b4e1545dc9/air-force-1-07-mens-shoes-jBrhbr.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2fce110e-7613-485a-8f17-9ea267f121e6/air-force-1-07-mens-shoes-jBrhbr.png'
+    ],
+    /* Sizing /////////////////////////////////////////////////////////////////////////////// */
+    ARRAY[
+        '{"size": "M 6 / W 7.5", "inStock": false}'::JSONB,
+        '{"size": "M 6.5 / W 8", "inStock": true}'::JSONB,
+        '{"size": "M 7 / W 8.5", "inStock": true}'::JSONB,
+        '{"size": "M 7.5 / W 9", "inStock": false}'::JSONB,
+        '{"size": "M 8 / W 9.5", "inStock": true}'::JSONB,
+        '{"size": "M 8.5 / W 10", "inStock": true}'::JSONB,
+        '{"size": "M 9 / W 10.5", "inStock": true}'::JSONB,
+        '{"size": "M 9.5 / W 11", "inStock": true}'::JSONB,
+        '{"size": "M 10 / W 11.5", "inStock": true}'::JSONB,
+        '{"size": "M 10.5 / W 12", "inStock": true}'::JSONB,
+        '{"size": "M 11 / W 12.5", "inStock": true}'::JSONB,
+        '{"size": "M 11.5 / W 13", "inStock": true}'::JSONB,
+        '{"size": "M 12 / W 13.5", "inStock": true}'::JSONB,
+        '{"size": "M 12.5 / W 14", "inStock": true}'::JSONB,
+        '{"size": "M 13 / W 14.5", "inStock": true}'::JSONB,
+        '{"size": "M 14 / W 15.5", "inStock": true}'::JSONB,
+        '{"size": "M 15 / W 16.5", "inStock": true}'::JSONB,
+        '{"size": "M 16 / W 17.5", "inStock": true}'::JSONB,
+        '{"size": "M 17 / W 18.5", "inStock": true}'::JSONB,
+        '{"size": "M 18 / W 19.5", "inStock": true}'::JSONB
+    ],
+    /* Carousels //////////////////////////////////////////////////////////////////////////// */
+    ARRAY[
+        '{
+            "image": "https://static.pxlecdn.com/photos/584393865/original/7fed2411cf2668ec98b4.jpg",
+            "text": "@i_am_udee",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"Nike Everyday Max Cushioned",
+                    "type":"Training Ankle Socks (3 Pairs)",
+                    "image":"https://static.pxlecdn.com/products/43606110/primary/thumb/52c88bf2efdb48f2039578ae2a7c1227.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/460291174/original/43fba61e4455e587b4d1",
+            "text": "@sinalomcetywa",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"NikeCourt Dri-FIT",
+                    "type":"Women''s Short-Sleeve Tennis Top",
+                    "image":"https://static.nike.com/a/images/c_limit,h_2500,w_2500,b_rgb:F5F5F5,f_png/o2w4fx8brljzqlnrvmss/image.png"
+                },
+                {
+                    "name":"Nike Sportswear Heritage 86",
+                    "type":"Cap",
+                    "image":"https://static.pxlecdn.com/products/43613804/primary/thumb/20c6d10b120c194192e773793f171fd3.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/460294438/original/7a3ea69740730a61fda3",
+            "text": "@sabon_kudii",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/460293016/original/a172f313622f4c5a37a0",
+            "text": "@jordankenney",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/532966617/original/3760a4d1ab9933c47191.jpg",
+            "text": "@macmanila13",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"Nike Sportswear Tech Fleece",
+                    "type":"Men''s Pants",
+                    "image":"https://static.nike.com/a/images/c_limit,h_2500,w_2500,b_rgb:F5F5F5,f_png/c487b2c5-2fc5-4e59-a8bf-f8c78ddb4287/image.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/460294629/original/5b88eeb96cd6da871e45",
+            "text": "@joel.reis88",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/512050698/original/5bf0e6e6f264be61e885.jpg",
+            "text": "@mamogolo",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                },
+                {
+                    "name":"Nike One",
+                    "type":"Women''s Mid-Rise Leggings (Plus Size)",
+                    "image":"https://static.pxlecdn.com/products/43622162/primary/thumb/172f93dfe16852ea030642d4643988c2.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/546016134/original/6747f264e2bb14b7a1fb.jpg",
+            "text": "@chetalinarula",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
+        }'::JSONB,
+        '{
+            "image": "https://static.pxlecdn.com/photos/552108247/original/c303f7c79babacf32ff0.jpg",
+            "text": "@macmanila13",
+            "Items": [
+                {
+                    "name":"Nike Air Force 1 ''07",
+                    "type":"Men''s Shoes",
+                    "image":"https://static.pxlecdn.com/products/43618886/primary/thumb/9d174c3d24ec410be185f671ca1a7a43.png"
+                }
+            ]
+        }'::JSONB
+    ],
+    /* Explorer Images ///////////////////////////////////////////////////////////////////// */
+    ARRAY[
+        'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/edac202b-5742-47db-82a7-601b950abcfb/image.jpg',
+        'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/e1b5af2b-2bf2-44ff-b696-11b49e4547e0/image.jpg',
+        'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/db7fba46-21e9-4167-a4e1-37d828a03a47/image.jpg'
+    ],
+    -- Stores where shoes are available
+    ARRAY[
+        'Nike Factory Store - Paramus',
+        'Nike Well Collective - Battery Park',
+        'Nike Unite - East New York',
+        'Nike Factory Store - Newark'
+    ],
+    -- Benefits for products in the modal and explore section
+    ARRAY[
+        'Smoother than backboard glass and featuring a slight sheen, the stitched leather overlays add heritage style, durability and support.',
+        'Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.',
+        'The low-cut silhouette adds a clean, streamlined look.',
+        'Padded, low-cut collar feels soft and comfortable.'
+    ],
+    -- Details for product modal
+    ARRAY[
+        'Foam midsole',
+        'Perforations on toe'
+    ],
+    -- Origin for shoe
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
+);

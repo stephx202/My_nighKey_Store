@@ -124,8 +124,9 @@
 #purchaseInfo {
     position: relative;
     height: 1400px;
-    width: 50vh;
+    min-width: 40vh;
     /* outline: thin solid blue; */
+    margin-left: 100px;
 }
 
 #klarna{
@@ -255,9 +256,56 @@ a.details{
 .shoeSelection div{
   background-color: #f5f5f5;
   border-radius: 8px;
-  margin-right: 2px;
+  margin-right: 4px;
+  border: 1px solid #f5f5f5;
+  overflow: hidden;
+}
+
+.shoeSelection div:hover{
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .shoeSelection img{
   height: 65px;
 }
+
+.shoeSizes{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shoeSizes p{
+  font-size: 16px;
+  font-weight: 550;
+  margin-bottom: 0px;
+  padding-bottom:4px;
+}
+
+.sizes{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.size{
+  border: 1px solid #c5c5c5;
+  text-align: center;
+  width: 38%;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 3px;
+}
+
+.inStock:hover{
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.grayedOut{
+  background-color: #f5f5f5;
+  color:#707072
+}
+
