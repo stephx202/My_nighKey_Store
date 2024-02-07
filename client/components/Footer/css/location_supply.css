@@ -25,7 +25,7 @@
 }
 
 .location_supply p {
-  margin-right: 3.5rem;
+  margin-right: 19.5rem;
   font-size: 9.5px;
   margin-top: .5rem;
 }
@@ -37,11 +37,12 @@
 
 .copyright {
   text-align: start;
-  width: 64rem;
+  width: 68rem;
   color: white;
   height: 3rem;
   display: flex;
   position: relative;
+  left:-1.5rem;
 }
 
 .copyright span {

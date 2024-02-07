@@ -8,13 +8,13 @@ import Modal from './Modal.jsx';
 
 
   
-  const Body1Arrows = ({ className, onClick }) => (
-    <button
-    className={className}
-    onClick={onClick}
-  >
-  </button>
-  );
+  // const Body1Arrows = ({ className, onClick }) => (
+  //   <button
+  //   className={className}
+  //   onClick={onClick}
+  // >
+  // </button>
+  // );
   
   const Body1Carousel = () => {
     const [showModal, setShowModal] = useState(false);
@@ -39,8 +39,8 @@ import Modal from './Modal.jsx';
       initialSlide: 0,
     //   autoplay: true,
       autoplaySpeed: 3000,
-      prevArrow: <Body1Arrows className="slick-prev" />,
-      nextArrow: <Body1Arrows className="slick-next" />,
+      // prevArrow: <Body1Arrows className="slick-prev" />,
+      // nextArrow: <Body1Arrows className="slick-next" />,
       responsive: [
         {
             breakpoint: 1024,
@@ -68,6 +68,8 @@ import Modal from './Modal.jsx';
   
     return (
         <div className="Body1Carousel">
+          <h1 id="howOthersHeading">How Others Are Wearing It</h1>
+          <h3 id= "howOthersSmallHeading">Upload your photo or mention @Nike on Instagram for a chance to be featured.</h3>
           <Slider {...settings}>
             {Body1IMGs.map((image, index) => (
               <div key={index} className="Body1IMGs" onClick={() => openModal(image.image)}>

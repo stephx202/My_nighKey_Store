@@ -40,11 +40,21 @@
 #sub_footer {
   display: flex;
   position: relative;
-  left: -19rem;
+  left: -17rem;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
   font-size: 10px;
-  width: 80vw;
+}
+
+.guideDiv {
+  display: grid;
+  position: absolute;
+  width: 37rem;
+  height: 9.5rem;
+  border: 2px solid white;
+  bottom: 5rem;
+  left: 89rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }

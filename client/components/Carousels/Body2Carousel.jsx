@@ -20,10 +20,10 @@ import shoe1IMG9 from './CompleteTheLookIMGs/Shoe1IMG9.png';
 import shoe1IMG10 from './CompleteTheLookIMGs/Shoe1IMG10.png';
 
 
-const CustomArrow = ({ className, onClick }) => (
-    <div className={className} onClick={onClick}>
-    </div>
-);
+// const CustomArrow = ({ className, onClick }) => (
+//     <div className={className} onClick={onClick}>
+//     </div>
+// );
 
 
 const Body2Carousel = () => {
@@ -376,8 +376,8 @@ const Body2Carousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: <CustomArrow className="slick-prev" />,
-    nextArrow: <CustomArrow className="slick-next" />,
+    // prevArrow: <CustomArrow className="slick-prev" />,
+    // nextArrow: <CustomArrow className="slick-next" />,
   };
 
   let modalClose = (event) => {
