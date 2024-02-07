@@ -68,6 +68,8 @@ import Modal from './Modal.jsx';
   
     return (
         <div className="Body1Carousel">
+          <h1 id="howOthersHeading">How Others Are Wearing It</h1>
+          <h3 id= "howOthersSmallHeading">Upload your photo or mention @Nike on Instagram for a chance to be featured.</h3>
           <Slider {...settings}>
             {Body1IMGs.map((image, index) => (
               <div key={index} className="Body1IMGs" onClick={() => openModal(image.image)}>

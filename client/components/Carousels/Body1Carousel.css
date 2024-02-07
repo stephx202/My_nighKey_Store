@@ -1,3 +1,13 @@
+#howOthersHeading{
+
+}
+
+#howOthersSmallHeading{
+    
+}
+
+
+
 .ImageContainer{
     margin-top: 100px;
     position: relative;
@@ -32,7 +42,12 @@
     width: 100%
   }
 
+.Body1Carousel .slick-track {
+    height: 100%;
+    padding: 58px;
 
+    
+}
 
 .Body1IMGs img {
     width: 440px;
