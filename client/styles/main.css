@@ -1,13 +1,16 @@
 #main {
-    position: relative;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    height: 1500px;
-    width: 60vw;
-    top: 5vh;
-    left: 20vw;
-    /* outline: solid thin red; */
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 1500px;
+  width: 60vw;
+  top: 5vh;
+  left: 20vw;
+  /* Added margin-bottom 50rem below to push the pictures down below the scrolling 
+    side panel for testing.. Comment or remove margin as needed */
+  margin-bottom: 50rem;
+  /* outline: solid thin red; */
 }
 
 /* Image Gallery Component ////////////////////////////////////////////////// */
@@ -70,16 +73,16 @@
   pointer-events: none;
 }
 #highlyRated {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 3vh;
-    left: 7vw;
-    height: 40px;
-    width: 150px;
-    background-color: white;
-    border-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3vh;
+  left: 7vw;
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  border-radius: 25px;
 }
 .nikeFont {
   font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
@@ -122,126 +125,125 @@
 
 /* Purchase Info Component ////////////////////////////////////////////////////////// */
 #purchaseInfo {
-    position: relative;
-    height: 1400px;
-    min-width: 40vh;
-    /* outline: thin solid blue; */
-    margin-left: 100px;
+  position: relative;
+  height: 1400px;
+  min-width: 40vh;
+  /* outline: thin solid blue; */
+  margin-left: 100px;
 }
 
-#klarna{
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    padding:10px;
+#klarna {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
 }
 
-#klarna a{
-    color: black;
+#klarna a {
+  color: black;
 }
-
 
 /*  Big Pill Buttons ///////////////////////////////////////////////////////////////////// */
-#addBtn, #favoriteBtn{
-    display: block;
-    width: 100%;
-    padding:15px;
-    border-radius: 25px;
-    font-size: medium;
-    font-weight: bold;
-    margin-top: 15px;
+#addBtn,
+#favoriteBtn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
-#addBtn{
-    background-color: black;
-    border: 1px solid black;
-    color: white;
+#addBtn {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
 }
 
-#addBtn:hover{
-    background-color:#707072;
-    border: 1px solid #707072;
+#addBtn:hover {
+  background-color: #707072;
+  border: 1px solid #707072;
 }
 
-#favoriteBtn{
-    background-color: white;
-    border: 1px solid #adadad
+#favoriteBtn {
+  background-color: white;
+  border: 1px solid #adadad;
 }
 
-#favoriteBtn:hover{
-    border: 1px solid black;
+#favoriteBtn:hover {
+  border: 1px solid black;
 }
 
-#favoriteBtn svg{
-    vertical-align: text-bottom;
+#favoriteBtn svg {
+  vertical-align: text-bottom;
 }
-
 
 /* Text below buttons///////////////////////////////////////////////////////// */
-#shipping h4{
-    margin-bottom: 5px;
-    font-weight: 700;
+#shipping h4 {
+  margin-bottom: 5px;
+  font-weight: 700;
 }
 
-#shipping p{
-    padding-left:0;
-    font-size:16px;
-    font-weight: 500;
+#shipping p {
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-#shipping a{
-    color: black;
+#shipping a {
+  color: black;
 }
 
-#shipping p.subtle{
-    display: block;
-    color:#707072;
-    font-size: 14px;
+#shipping p.subtle {
+  display: block;
+  color: #707072;
+  font-size: 14px;
 }
 
 /* Product Details//////////////////////////////////////////////////////// */
-.details{
-    line-height: 1.75;
-    font-size: 17px;
-    /* font-weight: 400; */
+.details {
+  line-height: 1.75;
+  font-size: 17px;
+  /* font-weight: 400; */
 }
 
-ul.details{
-    padding-left:18px;
-    line-height: 1.75;
-    font-size: 17px;
+ul.details {
+  padding-left: 18px;
+  line-height: 1.75;
+  font-size: 17px;
 }
 
-a.details{
-    font-weight: 600;
-    color: black;
+a.details {
+  font-weight: 600;
+  color: black;
 }
 
 /* Shoe Sizes////////////////////////////////////////////////////////////// */
-.purchased{
+.purchased {
   display: flex;
   /* border: 1px solid black; */
   padding-left: 5px;
 }
 
-.purchased h4{
-  margin-top:10px;
+.purchased h4 {
+  margin-top: 10px;
   margin-bottom: 0;
   font-weight: 500;
 }
 
-.shoeTitle{
-  padding:10px;
+.shoeTitle {
+  padding: 10px;
 }
 
-.shoeTitle h1{
+.shoeTitle h1 {
   font-weight: 600;
-  font-size:22px;
-  margin-top:0;
-  margin-bottom:2px;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 2px;
 }
 
-.shoeTitle p{
+.shoeTitle p {
   display: block;
   padding: 0;
   margin: 0;
@@ -249,11 +251,11 @@ a.details{
   font-size: 15px;
 }
 
-.shoeSelection{
+.shoeSelection {
   display: flex;
   flex-wrap: wrap;
 }
-.shoeSelection div{
+.shoeSelection div {
   background-color: #f5f5f5;
   border-radius: 8px;
   margin-right: 4px;
@@ -261,36 +263,35 @@ a.details{
   overflow: hidden;
 }
 
-.shoeSelection div:hover{
+.shoeSelection div:hover {
   border: 1px solid black;
   cursor: pointer;
 }
 
-.shoeSelection img{
+.shoeSelection img {
   height: 65px;
 }
 
-.shoeSizes{
+.shoeSizes {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.shoeSizes p{
+.shoeSizes p {
   font-size: 16px;
   font-weight: 550;
   margin-bottom: 0px;
-  padding-bottom:4px;
+  padding-bottom: 4px;
 }
 
-.sizes{
-  
+.sizes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.size{
+.size {
   border: 1px solid #c5c5c5;
   text-align: center;
   width: 38%;
@@ -299,13 +300,12 @@ a.details{
   margin-bottom: 3px;
 }
 
-.inStock:hover{
+.inStock:hover {
   border: 1px solid black;
   cursor: pointer;
 }
 
-.grayedOut{
+.grayedOut {
   background-color: #f5f5f5;
-  color:#707072
+  color: #707072;
 }
-

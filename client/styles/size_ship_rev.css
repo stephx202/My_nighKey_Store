@@ -6,10 +6,11 @@
   color: #292929;
   height: 20rem;
   width: 50rem;
-  margin-left: 10rem;
+  margin-left: 8rem;
   text-wrap: nowrap;
   margin-top: 40rem;
-  bottom: 30rem;
+  bottom: 31rem;
+  right:1.7rem;
 }
 
 #normalSizing {
@@ -96,7 +97,6 @@
   bottom: 8.6rem;
 }
 
-
 /* 15rem */
 #normalReviewing {
   font-family: "Roboto", sans-serif;
@@ -166,6 +166,24 @@
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
   bottom: 9rem;
+  right: 6.2rem;
+}
+
+#size_ship_reviewing {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 17px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  height: 3rem;
+  width: 22.4rem;
+  padding-top: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  bottom: -9.7rem;
   right: 6.2rem;
 }
 
@@ -273,7 +291,7 @@
 }
 
 .bottom-border {
-  width:22.4rem;
-  height:1rem;
-  border-bottom:1px rgba(0, 0, 0, 0.1) solid;
+  width: 22.4rem;
+  height: 1rem;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
 }

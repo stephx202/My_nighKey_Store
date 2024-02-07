@@ -4,11 +4,12 @@
     font-size: 24px;
     font-weight:100;
     padding-left: 58px;
-    /* padding-bottom: ; */
+    padding-bottom: 2px; 
 }
 
 .Body2Carousel{
     height: 300px;
+    padding-bottom: 500px;
 }
 .Body2IMGs{
     width: 92%;
