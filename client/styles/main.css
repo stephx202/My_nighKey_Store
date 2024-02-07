@@ -3,13 +3,14 @@
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  height: 1500px;
+  /* height: auto; */
+  min-height: 1800px;
   width: 60vw;
   top: 5vh;
   left: 20vw;
   /* Added margin-bottom 50rem below to push the pictures down below the scrolling 
     side panel for testing.. Comment or remove margin as needed */
-  margin-bottom: 50rem;
+  /* margin-bottom: 50rem; */
   /* outline: solid thin red; */
 }
 
@@ -127,7 +128,8 @@
 
 #purchaseInfo {
   position: relative;
-  height: 1400px;
+  /* height: 1800px;  */
+  /* max-height: auto; */
   min-width: 40vh;
   /* outline: thin solid blue; */
   margin-left: 100px;
