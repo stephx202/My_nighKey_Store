@@ -3,21 +3,42 @@
     font-size: 30px;
     font-weight:500;
     padding-left: 58px;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     padding-top: 96px ;
 
 }
 
-
-
-
-
+  #Body3Carousel {
+    width: 94vw;
+    margin: auto;
+  }
+  
+  .carouselContainer {
+    width: 5500px; 
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .horizontal-scroll {
+    overflow-x: auto;
+  }
+  
+  
+#Body3Carousel::-webkit-scrollbar {
+    height: 7px;
+  }
+  
+  #Body3Carousel::-webkit-scrollbar-thumb {
+    background-color: #707072;
+  }
+  
+  #Body3Carousel::-webkit-scrollbar-track {
+    background-color: white;
+  }
 
 #Body3Carousel .slick-track {
     height: 100%;
-    padding: 58px;
-
-    
+    padding: 58px;  
 }
 .Body3IMGs{
     width: 92%;
@@ -35,6 +56,7 @@
 
 #Body3Carousel .slick-slide{
     margin-right: -36px;
+    
 }
 
 .shoeName{
@@ -66,7 +88,7 @@
   
 }
 
-#Body3Carousel .slick-prev::before,
+/* #Body3Carousel .slick-prev::before,
 #Body3Carousel .slick-next::before {
   content: ''; 
   display: block;
@@ -86,5 +108,30 @@
     background-size: contain;
     background-position: center;
     right: 60px
+} */
+
+.left, .right{
+    float: right;
+    background-position: center;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-top:0;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
 }
+
+.left{
+    margin-right:20px;
+}
+
+.left:hover, .right:hover{
+    background-color: #d5d5d5;
+}
+
+.left svg:hover, .right svg:hover{
+    fill:none;
+}
+
+
 
