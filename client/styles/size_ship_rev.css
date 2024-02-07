@@ -96,7 +96,6 @@
   bottom: 8.6rem;
 }
 
-
 /* 15rem */
 #normalReviewing {
   font-family: "Roboto", sans-serif;
@@ -167,6 +166,43 @@
   position: relative;
   bottom: 9rem;
   right: 6.2rem;
+}
+
+#size_ship_reviewing {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 17px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  height: 3rem;
+  width: 22.4rem;
+  padding-top: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  bottom: -9.7rem;
+  right: 6.2rem;
+}
+
+#allArrowsClickedReviewing {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 17px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  height: 3rem;
+  width: 22.4rem;
+  padding-top: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  bottom: -12rem;
+  right: 6.2rem;
+  margin-bottom: 10rem;
 }
 
 .star {
@@ -273,7 +309,7 @@
 }
 
 .bottom-border {
-  width:22.4rem;
-  height:1rem;
-  border-bottom:1px rgba(0, 0, 0, 0.1) solid;
+  width: 22.4rem;
+  height: 1rem;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
 }
