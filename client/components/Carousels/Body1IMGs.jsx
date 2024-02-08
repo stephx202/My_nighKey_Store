@@ -45,4 +45,4 @@ const Body1Shoe1IMGs = [
 
     },
 ]
-export default Body1Shoe1IMGs
+//export default Body1Shoe1IMGs

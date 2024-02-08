@@ -1,8 +1,8 @@
 
 #CTLheading{
-    font-family:Helvetica;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 24px;
-    font-weight:100;
+    font-weight:400;
     padding-left: 58px;
     padding-bottom: 2px; 
 }
@@ -310,18 +310,34 @@
     display: block;
 }
   
-.Body2Carousel .slick-prev {
-      background-image: url("data:image/svg+xml;utf8,<svg fill='%23f5f5f5' height='200px' width='200px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-49.35 -49.35 592.16 592.16' xml:space='preserve' stroke='%23f5f5f5' stroke-width='0.00493456' transform='rotate(180)'><g id='SVGRepo_bgCarrier' stroke-width='0' transform='translate(133.23311999999999,133.23311999999999), scale(0.46)'><rect x='-49.35' y='-49.35' width='592.16' height='592.16' rx='296.08' fill='%23d6d6d6' strokewidth='0'></rect></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.986912'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M246.73,0C110.682,0,0.002,110.68,0.002,246.736c0,136.036,110.68,246.72,246.728,246.72s246.724-110.684,246.724-246.72 C493.454,110.68,382.778,0,246.73,0z M321.138,250.492L210.822,360.804c-2.004,2.008-5.548,2.008-7.556,0l-8.98-8.968 c-2.076-2.084-2.072-5.48,0.004-7.564l94.952-94.94c0.712-0.72,1.116-1.7,1.116-2.732c0-1.016-0.408-2.004-1.116-2.72 l-94.78-94.776c-1-1-1.56-2.344-1.56-3.792c0-1.42,0.556-2.772,1.556-3.764l8.968-8.976c1.004-1,2.352-1.556,3.78-1.556 c1.436-0.008,2.772,0.556,3.776,1.556l110.156,110.152c1.02,1.016,1.572,2.372,1.552,3.936 C322.71,248.116,322.158,249.476,321.138,250.492z'></path> </g> </g> </g></svg>");
+.Body2Carousel .slick-prev:hover {
+      background-image: url("data:image/svg+xml;utf8,<svg fill='%23f5f5f5' height='200px' width='200px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-49.35 -49.35 592.16 592.16' xml:space='preserve' stroke='%23f5f5f5' stroke-width='0.00493456' transform='rotate(180)'><g id='SVGRepo_bgCarrier' stroke-width='0' transform='translate(133.23311999999999,133.23311999999999), scale(0.46)'><rect x='-49.35' y='-49.35' width='592.16' height='592.16' rx='296.08' fill='%23696969' strokewidth='0'></rect></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.986912'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M246.73,0C110.682,0,0.002,110.68,0.002,246.736c0,136.036,110.68,246.72,246.728,246.72s246.724-110.684,246.724-246.72 C493.454,110.68,382.778,0,246.73,0z M321.138,250.492L210.822,360.804c-2.004,2.008-5.548,2.008-7.556,0l-8.98-8.968 c-2.076-2.084-2.072-5.48,0.004-7.564l94.952-94.94c0.712-0.72,1.116-1.7,1.116-2.732c0-1.016-0.408-2.004-1.116-2.72 l-94.78-94.776c-1-1-1.56-2.344-1.56-3.792c0-1.42,0.556-2.772,1.556-3.764l8.968-8.976c1.004-1,2.352-1.556,3.78-1.556 c1.436-0.008,2.772,0.556,3.776,1.556l110.156,110.152c1.02,1.016,1.572,2.372,1.552,3.936 C322.71,248.116,322.158,249.476,321.138,250.492z'></path> </g> </g> </g></svg>");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       left: 70px;
 }
   
-.Body2Carousel .slick-next {
-      background-image: url("data:image/svg+xml;utf8,<svg fill='%23f5f5f5' height='200px' width='200px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-49.35 -49.35 592.16 592.16' xml:space='preserve' stroke='%23f5f5f5' stroke-width='0.00493456' transform='rotate(0)'><g id='SVGRepo_bgCarrier' stroke-width='0' transform='translate(133.23311999999999,133.23311999999999), scale(0.46)'><rect x='-49.35' y='-49.35' width='592.16' height='592.16' rx='296.08' fill='%23d6d6d6' strokewidth='0'></rect></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.986912'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M246.73,0C110.682,0,0.002,110.68,0.002,246.736c0,136.036,110.68,246.72,246.728,246.72s246.724-110.684,246.724-246.72 C493.454,110.68,382.778,0,246.73,0z M321.138,250.492L210.822,360.804c-2.004,2.008-5.548,2.008-7.556,0l-8.98-8.968 c-2.076-2.084-2.072-5.48,0.004-7.564l94.952-94.94c0.712-0.72,1.116-1.7,1.116-2.732c0-1.016-0.408-2.004-1.116-2.72 l-94.78-94.776c-1-1-1.56-2.344-1.56-3.792c0-1.42,0.556-2.772,1.556-3.764l8.968-8.976c1.004-1,2.352-1.556,3.78-1.556 c1.436-0.008,2.772,0.556,3.776,1.556l110.156,110.152c1.02,1.016,1.572,2.372,1.552,3.936 C322.71,248.116,322.158,249.476,321.138,250.492z'></path> </g> </g> </g></svg>");
+.Body2Carousel .slick-next:hover {
+      background-image: url("data:image/svg+xml;utf8,<svg fill='%23f5f5f5' height='200px' width='200px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-49.35 -49.35 592.16 592.16' xml:space='preserve' stroke='%23f5f5f5' stroke-width='0.00493456' transform='rotate(0)'><g id='SVGRepo_bgCarrier' stroke-width='0' transform='translate(133.23311999999999,133.23311999999999), scale(0.46)'><rect x='-49.35' y='-49.35' width='592.16' height='592.16' rx='296.08' fill='%23696969' strokewidth='0'></rect></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.986912'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M246.73,0C110.682,0,0.002,110.68,0.002,246.736c0,136.036,110.68,246.72,246.728,246.72s246.724-110.684,246.724-246.72 C493.454,110.68,382.778,0,246.73,0z M321.138,250.492L210.822,360.804c-2.004,2.008-5.548,2.008-7.556,0l-8.98-8.968 c-2.076-2.084-2.072-5.48,0.004-7.564l94.952-94.94c0.712-0.72,1.116-1.7,1.116-2.732c0-1.016-0.408-2.004-1.116-2.72 l-94.78-94.776c-1-1-1.56-2.344-1.56-3.792c0-1.42,0.556-2.772,1.556-3.764l8.968-8.976c1.004-1,2.352-1.556,3.78-1.556 c1.436-0.008,2.772,0.556,3.776,1.556l110.156,110.152c1.02,1.016,1.572,2.372,1.552,3.936 C322.71,248.116,322.158,249.476,321.138,250.492z'></path> </g> </g> </g></svg>");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       right: 80px;
+}
+
+.Body2Carousel .slick-prev {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffffff' height='200px' width='200px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-49.35 -49.35 592.16 592.16' xml:space='preserve' stroke='%23f5f5f5' stroke-width='0.00493456' transform='rotate(180)'><g id='SVGRepo_bgCarrier' stroke-width='0' transform='translate(133.23311999999999,133.23311999999999), scale(0.46)'><rect x='-49.35' y='-49.35' width='592.16' height='592.16' rx='296.08' fill='%23d6d6d6' strokewidth='0'></rect></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.986912'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M246.73,0C110.682,0,0.002,110.68,0.002,246.736c0,136.036,110.68,246.72,246.728,246.72s246.724-110.684,246.724-246.72 C493.454,110.68,382.778,0,246.73,0z M321.138,250.492L210.822,360.804c-2.004,2.008-5.548,2.008-7.556,0l-8.98-8.968 c-2.076-2.084-2.072-5.48,0.004-7.564l94.952-94.94c0.712-0.72,1.116-1.7,1.116-2.732c0-1.016-0.408-2.004-1.116-2.72 l-94.78-94.776c-1-1-1.56-2.344-1.56-3.792c0-1.42,0.556-2.772,1.556-3.764l8.968-8.976c1.004-1,2.352-1.556,3.78-1.556 c1.436-0.008,2.772,0.556,3.776,1.556l110.156,110.152c1.02,1.016,1.572,2.372,1.552,3.936 C322.71,248.116,322.158,249.476,321.138,250.492z'></path> </g> </g> </g></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    left: 70px;
+}
+
+.Body2Carousel .slick-next {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffffff' height='200px' width='200px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-49.35 -49.35 592.16 592.16' xml:space='preserve' stroke='%23f5f5f5' stroke-width='0.00493456' transform='rotate(0)'><g id='SVGRepo_bgCarrier' stroke-width='0' transform='translate(133.23311999999999,133.23311999999999), scale(0.46)'><rect x='-49.35' y='-49.35' width='592.16' height='592.16' rx='296.08' fill='%23d6d6d6' strokewidth='0'></rect></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.986912'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M246.73,0C110.682,0,0.002,110.68,0.002,246.736c0,136.036,110.68,246.72,246.728,246.72s246.724-110.684,246.724-246.72 C493.454,110.68,382.778,0,246.73,0z M321.138,250.492L210.822,360.804c-2.004,2.008-5.548,2.008-7.556,0l-8.98-8.968 c-2.076-2.084-2.072-5.48,0.004-7.564l94.952-94.94c0.712-0.72,1.116-1.7,1.116-2.732c0-1.016-0.408-2.004-1.116-2.72 l-94.78-94.776c-1-1-1.56-2.344-1.56-3.792c0-1.42,0.556-2.772,1.556-3.764l8.968-8.976c1.004-1,2.352-1.556,3.78-1.556 c1.436-0.008,2.772,0.556,3.776,1.556l110.156,110.152c1.02,1.016,1.572,2.372,1.552,3.936 C322.71,248.116,322.158,249.476,321.138,250.492z'></path> </g> </g> </g></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: 80px;
 }
