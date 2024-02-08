@@ -15,6 +15,10 @@
     vertical-align: bottom;
 }
 
+.bottom{
+    height:7vh;
+}
+
 .text div{
     font-size: 21px;
     margin:auto;
