@@ -452,11 +452,52 @@ const Body2Carousel = ({shoe}) => {
       <h3 id='CTLheading'>Complete the Look</h3>
       <Slider {...settings}>
         {looks.map((look, index) => (
-          <div key={index} className="Body2IMGs" onMouseEnter={()=>setShowDiscs(index)} onMouseLeave={()=>setShowDiscs(null)}>
-          {showDiscs === index ? <><div className='hoverDisc1' />
-    <div className='hoverDisc2' />
-    <div className='hoverDisc3' />
-    <div className='hoverDisc4' /></>: null}
+          
+          <div key={index} className="Body2IMGs" onMouseEnter={()=>setShowDiscs(index)} onMouseLeave={()=>setShowDiscs(null)}>{console.log(look.items[0].name)}
+          {showDiscs === index ? <>
+          <div className='hoverDisc1'>
+          <div className='disc1Div' >
+          <div className='lookItem'>
+          <p>{look.items[1].name}</p>
+          <p style={{color:"#afafaf"}}>{look.items[1].type}</p>
+          <p>{look.items[1].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+          </div>
+          </div>
+    <div className='hoverDisc2' >
+    <div className='disc2Div' >
+          <div className='lookItem'>
+          <p>{look.items[0].name}</p>
+          <p style={{color:"#afafaf"}}>{look.items[0].type}</p>
+          <p>{look.items[0].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+
+          </div>
+    </div>
+    <div className='hoverDisc3' >
+    <div className='disc3Div' >
+          <div className='lookItem'>
+          <p>{look.items[3].name}</p>
+          <p style={{color:"#afafaf"}}>{look.items[3].type}</p>
+          <p>{look.items[3].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+
+          </div>
+    </div>
+    <div className='hoverDisc4' >
+    <div className='disc4Div' >
+          <div className='lookItem'>
+          <p>{look.items[2].name}</p>
+          <p style={{color:"#afafaf"}}>{look.items[2].type}</p>
+          <p>{look.items[2].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+
+          </div>
+    </div></>: null}
             <img src={looks[index].image} alt={'Shoe 1'} />
             {/* <div className="overlay">
                 <div className="hoverButton"></div>
