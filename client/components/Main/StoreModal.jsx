@@ -5,8 +5,14 @@ export default function StoreModal(props){
     const [selected, setSelected] = useState({})
 
     function saveStore(){
+        console.log(Object.keys(selected).length)
+        if (Object.keys(selected).length !== 0){
+             props.select({...selected, date: month + " " +day })
+        } else{
+            props.select(false)
+
+        }
         
-        props.select({...selected, date: month + " " +day })
         props.close(false)
     }
     // console.log(selected)
