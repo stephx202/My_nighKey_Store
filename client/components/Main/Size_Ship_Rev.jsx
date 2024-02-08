@@ -3,6 +3,7 @@ import "../../styles/size_ship_rev.css";
 import downarrow from "../../../images/down_arrow.png";
 import uparrow from "../../../images/up_arrow.png";
 import rating from "../../../images/4.8_star_rating.png";
+import axios from "axios";
 
 const Size_Ship_Rev = () => {
   const [currentShipping, setShipping] = useState("normalShipping");
@@ -70,9 +71,7 @@ const Size_Ship_Rev = () => {
     );
 
     setStarClass((prevClass) =>
-      prevClass === "star"
-        ? "star-expanded"
-        : "star"
+      prevClass === "star" ? "star-expanded" : "star"
     );
   };
   useEffect(() => {
@@ -92,6 +91,17 @@ const Size_Ship_Rev = () => {
       setReviewing("shipReviewing");
     }
   }, [currentSizeArrow, currentShipArrow]);
+
+  useEffect(() => {
+    axios
+      .get("/api/shoedata")
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
 
   return (
     <>
