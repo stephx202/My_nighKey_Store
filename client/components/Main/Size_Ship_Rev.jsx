@@ -105,16 +105,105 @@ const Size_Ship_Rev = () => {
 
   return (
     <>
-      <div id="size_ship_rev">
-        <div id="normalSizing">
-          <div>Size & Fit</div>
-          <div>
-            <img
+
+    <div className="normalSizing" style={{marginTop: "40px"}}>
+      <h4>Size & Fit </h4>
+      <img
               onClick={sizeChangeArrow}
-              className={currentSizingClass}
+              // className={currentSizingClass}
               src={`${currentSizeArrow}`}
               alt=""
             />
+    </div>
+    <div>
+           
+            {isSizeParagraphVisible && (
+              <div >
+                <ul>
+                  <li>
+                    Fits large; we recommend ordering a half size<br></br>down
+                  </li>
+                  <li>
+                    <b>Size Guide</b>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <div className="normalSizing">
+          <h4>Shipping & Returns</h4>
+         
+          
+            <img
+              onClick={shipChangeArrow}
+              // className={currentShippingClass}
+              src={`${currentShipArrow}`}
+              alt=""
+            />
+   </div>
+            <div>
+            {isShipParagraphVisible && (
+              <div>
+                Free standard shipping on orders $50+ and free<br></br>
+                60-day returnsfor Nike Members. <span>Learn more.</span>
+                <br></br>
+                <span>Return policy exclusions apply.</span>
+                <br></br>
+                <br></br>
+                <span>Pick-up available at select Nike stores.</span>
+              </div>
+            )}
+          </div>
+
+          <div className="normalSizing">
+          <h4>Reviews (173)</h4>
+          <p>
+            {/* <img className={currentStarClass} src={`${rating}`} alt="star" /> */}
+          </p>
+          
+            <img
+              onClick={reviewChangeArrow}
+              // className={currentReviewingClass}
+              src={`${currentRevArrow}`}
+              alt=""
+            />
+            </div>
+            <div>
+            {currentRevArrow === uparrow ? (
+              <div>
+                <span className="bold">Write a Review</span>
+                <br></br>
+                <br></br>
+                <span className="bold">Awesome shoes!</span>
+                <br></br>
+                loretor519667877 - Jan 28, 2024 Perfectly awesome pair of shoes
+                <br></br>
+                <br></br>
+                <span className="bold">Shoes</span>
+                Leairah52cb098261ca4e868c08b70a05c0fbd4<br></br>- Jan 23, 2024
+                <br></br>I like them I also want more jordan 4's on this app
+                <br></br>
+                and university blue.<br></br>
+                <br></br>
+                <span className="bold">Classic like always</span>
+                <br></br>
+                Michael677065232 - Jan 23, 2024<br></br>
+                Nice and clean, Classic like always<br></br>
+                <br></br>
+                <span className="bold">More Reviews</span>
+                <br></br>
+                <br></br>
+                
+              </div>
+            ) : null}
+          </div>
+          <div className="bottom-border"></div>
+      {/* <div id="size_ship_rev">
+        <div id="normalSizing">
+          <div>Size & Fit</div>
+          <div>
+           
             {isSizeParagraphVisible && (
               <div className="sizePar">
                 <ul>
@@ -129,8 +218,8 @@ const Size_Ship_Rev = () => {
             )}
           </div>
         </div>
-
-        <div id={currentShipping}>
+</div> */}
+        {/* <div id={currentShipping}>
           <div>Shipping & Returns</div>
           <div>
             <img
@@ -194,7 +283,7 @@ const Size_Ship_Rev = () => {
             ) : null}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

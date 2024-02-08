@@ -37,10 +37,10 @@ const Body3Carousel = () => {
     return (
     <><h2 id="body3Heading">You Might Also Like</h2>
     <button className="right" onClick={clickRight}>
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
     </button>
             <button className="left" onClick={clickLeft}>
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path></svg>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path></svg>
             </button>
 	
        
