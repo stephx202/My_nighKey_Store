@@ -29,7 +29,7 @@ import shoe1IMG10 from './CompleteTheLookIMGs/Shoe1IMG10.png';
 const Body2Carousel = ({shoe}) => {
     //add if statements to depend on what shoes choosen. create 4 diffrent arrays.
   const [theLook, setTheLook] = useState(null);
-  
+  const [showDiscs, setShowDiscs] = useState(null);
   const images = [
     shoe1IMG1, shoe1IMG2, shoe1IMG3, shoe1IMG4, shoe1IMG5,
     shoe1IMG6, shoe1IMG7, shoe1IMG8, shoe1IMG9, shoe1IMG10,
@@ -444,13 +444,19 @@ const Body2Carousel = ({shoe}) => {
     }
   }
 
+  
+
   return (
     <div className="Body2Carousel">
       {clickModal()}
       <h3 id='CTLheading'>Complete the Look</h3>
       <Slider {...settings}>
         {looks.map((look, index) => (
-          <div key={index} className="Body2IMGs">
+          <div key={index} className="Body2IMGs" onMouseEnter={()=>setShowDiscs(index)} onMouseLeave={()=>setShowDiscs(null)}>
+          {showDiscs === index ? <><div className='hoverDisc1' />
+    <div className='hoverDisc2' />
+    <div className='hoverDisc3' />
+    <div className='hoverDisc4' /></>: null}
             <img src={looks[index].image} alt={'Shoe 1'} />
             {/* <div className="overlay">
                 <div className="hoverButton"></div>
