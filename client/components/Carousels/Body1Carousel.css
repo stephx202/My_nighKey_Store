@@ -37,6 +37,7 @@
 
 #SVGRepo_iconCarrier{
     fill: transparent;
+  
 
 }
 
@@ -45,8 +46,12 @@
 .SearchIcon{
     width: 36px;
     height: 36px;
-
     
+}
+
+#iconCenterFill{
+    transform: translate(30%,30%);
+
 }
 
 .Body1Carousel {
