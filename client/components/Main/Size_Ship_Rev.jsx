@@ -26,11 +26,6 @@ const Size_Ship_Rev = ({ shoe }) => {
     setSizeArrow((prevArrow) =>
       prevArrow === downarrow ? uparrow : downarrow
     );
-    setSizingClass((prevClass) =>
-      prevClass === "downarrow-sizing"
-        ? "expanded-downarrow-sizing"
-        : "downarrow-sizing"
-    );
 
     setShipping((prevID) => {
       return prevID === "normalShipping" ? "sizeShipping" : "normalShipping";
@@ -52,26 +47,12 @@ const Size_Ship_Rev = ({ shoe }) => {
     setReviewing((prevID) => {
       return prevID === "normalReviewing" ? "shipReviewing" : "normalReviewing";
     });
-
-    setShippingClass((prevClass) =>
-      prevClass === "downarrow-shipping"
-        ? "expanded-downarrow-shipping"
-        : "downarrow-shipping"
-    );
   };
   const reviewChangeArrow = () => {
+    console.log(currentRevArrow);
     setRevArrow((prevArrow) => (prevArrow === downarrow ? uparrow : downarrow));
     setReviewParagraphVisibility((prevVisibility) => !prevVisibility);
-
-    setReviewingClass((prevClass) =>
-      prevClass === "downarrow-reviewing"
-        ? "expanded-downarrow-reviewing"
-        : "downarrow-reviewing"
-    );
-
-    setStarClass((prevClass) =>
-      prevClass === "star" ? "star-expanded" : "star"
-    );
+    console.log(currentRevArrow);
   };
   useEffect(() => {
     if (currentSizeArrow === uparrow && currentShipArrow === uparrow) {
@@ -113,14 +94,13 @@ const Size_Ship_Rev = ({ shoe }) => {
         0,
         numberOfReviewsToShow
       );
-      
 
       return (
-        <div className = 'reviewsDiv'>
+        <div className="reviewsDiv">
           {/* Render sliced review comments */}
           <img
             style={{
-              width: "9rem",
+              width: "8.5rem",
               position: "relative",
               top: "4rem",
               left: "-1.4rem",
@@ -128,8 +108,28 @@ const Size_Ship_Rev = ({ shoe }) => {
             src={`${rating}`}
             alt=""
           />
-          {`${shoe.star_rating.slice(-2,-1)} Stars`}
-          <h4 style={{ textDecoration: "underline" }}>Write a Review</h4>
+          <p
+            style={{
+              fontSize: "1rem",
+              fontWeight: "400",
+              position: "relative",
+              right: "1.8rem",
+              bottom: "-2px",
+              letterSpacing: ".1px",
+            }}
+          >
+            {`${shoe.star_rating.slice(-3, -2)} Stars`}
+          </p>
+          <h4
+            style={{
+              borderBottom: "1px solid black",
+              width: "7.2rem",
+              letterSpacing: ".1px",
+              paddingBottom: "2px",
+            }}
+          >
+            Write a Review
+          </h4>
           {slicedComments.map((review, index) => (
             <div key={index}>
               {review.username} - {shoe.review_date[index]}
@@ -139,7 +139,6 @@ const Size_Ship_Rev = ({ shoe }) => {
               <br />
             </div>
           ))}
-         
         </div>
       );
     }
@@ -153,9 +152,18 @@ const Size_Ship_Rev = ({ shoe }) => {
       </div>
       <div>
         {isSizeParagraphVisible && (
-          <div>
+          <div
+            style={{
+              position: "relative",
+              bottom: "1.7rem",
+              textWrap: "wrap",
+              fontSize: "1.1rem",
+              width: "100vw",
+              paddingBottom: "2.5rem",
+            }}
+          >
             <ul>
-              <li>
+              <li style={{ paddingBottom: "10px" }}>
                 Fits large; we recommend ordering a half size<br></br>down
               </li>
               <li>
@@ -173,14 +181,42 @@ const Size_Ship_Rev = ({ shoe }) => {
       </div>
       <div>
         {isShipParagraphVisible && (
-          <div>
-            Free standard shipping on orders $50+ and free<br></br>
-            60-day returnsfor Nike Members. <span>Learn more.</span>
+          <div
+            style={{
+              width: "100vw",
+              lineHeight: "2",
+            }}
+          >
+            <p
+              style={{
+                textWrap: "nowrap",
+                fontSize: "1.1rem",
+                fontWeight: "300",
+              }}
+            >
+              <span style={{ position: "relative", right: "6px" }}>
+                Free standard shipping on orders $50+ and free 60-day
+              </span>
+              <br></br>
+              returns for Nike Members.
+              <span
+                style={{ fontWeight: "600", borderBottom: "1px solid black" }}
+              >
+                Learn more.<br></br>
+              </span>
+            </p>
+            <span
+              style={{ fontWeight: "600", borderBottom: "1px solid black" }}
+            >
+              Return policy exclusions apply.
+            </span>
             <br></br>
-            <span>Return policy exclusions apply.</span>
             <br></br>
-            <br></br>
-            <span>Pick-up available at select Nike stores.</span>
+            <span
+              style={{ fontWeight: "600", borderBottom: "1px solid black" }}
+            >
+              Pick-up available at select Nike stores.
+            </span>
           </div>
         )}
       </div>
@@ -189,12 +225,7 @@ const Size_Ship_Rev = ({ shoe }) => {
         <h4>Reviews (3860)</h4>
         <br></br>
         <img className="star" src={`${rating}`} alt="" />
-        <img
-          onClick={reviewChangeArrow}
-          // onMouseDown={getReviewData}
-          src={`${currentRevArrow}`}
-          alt=""
-        />
+        <img onClick={reviewChangeArrow} src={`${currentRevArrow}`} alt="" />
       </div>
       <div>
         {currentRevArrow === uparrow ? (
