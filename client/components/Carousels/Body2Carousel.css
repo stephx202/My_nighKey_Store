@@ -163,7 +163,20 @@
     height: auto;
     width: 65%;
 }
-
+#item1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+#item2 {
+    position: absolute;
+}
+#item3 {
+    position: absolute;
+}
+#item4 {
+    position: absolute;
+}
 /* Modal Right Side */
 #lookModalRight {
     display: flex;
