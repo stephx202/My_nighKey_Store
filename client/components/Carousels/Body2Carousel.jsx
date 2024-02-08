@@ -118,9 +118,9 @@ const Body2Carousel = ({shoe}) => {
       <div className='hoverDisc3' >
       <div className='disc3Div' >
             <div className='lookItem'>
-            <p>{shoe.completethelook[index].items[2].name}</p>
-            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[2].type}</p>
-            <p>{shoe.completethelook[index].items[2].price}</p>
+            <p>{shoe.completethelook[index].items[3].name}</p>
+            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[3].type}</p>
+            <p>{shoe.completethelook[index].items[3].price}</p>
             </div>
             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
   
@@ -129,9 +129,9 @@ const Body2Carousel = ({shoe}) => {
       <div className='hoverDisc4' >
       <div className='disc4Div' >
             <div className='lookItem'>
-            <p>{shoe.completethelook[index].items[3].name}</p>
-            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[3].type}</p>
-            <p>{shoe.completethelook[index].items[3].price}</p>
+            <p>{shoe.completethelook[index].items[2].name}</p>
+            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[2].type}</p>
+            <p>{shoe.completethelook[index].items[2].price}</p>
             </div>
             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
   
