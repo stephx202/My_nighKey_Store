@@ -4,38 +4,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Body2Carousel.css';
 
-//import CompleteTheLookIMGs from './CompleteTheLookIMGs';
-
-
-
-import shoe1IMG1 from './CompleteTheLookIMGs/Shoe1IMG1.png';
-import shoe1IMG2 from './CompleteTheLookIMGs/Shoe1IMG2.png';
-import shoe1IMG3 from './CompleteTheLookIMGs/Shoe1IMG3.png';
-import shoe1IMG4 from './CompleteTheLookIMGs/Shoe1IMG4.png';
-import shoe1IMG5 from './CompleteTheLookIMGs/Shoe1IMG5.png';
-import shoe1IMG6 from './CompleteTheLookIMGs/Shoe1IMG6.png';
-import shoe1IMG7 from './CompleteTheLookIMGs/Shoe1IMG7.png';
-import shoe1IMG8 from './CompleteTheLookIMGs/Shoe1IMG8.png';
-import shoe1IMG9 from './CompleteTheLookIMGs/Shoe1IMG9.png';
-import shoe1IMG10 from './CompleteTheLookIMGs/Shoe1IMG10.png';
-
-
-// const CustomArrow = ({ className, onClick }) => (
-//     <div className={className} onClick={onClick}>
-//     </div>
-// );
-
 
 const Body2Carousel = ({shoe}) => {
     //add if statements to depend on what shoes choosen. create 4 diffrent arrays.
   const [theLook, setTheLook] = useState(null);
-  
-  const images = [
-    shoe1IMG1, shoe1IMG2, shoe1IMG3, shoe1IMG4, shoe1IMG5,
-    shoe1IMG6, shoe1IMG7, shoe1IMG8, shoe1IMG9, shoe1IMG10,
-  ];
-  
-  console.log(shoe.completethelook)   
+  const [showDiscs, setShowDiscs] = useState(null);
+
 
   const settings = {
     dots: false,
@@ -111,6 +85,7 @@ const Body2Carousel = ({shoe}) => {
     }
   }
 
+
   if (shoe.completethelook) {
     return (
       <div className="Body2Carousel">
@@ -118,18 +93,62 @@ const Body2Carousel = ({shoe}) => {
         <h3 id='CTLheading'>Complete the Look</h3>
         <Slider {...settings}>
           {shoe.completethelook.map((look, index) => (
-            <div key={index} className="Body2IMGs">
-              <img src={look.image} alt={`Shoe ${index + 1}`} />
-              <button id={index} className="hoverButton" onClick={clickModalHandler}>View Entire Look</button>
+            <div key={index} className="Body2IMGs" onMouseEnter={()=>setShowDiscs(index)} onMouseLeave={()=>setShowDiscs(null)}>
+            {showDiscs === index ? <>
+            <div className='hoverDisc1'>
+            <div className='disc1Div' >
+            <div className='lookItem'><p>{shoe.completethelook[index].items[1].name}</p>
+            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[1].type}</p>
+            <p>{shoe.completethelook[index].items[1].price}</p>
+            </div>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+            </div>
+            </div>
+            <div className='hoverDisc2' >
+      <div className='disc2Div' >
+            <div className='lookItem'>
+            <p>{shoe.completethelook[index].items[0].name}</p>
+            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[0].type}</p>
+            <p>{shoe.completethelook[index].items[0].price}</p>
+            </div>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+  
+            </div>
+      </div>
+      <div className='hoverDisc3' >
+      <div className='disc3Div' >
+            <div className='lookItem'>
+            <p>{shoe.completethelook[index].items[2].name}</p>
+            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[2].type}</p>
+            <p>{shoe.completethelook[index].items[2].price}</p>
+            </div>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+  
+            </div>
+      </div>
+      <div className='hoverDisc4' >
+      <div className='disc4Div' >
+            <div className='lookItem'>
+            <p>{shoe.completethelook[index].items[3].name}</p>
+            <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[3].type}</p>
+            <p>{shoe.completethelook[index].items[3].price}</p>
+            </div>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+  
+            </div>
+      </div></>: null}
+              <img src={shoe.completethelook[index].image} alt={'Shoe 1'} />
+                  <button id={index} className="hoverButton" onClick={clickModalHandler}>View Entire Look</button>
             </div>
           ))}
         </Slider>
       </div>
+   
     );
   } else {
     return null;
   }
-
+  
 };
 
 export default Body2Carousel;

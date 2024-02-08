@@ -21,7 +21,7 @@
     text-align: center;
     width: 1520px; 
     height: 850px; 
-    border-radius: 40px;
+    border-radius: 25px;
     overflow: hidden; 
 }
 
@@ -36,7 +36,8 @@
 .image {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit:cover; 
+    left: 50px;
     /* border-radius: 10px; */
     position: relative;
     z-index: 2;
@@ -45,11 +46,12 @@
 
 .background-image {
     position: absolute;
+    left: -150px;
     top: 0;
     /* left: 85px; */
-    width: 100%;
-    height: 100%;
-    filter: blur(10px);
+    width: 150%;
+    height: 150%;
+    filter: blur(15px);
     object-fit: cover;
     z-index: 1;
 }
@@ -62,40 +64,44 @@
     left: 100px;
     width: 800px;
     height: 849.98px;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+
+    background-color: white;
 }
 #inThisLookHeading{
     position: relative;
     padding-top: 39px ;
-    font-size: 36px;
+    font-size: 24px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 400;
-    right: 190px
+    right: 250px
 }
 
-.oneItemContainer{
-    position: relative;
-    height: 180px;
-    bottom: 20px;
-    right: 60px ;
-}
 .howOthersUserName{
     position: relative;
     font-family: Helvetica, Arial, sans-serif !important;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
     color: #666970;
-    right: 230px;
-    bottom: 13px
+    right: -40px;
+    bottom: 13px;
+    width: fit-content;
 
+}
+.oneItemContainer{
+    position: relative;
+    height: 110px;
+    bottom: 20px;
+    right: 60px ;
 }
 .howOthersName{
     position: relative;
     font-family: Helvetica, Arial, sans-serif !important;
-    font-size:24px ;
+    font-size:16px ;
     color: #3d3f43;
     width: fit-content;
-    left: 252px;
-    top: 60px;
+    left: 212px;
+    top: 30px;
 }
 
 .howOthersType{
@@ -103,10 +109,11 @@
     font-family: Helvetica, Arial, sans-serif !important;
     color: #666970;
     font-weight: 500;
-    font-size: 24px;;
+    font-size: 16px;;
     width: fit-content;
-    left: 252px;
-    top: 35px;
+    left: 212px;
+    top: 10px;
+    padding-top: 8px;
 
 
 }
@@ -123,7 +130,11 @@
 
 
 .close-btn {
-    margin-top: 10px;
-    cursor: pointer;
+   background: none;
     z-index: 2;
-}
+    cursor:pointer;
+    border: none; 
+    position: relative;
+    bottom: 360px;
+    right: 30px;
+  }
