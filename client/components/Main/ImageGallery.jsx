@@ -4,11 +4,17 @@ import fadeBottom from "./resources/fadeBottom.png"
 
 
 
-const ImageGallery = ({shoe}) => {   
+const ImageGallery = ({shoe, allShoes, currentShoe}) => {   
     // current selected image in array
     const [selected, setSelected] = useState(0);
     // stores the expanded image HTML
     const [currentExpanded, setCurrentExpanded] = useState(<><img id="selectedImg" src="https://static.nike.com/a/images/t_default/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-mens-shoes-jBrhbr.png"></img></>)
+    
+    useEffect(() => {
+        if (allShoes[+currentShoe - 1]) {
+            setCurrentExpanded(<><img id="selectedImg" src={allShoes[currentShoe - 1].expandedimg[0]}></img></>)
+        }
+    }, [currentShoe])
     
     // Renders the scroll of thumbnails with hover features
     let renderScroll = () => {
@@ -65,7 +71,7 @@ const ImageGallery = ({shoe}) => {
             buttonRender(current);
         }
     }
-    // console.log(shoe.howotherscarousel)
+
     if (!shoe.thumbnails) {
         return null;
     } else {
