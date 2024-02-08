@@ -3,10 +3,8 @@ import "../../styles/size_ship_rev.css";
 import downarrow from "../../../images/down_arrow.png";
 import uparrow from "../../../images/up_arrow.png";
 import rating from "../../../images/4.8_star_rating.png";
-import axios from "axios";
 
-const Size_Ship_Rev = ({ shoe}) => {
-  console.log(shoe);
+const Size_Ship_Rev = ({ shoe }) => {
   const [currentShipping, setShipping] = useState("normalShipping");
   const [currentStarClass, setStarClass] = useState("star");
   const [currentReviewing, setReviewing] = useState("normalReviewing");
@@ -93,17 +91,59 @@ const Size_Ship_Rev = ({ shoe}) => {
     }
   }, [currentSizeArrow, currentShipArrow]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("/api/shoedata")
-  //     .then((response) => {
-  //       console.log(response);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data:", error);
-  //     });
-  // }, []);
- 
+  const getReviewData = () => {
+    // Check if all required fields have data
+    if (
+      !shoe.primary_review_comment ||
+      !shoe.star_rating ||
+      !shoe.review_date ||
+      !shoe.secondary_review_comment ||
+      !shoe.customer_username
+    ) {
+      // If any required field is missing data, return a message indicating no data found
+      return (
+        <div>
+          <p>No review data found.</p>
+        </div>
+      );
+    } else {
+      // If all required fields have data, slice the arrays to render only a few items
+      const numberOfReviewsToShow = 3; // Change this to the desired number of reviews to display
+      const slicedComments = shoe.primary_review_comment.slice(
+        0,
+        numberOfReviewsToShow
+      );
+      
+
+      return (
+        <div className = 'reviewsDiv'>
+          {/* Render sliced review comments */}
+          <img
+            style={{
+              width: "9rem",
+              position: "relative",
+              top: "4rem",
+              left: "-1.4rem",
+            }}
+            src={`${rating}`}
+            alt=""
+          />
+          {`${shoe.star_rating.slice(-2,-1)} Stars`}
+          <h4 style={{ textDecoration: "underline" }}>Write a Review</h4>
+          {slicedComments.map((review, index) => (
+            <div key={index}>
+              {review.username} - {shoe.review_date[index]}
+              <br />
+              {review.comment}
+              <br />
+              <br />
+            </div>
+          ))}
+         
+        </div>
+      );
+    }
+  };
 
   return (
     <>
@@ -147,33 +187,20 @@ const Size_Ship_Rev = ({ shoe}) => {
 
       <div className="normalSizing">
         <h4>Reviews (3860)</h4>
-        <p></p>
+        <br></br>
         <img className="star" src={`${rating}`} alt="" />
-        <img onClick={reviewChangeArrow} src={`${currentRevArrow}`} alt="" />
+        <img
+          onClick={reviewChangeArrow}
+          // onMouseDown={getReviewData}
+          src={`${currentRevArrow}`}
+          alt=""
+        />
       </div>
       <div>
         {currentRevArrow === uparrow ? (
           <div>
-            <span className="bold">Write a Review</span>
+            {getReviewData()}
             <br></br>
-            <br></br>
-            <span className="bold">Awesome shoes!</span>
-            <br></br>
-            loretor519667877 - Jan 28, 2024 Perfectly awesome pair of shoes
-            <br></br>
-            <br></br>
-            <span className="bold">Shoes</span>
-            Leairah52cb098261ca4e868c08b70a05c0fbd4<br></br>- Jan 23, 2024
-            <br></br>I like them I also want more jordan 4's on this app
-            <br></br>
-            and university blue.<br></br>
-            <br></br>
-            <span className="bold">Classic like always</span>
-            <br></br>
-            Michael677065232 - Jan 23, 2024<br></br>
-            Nice and clean, Classic like always<br></br>
-            <br></br>
-            <span className="bold">More Reviews</span>
             <br></br>
             <br></br>
           </div>

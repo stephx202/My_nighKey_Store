@@ -53,3 +53,8 @@
   width: 4.5rem;
   height: 4.5rem;
 }
+
+.reviewsDiv {
+  position: relative;
+  bottom:6rem;
+}
