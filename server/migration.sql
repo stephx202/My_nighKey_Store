@@ -818,30 +818,30 @@ INSERT INTO shoeData(
         "image": "shoe1IMG1",
         "items": [
             {
-            "name": "Nike Men''s Therma-FIT Fitness Crew",
+            "name": "Nike Element Men''s Dri-FIT 1/2-Zip Running Top",
             "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/918f8b7b-b73c-4617-93ae-9b35b4e0bb77/image?bgc=f1f1f1",
-            "type": "Crew Neck Pullover",
+            "type": "Quarter Zip Jacket",
             "colors": "9 Colors",
             "price": "$60"
             },
             {
-            "name": "Nike Men''s Dri-FIT Fitness T-Shirt",
+            "name": "Nike Sportswear Club Fleece",
             "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/15c85a1d-fe9a-48c1-a841-b3ce5b293ee9/image?bgc=f1f1f1",
-            "type": "Athletic Shirt",
+            "type": "Men''s Cargo Pants",
             "colors": "3 Colors",
             "price": "$35"
             },
             {
-            "name": "Nike Solo Swoosh",
+            "name": "Nike Everyday Plus Cushioned Training Ankle Socks (3 Pairs)",
             "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f5afea7-d314-4a80-9c6b-274a27bbc259/image?bgc=f1f1f1",
-            "type": "Men''s French Terry Shorts",
+            "type": "Athletic Socks",
             "colors": "1 Color",
             "price": "$45.97"
             },
             {
-            "name": "Nike Apex Futura Washed Bucket Hat",
+            "name": "Nike Brasilia Training Duffel Bag (Small, 41L)",
             "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f4b276bc-204a-4cf8-a678-cb54acf87bf8/image?bgc=f1f1f1",
-            "type": "Bucket Hat",
+            "type": "Athletic Duffel",
             "colors": "3 Colors",
             "price": "$30"
             }
@@ -851,30 +851,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG2",
             "items": [
                 {
-                "name": "Nike Sportswear T-Shirt",
+                "name": "Nike Sportswear Club Fleece Men''s Pullover Printed Hoodie",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/01dd1161-6b7d-471b-9492-5d4e90c9deda/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
+                "type": "Hoodie",
                 "colors": "3 Colors",
                 "price": "$35"
                 },
                 {
-                "name": "Nike Club Men''s Mesh Flow Shorts",
+                "name": "Nike SB Men''s Skate T-Shirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e9e22579-d56b-4be3-ab6e-9bc4fdb6960b/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
+                "type": "Athletic Shirt",
                 "colors": "3 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike Sportswear Everyday Essential",
+                "name": "Nike Club Men''s Woven Tapered Leg Pants",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d715d25a-d3fe-4c2a-a345-af995ef1e2c4/image?bgc=f1f1f1",
-                "type": "Crew Socks (3 Pairs)",
+                "type": "Athletic Pants",
                 "colors": "2 Colors",
                 "price": "$22"
                 },
                 {
-                "name": "Nike Essential Horizon Blue Light Glasses",
+                "name": "Nike Diamond Select",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/2622c925-ca43-4422-bf3f-0370ec99413c/image?bgc=f1f1f1",
-                "type": "Blue Light Glasses",
+                "type": "Bat Pack (31L)",
                 "colors": "2 Colors",
                 "price": "$99"
                 }
@@ -884,30 +884,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG3",
             "items": [
                 {
-                "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
+                "name": "Nike Sportswear Tech Fleece Lightweight Men''s Full-Zip Hoodie Sweatshirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/5048a8ab-e814-4c17-a525-e012de395363/image?bgc=f1f1f1",
-                "type": "Active Long Sleeve Shirt",
+                "type": "Hoodie",
                 "colors": "2 Colors",
                 "price": "$34.97"
                 },
                 {
-                "name": "Nike Club Men''s Woven Washed Flow Shorts",
+                "name": "Nike Sportswear Premium Essentials Men''s T-Shirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f1c4444-973e-4f0d-8187-b55b3be53e1f/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
+                "type": "Athletic Shirt",
                 "colors": "7 Colors",
                 "price": "$40.97"
                 },
                 {
-                "name": "Nike Chance Blue Light Glasses",
+                "name": "Nike Sportswear Club Men''s Graphic Shorts",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Other Glasses",
+                "type": "Athletic Shorts",
                 "colors": "2 Colors",
                 "price": "$69.97"
                 },
                 {
-                "name": "Nike Hayward",
+                "name": "Nike Sportswear Dri-FIT Everyday Essential Crew Socks (3 Pairs)",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/c9cab5ae-6d77-49d9-ae99-7eac4f699449/image?bgc=f1f1f1",
-                "type": "Backpack (26L)",
+                "type": "Athletic Socks",
                 "colors": "3 Colors",
                 "price": "$57"
                 }
@@ -917,30 +917,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG4",
             "items": [
                 {
-                "name": "Nike Sportswear Club Men''s Washed-Dye T-Shirt",
+                "name": "Nike Solo Swoosh",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/da86341f-333c-48c6-86d4-0b405bcbb5c3/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
+                "type": "Men''s Full-Zip Hoodie",
                 "colors": "1 Color",
                 "price": "$34.97"
                 },
                 {
-                "name": "Nike Club Fleece",
+                "name": "Nike Dri-FIT Running Division Men''s Running T-Shirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/04ef0063-28b1-44d8-b04c-4b51c8a7c799/image?bgc=f1f1f1",
-                "type": "Men''s French Terry Flow Shorts",
+                "type": "Athletic Shirt",
                 "colors": "4 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike Everyday Max Cushioned Training Ankle Socks (3 Pairs)",
+                "name": "Nike Phenom Men''s Dri-FIT Knit Running Pants",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b085899b-0fc7-4dcc-ab76-349d866f1540/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
+                "type": "Athletic Pants",
                 "colors": "2 Colors",
                 "price": "$24"
                 },
                 {
-                "name": "Nike Brasilia 9.5 Training Backpack (Extra Large, 30L)",
+                "name": "Nike Everyday Plus Cushioned",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/0332e712-954d-4302-a01e-2b3e76553817/image?bgc=f1f1f1",
-                "type": "Athletic Backpack",
+                "type": "Crew Socks (3 Pairs)",
                 "colors": "3 Colors",
                 "price": "$52"
                 }
@@ -950,30 +950,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG5",
             "items": [
                 {
-                "name": "Nike",
+                "name": "Nike Sportswear Tech Fleece Men''s Bomber Jacket",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/530fd3aa-7f44-47d7-b285-2b1ea8c74be3/image?bgc=f1f1f1",
-                "type": "Men''s Dri-FIT Fleece Fitness Pullover",
+                "type": "Athletic Jacket",
                 "colors": "4 Colors",
                 "price": "$95"
                 },
                 {
-                "name": "Nike Sportswear Swoosh",
+                "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/bc02425a-8f0d-4c95-af69-ec3353a628a9/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
+                "type": "Active Long Sleeve Shirt",
                 "colors": "8 Colors",
                 "price": "$30"
                 },
                 {
-                "name": "Nike Solo Swoosh Men''s Fleece Pants",
+                "name": "Nike Sportswear Tech Fleece",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/52be6f16-f0d0-4b1a-831d-a972c8a2af79/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
+                "type": "Men''s Joggers",
                 "colors": "11 Colors",
                 "price": "$100"
                 },
                 {
-                "name": "Nike Everyday Max Cushioned Training No-Show Socks (3 Pairs)",
+                "name": "Nike Cool Down",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/dab3628c-9af7-4711-b19c-8a5ba27315d9/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
+                "type": "Sunglasses",
                 "colors": "2 Colors",
                 "price": "$24"
                 }
@@ -990,23 +990,23 @@ INSERT INTO shoeData(
                 "price": "$70"
                 },
                 {
-                "name": "Nike Sportswear JDI",
+                "name": "Nike Sportswear Club Men''s T-Shirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/vgrltopc3ma73gt4m6gg/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
+                "type": "Athletic Shirt",
                 "colors": "12 Colors",
                 "price": "$30"
                 },
                 {
-                "name": "Nike Sportswear Club Fleece Men''s Pants",
+                "name": "Nike Sportswear Club Men''s Graphic Shorts",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/cb2dva7ujnsixi00saxa/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
+                "type": "Athletic Shorts",
                 "colors": "7 Colors",
                 "price": "$60"
                 },
                 {
-                "name": "Nike Sportswear RPM",
+                "name": "Nike ACG Aysén Day Pack (32L)",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/ed7237cc-8717-4600-9e1c-5a762d0f7929/image?bgc=f1f1f1",
-                "type": "Backpack (26L)",
+                "type": "Athletic Backpack",
                 "colors": "2 Colors",
                 "price": "$102"
                 }
@@ -1016,30 +1016,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG7",
             "items": [
                 {
-                "name": "Nike Sportswear Club Fleece Men''s Crew",
+                "name": "Nike Club Unstructured Futura Wash Cap",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f5dc30ee-5333-48a2-8951-88e574a5bb61/image?bgc=f1f1f1",
-                "type": "Crew Neck Pullover",
+                "type": "Baseball Hat",
                 "colors": "14 Colors",
                 "price": "$45.97"
                 },
                 {
-                "name": "Nike Sportswear Club",
+                "name": "Nike Sportswear Club Fleece Men''s Crew-Neck Sweatshirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/hdxcatug6qs32urlpmyw/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
+                "type": "Sweatshirt",
                 "colors": "17 Colors",
                 "price": "$25.97"
                 },
                 {
-                "name": "Nike Sportswear Club",
+                "name": "Nike Sportswear Club Fleece",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/49dc07f5-b48c-4f9b-acd3-6c5da76be9e1/image?bgc=f1f1f1",
-                "type": "Men''s Cargo Shorts",
+                "type": "Joggers",
                 "colors": "3 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike Elemental Premium",
+                "name": "Nike Everyday Cushioned Training Crew Socks (6 Pairs)",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b8538f8c-161d-4450-9d1e-31ea520fb202/image?bgc=f1f1f1",
-                "type": "Backpack (21L)",
+                "type": "Athletic Socks",
                 "colors": "4 Colors",
                 "price": "$23.97"
                 }
@@ -1049,30 +1049,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG8",
             "items": [
                 {
-                "name": "Nike Solo Swoosh",
+                "name": "Nike SB Fleece Pullover Skate Hoodie",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/819ab2fd-97a4-408d-82ce-b13060cd2384/image?bgc=f1f1f1",
-                "type": "Men''s Fleece Pullover Hoodie",
+                "type": "Hoodie",
                 "colors": "9 Colors",
                 "price": "$100"
                 },
                 {
-                "name": "Nike ACG Men''s T-Shirt",
+                "name": "Nike Dri-FIT Primary Men''s Training T-Shirt",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/fff45434-3a12-43a5-bd59-fd79b822b36e/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
+                "type": "Sports Jersey",
                 "colors": "2 Colors",
                 "price": "$34.97"
                 },
                 {
-                "name": "Nike Sportswear Tech Pack Men''s Woven Utility Pants",
+                "name": "Nike Sportswear Club Fleece",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/069c88b3-f68c-4ab7-8440-6f52a9f60b41/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
+                "type": "Joggers",
                 "colors": "3 Colors",
                 "price": "$108.97"
                 },
                 {
-                "name": "Nike Chance Blue Light Glasses",
+                "name": "Nike Dri-FIT Club Structured Heathered Cap",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Other Glasses",
+                "type": "Golf Hat",
                 "colors": "2 Colors",
                 "price": "$69.97"
                 }
@@ -1082,30 +1082,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG9",
             "items": [
                 {
-                "name": "Nike ACG Therma-FIT",
+                "name": "Nike Premium",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1ffcc569-642d-4986-b5c9-ebcd581f5e23/image?bgc=f1f1f1",
-                "type": "Fleece Pullover Hoodie",
+                "type": "Lanyard",
                 "colors": "2 Colors",
                 "price": "$125"
                 },
                 {
-                "name": "Nike Sportswear Men''s T-Shirt",
+                "name": "Nike ESC Men''s Knit Pullover Hoodie",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/3a5cb00e-ca2b-4942-9cbf-6e19bac245a5/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
+                "type": "Hoodie",
                 "colors": "3 Colors",
                 "price": "$35"
                 },
                 {
-                "name": "Nike ACG Trail Shorts",
+                "name": "Nike SB Kearny",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e3f188c8-cc94-4b7f-a8e1-a56af04faf40/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
+                "type": "Skate Cargo Pants",
                 "colors": "5 Colors",
                 "price": "$36.97"
                 },
                 {
-                "name": "Nike Everyday Plus Cushioned",
+                "name": "Nike Circuit Blue Light Glasses",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d13c0a26-336e-4536-b5d3-ab96a41d540d/image?bgc=f1f1f1",
-                "type": "Ankle Socks",
+                "type": "Blue Light Glasses",
                 "colors": "2 Colors",
                 "price": "$22"
                 }
@@ -1115,30 +1115,30 @@ INSERT INTO shoeData(
             "image": "shoe1IMG10",
             "items": [
                 {
-                "name": "Nike Therma-FIT",
+                "name": "Nike Sportswear Club Fleece",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/956d9c49-748a-48e1-9b69-43251c2e612f/image?bgc=f1f1f1",
-                "type": "Men''s 1/4-Zip Fitness Hoodie",
+                "type": "Pullover Hoodie",
                 "colors": "1 Color",
                 "price": "$39.97"
                 },
                 {
-                "name": "Nike ACG \"Lungs\" Men''s Long-Sleeve T-Shirt",
+                "name": "Nike Sportswear Premium Essentials",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/636fe4a5-885b-4a6b-bf9b-44b296953c40/image?bgc=f1f1f1",
-                "type": "Active Long Sleeve Shirt",
+                "type": "Men''s T-Shirt",
                 "colors": "6 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike ACG",
+                "name": "Nike Sportswear Sport Essentials Men''s Woven Lined Flow Shorts",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/117fe364-f46f-45f1-86e6-d508e4c84b27/image?bgc=f1f1f1",
-                "type": "Trail Shorts",
+                "type": "Athletic Shorts",
                 "colors": "5 Colors",
                 "price": "$36.97"
                 },
                 {
-                "name": "Nike Refuel",
+                "name": "Nike Sportswear Essentials",
                 "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1c6713af-03b0-4a7f-99b8-6600d6b86f72/image?bgc=f1f1f1",
-                "type": "Water Bottle (24 oz)",
+                "type": "Messenger Bag (17L)",
                 "colors": "1 Color",
                 "price": "$12"
                 }
