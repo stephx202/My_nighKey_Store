@@ -29,13 +29,13 @@ import shoe1IMG10 from './CompleteTheLookIMGs/Shoe1IMG10.png';
 const Body2Carousel = ({shoe}) => {
     //add if statements to depend on what shoes choosen. create 4 diffrent arrays.
   const [theLook, setTheLook] = useState(null);
-  
+  const [showDiscs, setShowDiscs] = useState(null);
   const images = [
     shoe1IMG1, shoe1IMG2, shoe1IMG3, shoe1IMG4, shoe1IMG5,
     shoe1IMG6, shoe1IMG7, shoe1IMG8, shoe1IMG9, shoe1IMG10,
   ];
   
-  console.log(shoe.completethelook)   
+
 
   const settings = {
     dots: false,
@@ -111,13 +111,58 @@ const Body2Carousel = ({shoe}) => {
     }
   }
 
+  
+
   return (
     <div className="Body2Carousel">
       {clickModal()}
       <h3 id='CTLheading'>Complete the Look</h3>
       <Slider {...settings}>
         {images.map((look, index) => (
-          <div key={index} className="Body2IMGs">
+          <div key={index} className="Body2IMGs" onMouseEnter={()=>setShowDiscs(index)} onMouseLeave={()=>setShowDiscs(null)}>
+          {showDiscs === index ? <>
+          <div className='hoverDisc1'>
+          <div className='disc1Div' >
+          <div className='lookItem'><p>{shoe.completethelook[index].items[1].name}</p>
+          <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[1].type}</p>
+          <p>{shoe.completethelook[index].items[1].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+          </div>
+          </div>
+          <div className='hoverDisc2' >
+    <div className='disc2Div' >
+          <div className='lookItem'>
+          <p>{shoe.completethelook[index].items[0].name}</p>
+          <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[0].type}</p>
+          <p>{shoe.completethelook[index].items[0].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+
+          </div>
+    </div>
+    <div className='hoverDisc3' >
+    <div className='disc3Div' >
+          <div className='lookItem'>
+          <p>{shoe.completethelook[index].items[2].name}</p>
+          <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[2].type}</p>
+          <p>{shoe.completethelook[index].items[2].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+
+          </div>
+    </div>
+    <div className='hoverDisc4' >
+    <div className='disc4Div' >
+          <div className='lookItem'>
+          <p>{shoe.completethelook[index].items[3].name}</p>
+          <p style={{color:"#afafaf"}}>{shoe.completethelook[index].items[3].type}</p>
+          <p>{shoe.completethelook[index].items[3].price}</p>
+          </div>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+
+          </div>
+    </div></>: null}
             <img src={images[index]} alt={'Shoe 1'} />
             {/* <div className="overlay">
                 <div className="hoverButton"></div>
