@@ -1,7 +1,7 @@
 //Modal for the first body Carousel when images are clicked(after the banner carousel)
 
 import React from 'react';
-import './Modal.css';
+import './ModalBody1.css';
 
 const ModalBody1 = (props) => {
   const { showModal, closeModal, image, selectedIndex, howotherscarousel } = props;
@@ -17,15 +17,15 @@ const ModalBody1 = (props) => {
           </div>
           
           <div className="text-container">
+              <h2 id="inThisLookHeading">In This Look</h2>
+              <h4 className= "howOthersUserName">{userName}</h4>
             <ul>
                 {items.map((item, index) => (
-                  <li key={index}>
-                    <h2>In This Look</h2>
-                    <h4 className= "howOthersUserName">{userName}</h4>
+                  <div className="oneItemContainer" key={index}>
                     <h4 className="howOthersName">{item.name}</h4>
-                    <h2 className="howOthersType">{item.type}</h2>
-                    <img src={item.image} alt={item.name} />
-                  </li>
+                    <h4 className="howOthersType">{item.type}</h4>
+                      < img src={item.image} alt={item.name} />
+                  </div>
                 ))}
               </ul>
           </div>

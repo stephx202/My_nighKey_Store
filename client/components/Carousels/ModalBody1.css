@@ -1,0 +1,129 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    padding: 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 1520px; 
+    height: 850px; 
+    border-radius: 40px;
+    overflow: hidden; 
+}
+
+
+
+.imageDiv {
+    width: 55%;
+    height: 100%;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    /* border-radius: 10px; */
+    position: relative;
+    z-index: 2;
+    /* outline: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    /* left: 85px; */
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.text-container {
+    position: relative;
+    /* margin-top: -200px; */
+    z-index: 2;
+    /* left: 200px; */
+    left: 100px;
+    width: 800px;
+    height: 849.98px;
+}
+#inThisLookHeading{
+    position: relative;
+    padding-top: 39px ;
+    font-size: 36px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 400;
+    right: 190px
+}
+
+.oneItemContainer{
+    position: relative;
+    height: 180px;
+    bottom: 20px;
+    right: 60px ;
+}
+.howOthersUserName{
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 20px;
+    font-weight: 300;
+    color: #666970;
+    right: 230px;
+    bottom: 13px
+
+}
+.howOthersName{
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size:24px ;
+    color: #3d3f43;
+    width: fit-content;
+    left: 252px;
+    top: 60px;
+}
+
+.howOthersType{
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif !important;
+    color: #666970;
+    font-weight: 500;
+    font-size: 24px;;
+    width: fit-content;
+    left: 252px;
+    top: 35px;
+
+
+}
+
+.text-container img{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    right: 208px;
+    bottom: 65px
+}
+
+
+
+
+.close-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
