@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Body1Carousel.css';
 //import Body1IMGs from './Body1IMGs';
-import Modal from './Modal.jsx';
+import ModalBody1 from './ModalBody1.jsx';
 
 
   
@@ -98,7 +98,7 @@ import Modal from './Modal.jsx';
               </div>
             ))}
           </Slider>
-          <Modal showModal={showModal} closeModal={closeModal} image={selectedImage} selectedIndex={selectedIndex} howotherscarousel={howotherscarousel} />
+          <ModalBody1 showModal={showModal} closeModal={closeModal} image={selectedImage} selectedIndex={selectedIndex} howotherscarousel={howotherscarousel} />
         </div>
       );
   }

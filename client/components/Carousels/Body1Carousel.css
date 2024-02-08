@@ -8,7 +8,7 @@
 }
 
 #howOthersSmallHeading{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: Helvetica, Arial, sans-serif !important;
     font-weight: 300;
     padding-left: 58px;
     font-size: 16px;
@@ -19,7 +19,7 @@
 
 
 .ImageContainer{
-    margin-top: 100px;
+    margin-top: 55px;
     position: relative;
 }
 
@@ -55,7 +55,7 @@
 
 .Body1Carousel .slick-track {
     height: 100%;
-    padding: 58px;
+    padding-left: 58px;
 
     
 }
@@ -69,7 +69,7 @@
 }
 
 .Body1IMGs h3 {
-    font-family: 'sans-serif !important';
+    font-family:Helvetica,Arial,sans-serif !important;
     font-weight: lighter;
     font-size: 17px ;
   }

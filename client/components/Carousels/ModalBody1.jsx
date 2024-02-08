@@ -3,7 +3,7 @@
 import React from 'react';
 import './Modal.css';
 
-const Modal = (props) => {
+const ModalBody1 = (props) => {
   const { showModal, closeModal, image, selectedIndex, howotherscarousel } = props;
   const items = howotherscarousel[selectedIndex]?.Items || [];
   const userName = howotherscarousel[selectedIndex]?.text || [];
@@ -38,4 +38,4 @@ const Modal = (props) => {
   );
 };
 
-export default Modal;
+export default ModalBody1;
