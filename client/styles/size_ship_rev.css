@@ -4,16 +4,16 @@
   position: relative;
   grid-template-columns: 1fr;
   color: #292929;
-  height: 20rem;
+  /* height: 20rem; */
   /* width: 55rem; */
   margin-left: 8rem;
   text-wrap: nowrap;
-  margin-top: 40rem;
-  bottom: 31rem;
+  margin-top: 100px;
+  /* bottom: 31rem; */
   right: 1.7rem;
 }
 
-#normalSizing {
+/* #normalSizing {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   font-size: 17px;
@@ -22,21 +22,50 @@
   width: 26.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 2rem;
-  height: 4rem;
-  margin-left: -3.4rem;
+  /* height: 4rem; */
+  /* margin-left: -3.4rem;
   margin-top: 0.5rem;
   display: flex;
-  position: relative;
-  bottom: 7.5rem;
-  right: 3rem;
+  position: relative; */
+  /* bottom: 7.5rem; */
+  /* right: 3rem; */
+/* }  */
+
+
+/* my changes------------------------------------------ */
+.normalSizing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.normalSizing h4{
+  /* border: 1px solid brown; */
+  width: 48%;
+}
+
+.normalSizing img{
+float: right;
+  /* border: thin solid green; */
+  height: 25px;
+  width: 15px;
+  padding-top: 18px
+}
+
+.bottom-border {
+  width: 100%;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+/* ------------------------------------------------------------ */
 .downarrow-sizing {
   display: flex;
   position: relative;
   scale: 0.058 0.068;
   left: 10.6rem;
-  bottom: 10.6rem;
+  /* bottom: 10.6rem; */
 }
 
 .expanded-downarrow-sizing {
@@ -44,7 +73,7 @@
   position: relative;
   scale: 0.058 0.068;
   left: 10.6rem;
-  bottom: 10.6rem;
+  /* bottom: 10.6rem; */
 }
 
 #normalShipping {
@@ -299,8 +328,8 @@
   opacity: 0.6;
 }
 
-.bottom-border {
-  width: 22.4rem;
-  height: 1rem;
+/* .bottom-border {
+  width: 100%;
+  
   border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
-}
+} */
