@@ -97,7 +97,7 @@ import ModalBody1 from './ModalBody1.jsx';
                 <h3>{image.text}</h3>
               </div>
             ))}
-          </Slider>
+         </Slider>
           <ModalBody1 showModal={showModal} closeModal={closeModal} image={selectedImage} selectedIndex={selectedIndex} howotherscarousel={howotherscarousel} />
         </div>
       );
