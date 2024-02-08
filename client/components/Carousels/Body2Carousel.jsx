@@ -366,9 +366,7 @@ const Body2Carousel = ({shoe}) => {
         }
       ]
     },
-  ]
-  
-  console.log(shoe.completethelook)   
+  ] 
 
   const settings = {
     dots: false,

@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/api/shoedata", (req, res) => {
-  client.query("SELECT id, thumbnails FROM shoedata;").then((result) => {
+  client.query("SELECT id, thumbnails, expandedimg FROM shoedata;").then((result) => {
     res.send(result.rows);
   });
 });
