@@ -19,10 +19,10 @@ const Footer_Tos_Privacy = () => {
         <p className="guidePar" onMouseEnter={openGuide}>
           Guides
         </p>
-        <p>Terms of Sale</p>
-        <p>Terms of Use</p>
-        <p>Nike Privacy Policy</p>
-        <p>
+        <p className = "p1">Terms of Sale</p>
+        <p className = "p2">Terms of Use</p>
+        <p className = "p3">Nike Privacy Policy</p>
+        <p className = "p4">
           {" "}
           <img src={`${supply_icon}`} alt="" />
           Your Privacy Choices
@@ -30,20 +30,20 @@ const Footer_Tos_Privacy = () => {
       </div>
       {showGuide && (
         <div className="guideDiv" onMouseLeave={closeGuide}>
-          <div>
+          <div className="guide-div1">
             <p>Nike Adapt</p>
             <p>Nike Air Max</p>
             <p>Nike Flyleather</p>
             <p>Nike React</p>
             <p>Space Hippie</p>
           </div>
-          <div>
+          <div className="guide-div2">
             <p>Nike Air</p>
             <p>Nike FlyEase</p>
             <p>Nike Free</p>
             <p>Nike Vaporfly</p>
           </div>
-          <div>
+          <div className="guide-div3">
             <p>Nike Air Force 1</p>
             <p>Nike Flyknit</p>
             <p>Nike Joyride</p>

@@ -21,16 +21,19 @@
   background-color: transparent;
   margin-right:7rem;
   width: 2.5rem;
-  left:5rem;
+  left:4rem;
   margin-bottom: 18px;
+  font-size: 13px;
+  letter-spacing: -1.15px;
 }
 
 #company_sublinks p {
   text-align: left;
-  margin-left: 5.2rem;
+  margin-left: 4.2rem;
   display: flex;
-  font-size:11px;
+  font-size:12px;
   margin-top:-1.3rem;
+  width:4.5rem;
 }
 
 #company_sublinks p:hover {

@@ -3,7 +3,6 @@ import React from "react";
 
 export default function ShoeSizes(props) {
     const [selected, setSelected] = useState("");
-    console.log(props.shoe)
     return (
         <>
             <div className="purchased">

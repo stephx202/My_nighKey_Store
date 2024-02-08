@@ -16,10 +16,39 @@ const Body3Carousel = () => {
         // autoplaySpeed: 2000
     };
 
+    function clickRight() {
+        let container = document.querySelector('#Body3Carousel');
+        container.scrollTo({
+            left:container.scrollLeft + 615,
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    function clickLeft() {
+        let container = document.querySelector('#Body3Carousel');
+        container.scrollTo({
+            left:container.scrollLeft - 615,
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
     return (
-        <div id="Body3Carousel">
-            <h2 id="body3Heading">You Might Also Like</h2>
-            <Slider {...settings}>
+    <><h2 id="body3Heading">You Might Also Like</h2>
+    <button className="right" onClick={clickRight}>
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+    </button>
+            <button className="left" onClick={clickLeft}>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"  height="28px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path></svg>
+            </button>
+	
+       
+        <div id="Body3Carousel" className='horizontal-scroll'>
+            
+            <div className='carouselContainer'>
+            {/* <Slider {...settings}>  */}
+            
                 <div className="Body3IMGs">
                     <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/dunk-low-retro-mens-shoes-87q0hf.png" />
                     <h2 className="shoeName">Nike Dunk Low Retro</h2>
@@ -76,9 +105,10 @@ const Body3Carousel = () => {
                     <h3 className="smallerText">Men's Shoes</h3>
                     <h2 className="shoeName">$125.00</h2>
                 </div>
-                
-            </Slider>
-        </div>
+            {/* </Slider> */}
+                </div>
+            
+        </div></>
     );
 }
 

@@ -15,7 +15,7 @@
   border-radius: 2px;
   cursor: pointer;
   margin-top: 1.8rem;
-  right:13.6rem;
+  right:18.1rem;
 }
 
 .location_supply {
@@ -25,9 +25,9 @@
 }
 
 .location_supply p {
-  margin-right: 19.5rem;
-  font-size: 9.5px;
-  margin-top: .5rem;
+  margin-right: 12.5rem;
+  font-size: 12px;
+  margin-top: 2rem;
 }
 
 .location_supply p:hover {
@@ -37,7 +37,7 @@
 
 .copyright {
   text-align: start;
-  width: 68rem;
+  width: 72.5rem;
   color: white;
   height: 3rem;
   display: flex;
