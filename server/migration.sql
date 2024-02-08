@@ -603,14 +603,14 @@ ARRAY[
         2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
         3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
         4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
-        5.0,
+        5.0
     ],
     --customer username
     ARRAY['loretor519667877', 'Leairah52cb098261ca4e868c08b70a05c0fbd4', 'Michael677065232'],
     --review date
     ARRAY['Jan 28, 2024', 'Jan 23, 2024', 'Jan 23, 2024'],
     --secondary review comment
-    ARRAY['Perfectly awesome pair of shoes', 'I like them I also want more jordan 4's on this app and university blue.', 'Nice and clean, Classic like always']
+    ARRAY['Perfectly awesome pair of shoes', 'I like them I also want more jordan 4''s on this app and university blue.', 'Nice and clean, Classic like always']
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -850,14 +850,14 @@ INSERT INTO shoeData(
         2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
         3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
         4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
-        5.0,
+        5.0
     ],
     --customer username
     ARRAY['loretor519667877', 'Leairah52cb098261ca4e868c08b70a05c0fbd4', 'Michael677065232'],
     --review date
     ARRAY['Jan 28, 2024', 'Jan 23, 2024', 'Jan 23, 2024'],
     --secondary review comment
-    ARRAY['Perfectly awesome pair of shoes', 'I like them I also want more jordan 4's on this app and university blue.', 'Nice and clean, Classic like always']
+    ARRAY['Perfectly awesome pair of shoes', 'I like them I also want more jordan 4''s on this app and university blue.', 'Nice and clean, Classic like always']
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -1113,7 +1113,7 @@ INSERT INTO shoeData(
         2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
         3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
         4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
-        5.0,
+        5.0
     ],
     --customer username
     ARRAY['Shido', 'Ian01', 'Nicola'],
@@ -1377,7 +1377,7 @@ INSERT INTO shoeData(
         2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
         3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
         4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
-        5.0,
+        5.0
     ],
     --customer username
     ARRAY['Shido', 'Ian01', 'Nicola'],
