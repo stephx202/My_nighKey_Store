@@ -3,7 +3,8 @@
 import React from 'react';
 import './Modal.css';
 
-const Modal = ({ showModal, closeModal, image, text }) => {
+const Modal = ({ showModal, closeModal, image, items }) => {
+  
   return (
     showModal && (
       <div className="modal-overlay" onClick={closeModal}>
@@ -14,7 +15,15 @@ const Modal = ({ showModal, closeModal, image, text }) => {
           </div>
           
           <div className="text-container">
-            <p>{text}</p>
+            <ul>
+                {items.map((item, index) => (
+                  <li key={index}>
+                    <p>Name: {item.name}</p>
+                    <p>Type: {item.type}</p>
+                    <img src={item.image} alt={item.name} />
+                  </li>
+                ))}
+              </ul>
           </div>
           <button className="close-btn" onClick={closeModal}>
             Close

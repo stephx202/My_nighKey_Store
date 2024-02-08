@@ -6,7 +6,7 @@ import './Body1Carousel.css';
 //import Body1IMGs from './Body1IMGs';
 import Modal from './Modal.jsx';
 
-//STOP AFTER THIS IS GONE//////////////////
+
   
   // const Body1Arrows = ({ className, onClick }) => (
   //   <button
@@ -17,6 +17,7 @@ import Modal from './Modal.jsx';
   // );
   
   const Body1Carousel = ({ howotherscarousel }) => {
+    console.log("howotherscarousel:", howotherscarousel);//array of objects
     if (!howotherscarousel || howotherscarousel.length === 0) {
       return <div>No images available</div>;
       
@@ -95,7 +96,7 @@ import Modal from './Modal.jsx';
               </div>
             ))}
           </Slider>
-          <Modal showModal={showModal} closeModal={closeModal} image={selectedImage} text="shoe info will go here based on shoe"/>
+          <Modal showModal={showModal} closeModal={closeModal} image={selectedImage} items={howotherscarousel[0].Items}/>
         </div>
       );
   }
