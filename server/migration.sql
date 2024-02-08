@@ -27,7 +27,17 @@ CREATE TABLE shoeData (
     --  Details for product modal
     details text[],
     -- origing on shoe
-    origin text
+    origin text,
+    --primary review comments
+    primary_review_comment text[],
+    --star rating
+    star_rating real[],
+   --customer username
+    customer_username text[],
+    --review date
+    review_date text[],
+    --secondary review comments
+    secondary_review_comment text[]
 );
 
 /* White on White */
@@ -48,7 +58,12 @@ INSERT INTO shoeData(
     stores,
     benefits,
     details,
-    origin
+    origin,
+    primary_review_comment,
+    star_rating,
+    customer_username,
+    review_date,
+    secondary_review_comment
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -575,7 +590,27 @@ ARRAY[
         'Rubber sole'
     ],
     -- Origin for shoe
-    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.',
+    --primary_review_comment
+    ARRAY[
+        'Awesome shoes!',
+        'Shoes',
+        'Classic like always'
+    ],
+    --star_rating
+    ARRAY[
+        1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+        2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
+        3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
+        4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
+        5.0,
+    ],
+    --customer username
+    ARRAY['loretor519667877', 'Leairah52cb098261ca4e868c08b70a05c0fbd4', 'Michael677065232'],
+    --review date
+    ARRAY['Jan 28, 2024', 'Jan 23, 2024', 'Jan 23, 2024'],
+    --secondary review comment
+    ARRAY['Perfectly awesome pair of shoes', 'I like them I also want more jordan 4's on this app and university blue.', 'Nice and clean, Classic like always']
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -600,7 +635,12 @@ INSERT INTO shoeData(
     stores,
     benefits,
     details,
-    origin
+    origin,
+    primary_review_comment,
+    star_rating,
+    customer_username,
+    review_date,
+    secondary_review_comment
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -797,7 +837,27 @@ INSERT INTO shoeData(
         'Rubber sole'
     ],
     -- Origin for shoe
-    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.',
+    --primary_review_comment
+    ARRAY[
+        'Awesome shoes!',
+        'Shoes',
+        'Classic like always'
+    ],
+    --star_rating
+    ARRAY[
+        1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+        2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
+        3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
+        4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
+        5.0,
+    ],
+    --customer username
+    ARRAY['loretor519667877', 'Leairah52cb098261ca4e868c08b70a05c0fbd4', 'Michael677065232'],
+    --review date
+    ARRAY['Jan 28, 2024', 'Jan 23, 2024', 'Jan 23, 2024'],
+    --secondary review comment
+    ARRAY['Perfectly awesome pair of shoes', 'I like them I also want more jordan 4's on this app and university blue.', 'Nice and clean, Classic like always']
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -822,7 +882,12 @@ INSERT INTO shoeData(
     stores,
     benefits,
     details,
-    origin
+    origin,
+    primary_review_comment,
+    star_rating,
+    customer_username,
+    review_date,
+    secondary_review_comment
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -1035,7 +1100,27 @@ INSERT INTO shoeData(
         'Perforations on toe'
     ],
     -- Origin for shoe
-    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.',
+        --primary_review_comments
+    ARRAY[
+        'Great feature.',
+        'Nike Airforce Trainers',
+        'Smart'
+    ],
+    --star_rating
+    ARRAY[
+        1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+        2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
+        3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
+        4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
+        5.0,
+    ],
+    --customer username
+    ARRAY['Shido', 'Ian01', 'Nicola'],
+    --review dates
+    ARRAY['Jan 13, 2024', 'Jan 07, 2024', 'Jan 07, 2024'],
+    --secondary review comments
+    ARRAY['Good buy. ASOS has been delivering quality products', 'I bought this as a Christmas present. The quality is very good and the price was very competitive', 'Good fit. Ordered size 11. Went nice with cargos and jeans.']
 );
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -1060,7 +1145,12 @@ INSERT INTO shoeData(
     stores,
     benefits,
     details,
-    origin
+    origin,
+    primary_review_comment,
+    star_rating,
+    customer_username,
+    review_date,
+    secondary_review_comment
 ) VALUES(
     /* Details */
     'Nike Air Force 1 ''07',
@@ -1274,7 +1364,27 @@ INSERT INTO shoeData(
         'Perforations on toe'
     ],
     -- Origin for shoe
-    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.'
+    'Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world. Today, the Air Force 1 stays true to its roots with the same soft and springy cushioning that changed sneaker history.',
+         --primary_review_comments
+    ARRAY[
+        'Great feature.',
+        'Nike Airforce Trainers',
+        'Smart'
+    ],
+    --star_rating
+    ARRAY[
+        1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+        2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,
+        3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,
+        4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,
+        5.0,
+    ],
+    --customer username
+    ARRAY['Shido', 'Ian01', 'Nicola'],
+    --review dates
+    ARRAY['Jan 13, 2024', 'Jan 07, 2024', 'Jan 07, 2024'],
+    --secondary review comments
+    ARRAY['Good buy. ASOS has been delivering quality products', 'I bought this as a Christmas present. The quality is very good and the price was very competitive', 'Good fit. Ordered size 11. Went nice with cargos and jeans.']
 );
 
 -- --     -- Complete The Look
