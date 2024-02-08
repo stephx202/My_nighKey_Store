@@ -26,7 +26,7 @@ import shoe1IMG10 from './CompleteTheLookIMGs/Shoe1IMG10.png';
 // );
 
 
-const Body2Carousel = () => {
+const Body2Carousel = ({shoe}) => {
     //add if statements to depend on what shoes choosen. create 4 diffrent arrays.
   const [theLook, setTheLook] = useState(null);
   
@@ -368,7 +368,7 @@ const Body2Carousel = () => {
     },
   ]
   
-      
+  console.log(shoe.completethelook)   
 
   const settings = {
     dots: false,
@@ -385,15 +385,18 @@ const Body2Carousel = () => {
     setTheLook(null);
   }
   let renderModalScroll = () => {
+    if (!shoe.completethelook) {
+      return null
+    }
     return looks[theLook].items.map((item, index) => (
       <div key={index} className='modalItems'>
         <img className="itemImage" src={looks[theLook].items[index].img}></img>
         <div className='itemDesc'>
-          <h className='textBold'>{looks[theLook].items[index].name}</h>
-          <h className='textNormal'>{looks[theLook].items[index].type}</h>
-          <h className='textNormal'>{looks[theLook].items[index].colors}</h>
-          <h className='textBold'>{looks[theLook].items[index].price}</h>
-          <h className='shopText'>SHOP</h>
+          <p className='textBold'>{looks[theLook].items[index].name}</p>
+          <p className='textNormal'>{looks[theLook].items[index].type}</p>
+          <p className='textNormal'>{looks[theLook].items[index].colors}</p>
+          <p className='textBold'>{looks[theLook].items[index].price}</p>
+          <p className='shopText'>SHOP</p>
         </div>
       </div>
     ))
@@ -411,7 +414,7 @@ const Body2Carousel = () => {
   }
 
   let clickModal = () => {
-    if (theLook) {
+    if (theLook && shoe) {
       return (
         <div id='modalDim'>
           <div id='theLookModal'>
