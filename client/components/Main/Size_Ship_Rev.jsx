@@ -5,7 +5,8 @@ import uparrow from "../../../images/up_arrow.png";
 import rating from "../../../images/4.8_star_rating.png";
 import axios from "axios";
 
-const Size_Ship_Rev = () => {
+const Size_Ship_Rev = ({ shoe}) => {
+  console.log(shoe);
   const [currentShipping, setShipping] = useState("normalShipping");
   const [currentStarClass, setStarClass] = useState("star");
   const [currentReviewing, setReviewing] = useState("normalReviewing");
@@ -92,16 +93,17 @@ const Size_Ship_Rev = () => {
     }
   }, [currentSizeArrow, currentShipArrow]);
 
-  useEffect(() => {
-    axios
-      .get("/api/shoedata")
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("/api/shoedata")
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data:", error);
+  //     });
+  // }, []);
+ 
 
   return (
     <>
