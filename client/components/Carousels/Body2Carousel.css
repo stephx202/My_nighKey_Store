@@ -1,8 +1,8 @@
 
 #CTLheading{
-    font-family:Helvetica;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 24px;
-    font-weight:100;
+    font-weight:400;
     padding-left: 58px;
     padding-bottom: 2px; 
 }

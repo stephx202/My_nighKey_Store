@@ -24,9 +24,11 @@ import Modal from './Modal.jsx';
     }
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState(null);
 
-    const openModal = (image) => {
+    const openModal = (image, index) => {
       setSelectedImage(image);
+      setSelectedIndex(index);
       setShowModal(true);
     };
 
@@ -77,7 +79,7 @@ import Modal from './Modal.jsx';
           <h3 id= "howOthersSmallHeading">Upload your photo or mention @Nike on Instagram for a chance to be featured.</h3>
           <Slider {...settings}>
             {howotherscarousel.map((image, index) => (
-              <div key={index} className="Body1IMGs" onClick={() => openModal(image.image)}>
+              <div key={index} className="Body1IMGs" onClick={() => openModal(image.image, index)}>
                 <div className="ImageContainer">
                   <img src={image.image} alt={image.text} />
                   <div className="Overlay">
@@ -96,7 +98,7 @@ import Modal from './Modal.jsx';
               </div>
             ))}
           </Slider>
-          <Modal showModal={showModal} closeModal={closeModal} image={selectedImage} items={howotherscarousel[0].Items}/>
+          <Modal showModal={showModal} closeModal={closeModal} image={selectedImage} selectedIndex={selectedIndex} howotherscarousel={howotherscarousel} />
         </div>
       );
   }

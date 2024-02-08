@@ -3,8 +3,10 @@
 import React from 'react';
 import './Modal.css';
 
-const Modal = ({ showModal, closeModal, image, items }) => {
-  
+const Modal = (props) => {
+  const { showModal, closeModal, image, selectedIndex, howotherscarousel } = props;
+  const items = howotherscarousel[selectedIndex]?.Items || [];
+  const userName = howotherscarousel[selectedIndex]?.text || [];
   return (
     showModal && (
       <div className="modal-overlay" onClick={closeModal}>
@@ -18,8 +20,10 @@ const Modal = ({ showModal, closeModal, image, items }) => {
             <ul>
                 {items.map((item, index) => (
                   <li key={index}>
-                    <p>Name: {item.name}</p>
-                    <p>Type: {item.type}</p>
+                    <h2>In This Look</h2>
+                    <h4 className= "howOthersUserName">{userName}</h4>
+                    <h4 className="howOthersName">{item.name}</h4>
+                    <h2 className="howOthersType">{item.type}</h2>
                     <img src={item.image} alt={item.name} />
                   </li>
                 ))}
