@@ -13,7 +13,7 @@ export default function Explorer(props){
             <img src= {props.shoe.explorationimg[1]} />
             <div className='text'><div>{props.shoe.benefits[1]}</div></div>
             <img src={props.shoe.explorationimg[2]}/>
-            <div className='text'><div>{props.shoe.benefits[2]}</div></div>
+            <div className='text bottom'><div>{props.shoe.benefits[2]}</div></div>
 
         
         </div>
