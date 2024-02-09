@@ -5,16 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import './Body1Carousel.css';
 //import Body1IMGs from './Body1IMGs';
 import ModalBody1 from './ModalBody1.jsx';
+//import UploadModal from './UploadModal.jsx';
 
 
   
-  // const Body1Arrows = ({ className, onClick }) => (
-  //   <button
-  //   className={className}
-  //   onClick={onClick}
-  // >
-  // </button>
-  // );
+//stop deleting after this///////
   
   const Body1Carousel = ({ howotherscarousel }) => {
     console.log("howotherscarousel:", howotherscarousel);//array of objects
@@ -25,6 +20,8 @@ import ModalBody1 from './ModalBody1.jsx';
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [selectedIndex, setSelectedIndex] = useState(null);
+
+    //const[showUploadModal, setShowUploadModal] = useState(false);
 
     const openModal = (image, index) => {
       setSelectedImage(image);
@@ -37,6 +34,18 @@ import ModalBody1 from './ModalBody1.jsx';
       setSelectedImage(null);
     };
     
+    // const openUploadModal=()=>{
+    //   setShowUploadModal(true);
+    // }
+
+    // const closeUploadModal=()=>{
+    //   setShowUploadModal(false)
+    // }
+
+
+
+
+
     const settings = {
       dots: false,
       infinite: false,
@@ -74,9 +83,15 @@ import ModalBody1 from './ModalBody1.jsx';
     };
   
     return (
+      <>
         <div className="Body1Carousel">
           <h1 id="howOthersHeading">How Others Are Wearing It</h1>
           <h3 id= "howOthersSmallHeading">Upload your photo or mention @Nike on Instagram for a chance to be featured.</h3>
+          <div id="UploadPhotoBtn">Upload Your Photo</div>
+          {/* <button className="UploudOpenBtn" onClick={() => openUploadModal()}>
+              Open Upload Modal
+          </button>
+          <UploadModal showUploadModal={showUploadModal} closeUploadModal={closeUploadModal} /> */}
           <Slider {...settings}>
             {howotherscarousel.map((image, index) => (
               <div key={index} className="Body1IMGs" onClick={() => openModal(image.image, index)}>
@@ -100,7 +115,8 @@ import ModalBody1 from './ModalBody1.jsx';
          </Slider>
           <ModalBody1 showModal={showModal} closeModal={closeModal} image={selectedImage} selectedIndex={selectedIndex} howotherscarousel={howotherscarousel} />
         </div>
-      );
+      </>
+    );
   }
   
   export default Body1Carousel;

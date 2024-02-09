@@ -34,7 +34,7 @@ const ModalBody1 = (props) => {
             <circle id="circleBtn" cx="12" cy="12" r="9" fill="#bfbfbf" fillOpacity="0.24"></circle>
             <path d="M16 8L8 16" stroke="#222222" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"></path>
             <path d="M8 8L16 16" stroke="#222222" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"></path>
-        </svg>
+          </svg>
           </button>
         </div>
       </div>
