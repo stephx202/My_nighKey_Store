@@ -192,28 +192,46 @@ const Size_Ship_Rev = ({ shoe }) => {
                 textWrap: "nowrap",
                 fontSize: "1.1rem",
                 fontWeight: "300",
+                position: "relative",
+                bottom: "1.2rem",
               }}
             >
               <span style={{ position: "relative", right: "6px" }}>
                 Free standard shipping on orders $50+ and free 60-day
               </span>
               <br></br>
-              returns for Nike Members.
+              returns for Nike Members.{" "}
               <span
-                style={{ fontWeight: "600", borderBottom: "1px solid black" }}
+                style={{
+                  textWrap: "nowrap",
+                  fontSize: "1rem",
+                  fontWeight: "600",
+                  textDecoration: "underline",
+                }}
               >
-                Learn more.<br></br>
+                Learn more.
               </span>
+              <br></br>
             </p>
             <span
-              style={{ fontWeight: "600", borderBottom: "1px solid black" }}
+              style={{
+                fontWeight: "600",
+                borderBottom: "1px solid black",
+                position: "relative",
+                bottom: "1.1rem",
+              }}
             >
               Return policy exclusions apply.
             </span>
             <br></br>
             <br></br>
             <span
-              style={{ fontWeight: "600", borderBottom: "1px solid black" }}
+              style={{
+                fontWeight: "600",
+                borderBottom: "1px solid black",
+                position: "relative",
+                bottom: "2rem",
+              }}
             >
               Pick-up available at select Nike stores.
             </span>
@@ -221,7 +239,7 @@ const Size_Ship_Rev = ({ shoe }) => {
         )}
       </div>
 
-      <div className="normalSizing">
+      <div className="normalSizing" style={{ position: "relative", bottom:"-1px", paddingBottom:"14px" }}>
         <h4>Reviews (3860)</h4>
         <br></br>
         <img className="star" src={`${rating}`} alt="" />
@@ -237,7 +255,7 @@ const Size_Ship_Rev = ({ shoe }) => {
           </div>
         ) : null}
       </div>
-      <div className="bottom-border"></div>
+      <div style={{ position: "relative" }} className="bottom-border"></div>
     </>
   );
 };
