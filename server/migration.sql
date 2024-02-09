@@ -815,336 +815,336 @@ INSERT INTO shoeData(
     -- Complete The Look
     ARRAY[
         '{
-        "image": "shoe1IMG1",
+        "image": "https://i.postimg.cc/HnYt4r2Q/set1.png",
         "items": [
             {
+            "name": "Nike Brasilia Training Duffel Bag (Small, 41L)",
+            "img": "https://i.postimg.cc/vBdhTqx2/4.webp",
+            "type": "Athletic Duffel",
+            "colors": "3 Colors",
+            "price": "$30"
+            },
+            {
             "name": "Nike Element Men''s Dri-FIT 1/2-Zip Running Top",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/918f8b7b-b73c-4617-93ae-9b35b4e0bb77/image?bgc=f1f1f1",
+            "img": "https://i.postimg.cc/63L0vrdW/1.webp",
             "type": "Quarter Zip Jacket",
             "colors": "9 Colors",
             "price": "$60"
             },
             {
             "name": "Nike Sportswear Club Fleece",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/15c85a1d-fe9a-48c1-a841-b3ce5b293ee9/image?bgc=f1f1f1",
+            "img": "https://i.postimg.cc/y8tv4Y1H/2.webp",
             "type": "Men''s Cargo Pants",
             "colors": "3 Colors",
             "price": "$35"
             },
             {
             "name": "Nike Everyday Plus Cushioned Training Ankle Socks (3 Pairs)",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f5afea7-d314-4a80-9c6b-274a27bbc259/image?bgc=f1f1f1",
+            "img": "https://i.postimg.cc/TPbQRM1W/3.webp",
             "type": "Athletic Socks",
             "colors": "1 Color",
             "price": "$45.97"
-            },
-            {
-            "name": "Nike Brasilia Training Duffel Bag (Small, 41L)",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f4b276bc-204a-4cf8-a678-cb54acf87bf8/image?bgc=f1f1f1",
-            "type": "Athletic Duffel",
-            "colors": "3 Colors",
-            "price": "$30"
             }
         ]
         }'::JSONB,
         '{
-            "image": "shoe1IMG2",
-            "items": [
-                {
-                "name": "Nike Sportswear Club Fleece Men''s Pullover Printed Hoodie",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/01dd1161-6b7d-471b-9492-5d4e90c9deda/image?bgc=f1f1f1",
-                "type": "Hoodie",
-                "colors": "3 Colors",
-                "price": "$35"
-                },
-                {
-                "name": "Nike SB Men''s Skate T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e9e22579-d56b-4be3-ab6e-9bc4fdb6960b/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "3 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike Club Men''s Woven Tapered Leg Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d715d25a-d3fe-4c2a-a345-af995ef1e2c4/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
-                "colors": "2 Colors",
-                "price": "$22"
-                },
-                {
-                "name": "Nike Diamond Select",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/2622c925-ca43-4422-bf3f-0370ec99413c/image?bgc=f1f1f1",
-                "type": "Bat Pack (31L)",
-                "colors": "2 Colors",
-                "price": "$99"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG3",
-            "items": [
-                {
-                "name": "Nike Sportswear Tech Fleece Lightweight Men''s Full-Zip Hoodie Sweatshirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/5048a8ab-e814-4c17-a525-e012de395363/image?bgc=f1f1f1",
-                "type": "Hoodie",
-                "colors": "2 Colors",
-                "price": "$34.97"
-                },
-                {
-                "name": "Nike Sportswear Premium Essentials Men''s T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f1c4444-973e-4f0d-8187-b55b3be53e1f/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "7 Colors",
-                "price": "$40.97"
-                },
-                {
-                "name": "Nike Sportswear Club Men''s Graphic Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
-                "colors": "2 Colors",
-                "price": "$69.97"
-                },
-                {
-                "name": "Nike Sportswear Dri-FIT Everyday Essential Crew Socks (3 Pairs)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/c9cab5ae-6d77-49d9-ae99-7eac4f699449/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
-                "colors": "3 Colors",
-                "price": "$57"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG4",
-            "items": [
-                {
-                "name": "Nike Solo Swoosh",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/da86341f-333c-48c6-86d4-0b405bcbb5c3/image?bgc=f1f1f1",
-                "type": "Men''s Full-Zip Hoodie",
-                "colors": "1 Color",
-                "price": "$34.97"
-                },
-                {
-                "name": "Nike Dri-FIT Running Division Men''s Running T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/04ef0063-28b1-44d8-b04c-4b51c8a7c799/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "4 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike Phenom Men''s Dri-FIT Knit Running Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b085899b-0fc7-4dcc-ab76-349d866f1540/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
-                "colors": "2 Colors",
-                "price": "$24"
-                },
-                {
-                "name": "Nike Everyday Plus Cushioned",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/0332e712-954d-4302-a01e-2b3e76553817/image?bgc=f1f1f1",
-                "type": "Crew Socks (3 Pairs)",
-                "colors": "3 Colors",
-                "price": "$52"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG5",
-            "items": [
-                {
-                "name": "Nike Sportswear Tech Fleece Men''s Bomber Jacket",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/530fd3aa-7f44-47d7-b285-2b1ea8c74be3/image?bgc=f1f1f1",
-                "type": "Athletic Jacket",
-                "colors": "4 Colors",
-                "price": "$95"
-                },
-                {
-                "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/bc02425a-8f0d-4c95-af69-ec3353a628a9/image?bgc=f1f1f1",
-                "type": "Active Long Sleeve Shirt",
-                "colors": "8 Colors",
-                "price": "$30"
-                },
-                {
-                "name": "Nike Sportswear Tech Fleece",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/52be6f16-f0d0-4b1a-831d-a972c8a2af79/image?bgc=f1f1f1",
-                "type": "Men''s Joggers",
-                "colors": "11 Colors",
-                "price": "$100"
-                },
-                {
-                "name": "Nike Cool Down",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/dab3628c-9af7-4711-b19c-8a5ba27315d9/image?bgc=f1f1f1",
-                "type": "Sunglasses",
-                "colors": "2 Colors",
-                "price": "$24"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG6",
-            "items": [
-                {
-                "name": "Nike Sportswear Club Fleece Men''s Full-Zip Hoodie",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/da663b1f-6481-4799-8f0a-8b251f8d351d/image?bgc=f1f1f1",
-                "type": "Hoodie",
-                "colors": "10 Colors",
-                "price": "$70"
-                },
-                {
-                "name": "Nike Sportswear Club Men''s T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/vgrltopc3ma73gt4m6gg/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "12 Colors",
-                "price": "$30"
-                },
-                {
-                "name": "Nike Sportswear Club Men''s Graphic Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/cb2dva7ujnsixi00saxa/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
-                "colors": "7 Colors",
-                "price": "$60"
-                },
-                {
-                "name": "Nike ACG Aysén Day Pack (32L)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/ed7237cc-8717-4600-9e1c-5a762d0f7929/image?bgc=f1f1f1",
-                "type": "Athletic Backpack",
-                "colors": "2 Colors",
-                "price": "$102"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG7",
-            "items": [
-                {
-                "name": "Nike Club Unstructured Futura Wash Cap",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f5dc30ee-5333-48a2-8951-88e574a5bb61/image?bgc=f1f1f1",
-                "type": "Baseball Hat",
-                "colors": "14 Colors",
-                "price": "$45.97"
-                },
-                {
-                "name": "Nike Sportswear Club Fleece Men''s Crew-Neck Sweatshirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/hdxcatug6qs32urlpmyw/image?bgc=f1f1f1",
-                "type": "Sweatshirt",
-                "colors": "17 Colors",
-                "price": "$25.97"
-                },
-                {
-                "name": "Nike Sportswear Club Fleece",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/49dc07f5-b48c-4f9b-acd3-6c5da76be9e1/image?bgc=f1f1f1",
-                "type": "Joggers",
-                "colors": "3 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike Everyday Cushioned Training Crew Socks (6 Pairs)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b8538f8c-161d-4450-9d1e-31ea520fb202/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
-                "colors": "4 Colors",
-                "price": "$23.97"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG8",
-            "items": [
-                {
-                "name": "Nike SB Fleece Pullover Skate Hoodie",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/819ab2fd-97a4-408d-82ce-b13060cd2384/image?bgc=f1f1f1",
-                "type": "Hoodie",
-                "colors": "9 Colors",
-                "price": "$100"
-                },
-                {
-                "name": "Nike Dri-FIT Primary Men''s Training T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/fff45434-3a12-43a5-bd59-fd79b822b36e/image?bgc=f1f1f1",
-                "type": "Sports Jersey",
-                "colors": "2 Colors",
-                "price": "$34.97"
-                },
-                {
-                "name": "Nike Sportswear Club Fleece",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/069c88b3-f68c-4ab7-8440-6f52a9f60b41/image?bgc=f1f1f1",
-                "type": "Joggers",
-                "colors": "3 Colors",
-                "price": "$108.97"
-                },
-                {
-                "name": "Nike Dri-FIT Club Structured Heathered Cap",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Golf Hat",
-                "colors": "2 Colors",
-                "price": "$69.97"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG9",
-            "items": [
-                {
-                "name": "Nike Premium",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1ffcc569-642d-4986-b5c9-ebcd581f5e23/image?bgc=f1f1f1",
-                "type": "Lanyard",
-                "colors": "2 Colors",
-                "price": "$125"
-                },
-                {
-                "name": "Nike ESC Men''s Knit Pullover Hoodie",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/3a5cb00e-ca2b-4942-9cbf-6e19bac245a5/image?bgc=f1f1f1",
-                "type": "Hoodie",
-                "colors": "3 Colors",
-                "price": "$35"
-                },
-                {
-                "name": "Nike SB Kearny",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e3f188c8-cc94-4b7f-a8e1-a56af04faf40/image?bgc=f1f1f1",
-                "type": "Skate Cargo Pants",
-                "colors": "5 Colors",
-                "price": "$36.97"
-                },
-                {
-                "name": "Nike Circuit Blue Light Glasses",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d13c0a26-336e-4536-b5d3-ab96a41d540d/image?bgc=f1f1f1",
-                "type": "Blue Light Glasses",
-                "colors": "2 Colors",
-                "price": "$22"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG10",
-            "items": [
-                {
-                "name": "Nike Sportswear Club Fleece",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/956d9c49-748a-48e1-9b69-43251c2e612f/image?bgc=f1f1f1",
-                "type": "Pullover Hoodie",
-                "colors": "1 Color",
-                "price": "$39.97"
-                },
-                {
-                "name": "Nike Sportswear Premium Essentials",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/636fe4a5-885b-4a6b-bf9b-44b296953c40/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
-                "colors": "6 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike Sportswear Sport Essentials Men''s Woven Lined Flow Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/117fe364-f46f-45f1-86e6-d508e4c84b27/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
-                "colors": "5 Colors",
-                "price": "$36.97"
-                },
-                {
-                "name": "Nike Sportswear Essentials",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1c6713af-03b0-4a7f-99b8-6600d6b86f72/image?bgc=f1f1f1",
-                "type": "Messenger Bag (17L)",
-                "colors": "1 Color",
-                "price": "$12"
-                }
-            ]
-            }'::JSONB
-        ],
+        "image": "https://i.postimg.cc/Sx2frFWt/set2.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Club Fleece Men''s Pullover Printed Hoodie",
+            "img": "https://i.postimg.cc/NFdkNQJZ/1.webp",
+            "type": "Hoodie",
+            "colors": "3 Colors",
+            "price": "$35"
+            },
+            {
+            "name": "Nike SB Men''s Skate T-Shirt",
+            "img": "https://i.postimg.cc/gcsscKz4/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "3 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Club Men''s Woven Tapered Leg Pants",
+            "img": "https://i.postimg.cc/5Nt3XFjJ/3.webp",
+            "type": "Athletic Pants",
+            "colors": "2 Colors",
+            "price": "$22"
+            },
+            {
+            "name": "Nike Diamond Select",
+            "img": "https://i.postimg.cc/jdkhPdJ7/4.webp",
+            "type": "Bat Pack (31L)",
+            "colors": "2 Colors",
+            "price": "$99"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/1X3pVLmB/set3.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Tech Fleece Lightweight Men''s Full-Zip Hoodie Sweatshirt",
+            "img": "https://i.postimg.cc/sgk9H6mf/1.webp",
+            "type": "Hoodie",
+            "colors": "2 Colors",
+            "price": "$34.97"
+            },
+            {
+            "name": "Nike Sportswear Premium Essentials Men''s T-Shirt",
+            "img": "https://i.postimg.cc/wvH5g1nS/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "7 Colors",
+            "price": "$40.97"
+            },
+            {
+            "name": "Nike Sportswear Club Men''s Graphic Shorts",
+            "img": "https://i.postimg.cc/DZgrZ2Tm/3.webp",
+            "type": "Athletic Shorts",
+            "colors": "2 Colors",
+            "price": "$69.97"
+            },
+            {
+            "name": "Nike Sportswear Dri-FIT Everyday Essential Crew Socks (3 Pairs)",
+            "img": "https://i.postimg.cc/8CLd2RXR/4.webp",
+            "type": "Athletic Socks",
+            "colors": "3 Colors",
+            "price": "$57"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/BnK2F50r/set4.png",
+        "items": [
+            {
+            "name": "Nike Solo Swoosh",
+            "img": "https://i.postimg.cc/VLTj5G39/1.webp",
+            "type": "Men''s Full-Zip Hoodie",
+            "colors": "1 Color",
+            "price": "$34.97"
+            },
+            {
+            "name": "Nike Dri-FIT Running Division Men''s Running T-Shirt",
+            "img": "https://i.postimg.cc/7Yb3H8QY/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "4 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Phenom Men''s Dri-FIT Knit Running Pants",
+            "img": "https://i.postimg.cc/QCYcQ0V3/3.webp",
+            "type": "Athletic Pants",
+            "colors": "2 Colors",
+            "price": "$24"
+            },
+            {
+            "name": "Nike Everyday Plus Cushioned",
+            "img": "https://i.postimg.cc/NGd8vfDz/4.webp",
+            "type": "Crew Socks (3 Pairs)",
+            "colors": "3 Colors",
+            "price": "$52"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/jSPJ2s6K/set5.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Tech Fleece Men''s Bomber Jacket",
+            "img": "https://i.postimg.cc/02Lw96wc/1.webp",
+            "type": "Athletic Jacket",
+            "colors": "4 Colors",
+            "price": "$95"
+            },
+            {
+            "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
+            "img": "https://i.postimg.cc/qMtKfczN/2.webp",
+            "type": "Active Long Sleeve Shirt",
+            "colors": "8 Colors",
+            "price": "$30"
+            },
+            {
+            "name": "Nike Sportswear Tech Fleece",
+            "img": "https://i.postimg.cc/bYVnFVNX/3.webp",
+            "type": "Men''s Joggers",
+            "colors": "11 Colors",
+            "price": "$100"
+            },
+            {
+            "name": "Nike Cool Down",
+            "img": "https://i.postimg.cc/Zqmvy1jN/4.jpg",
+            "type": "Sunglasses",
+            "colors": "2 Colors",
+            "price": "$24"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/L5Gn47nn/set6.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Club Fleece Men''s Full-Zip Hoodie",
+            "img": "https://i.postimg.cc/gJkwg8Ck/1.webp",
+            "type": "Hoodie",
+            "colors": "10 Colors",
+            "price": "$70"
+            },
+            {
+            "name": "Nike Sportswear Club Men''s T-Shirt",
+            "img": "https://i.postimg.cc/bJCZWdP0/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "12 Colors",
+            "price": "$30"
+            },
+            {
+            "name": "Nike Sportswear Club Men''s Graphic Shorts",
+            "img": "https://i.postimg.cc/7h55kDPF/3.webp",
+            "type": "Athletic Shorts",
+            "colors": "7 Colors",
+            "price": "$60"
+            },
+            {
+            "name": "Nike ACG Aysén Day Pack (32L)",
+            "img": "https://i.postimg.cc/4317vBFS/4.webp",
+            "type": "Athletic Backpack",
+            "colors": "2 Colors",
+            "price": "$102"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/VLMjrB13/set7.png",
+        "items": [
+            {
+            "name": "Nike Club Unstructured Futura Wash Cap",
+            "img": "https://i.postimg.cc/xjBv1Frv/3.webp",
+            "type": "Baseball Hat",
+            "colors": "14 Colors",
+            "price": "$45.97"
+            },
+            {
+            "name": "Nike Sportswear Club Fleece Men''s Crew-Neck Sweatshirt",
+            "img": "https://i.postimg.cc/BtWnfKVF/1.webp",
+            "type": "Sweatshirt",
+            "colors": "17 Colors",
+            "price": "$25.97"
+            },
+            {
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/G34Prnf3/2.webp",
+            "type": "Joggers",
+            "colors": "3 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Everyday Cushioned Training Crew Socks (6 Pairs)",
+            "img": "https://i.postimg.cc/4yHx05BZ/4.webp",
+            "type": "Athletic Socks",
+            "colors": "4 Colors",
+            "price": "$23.97"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/brn2npXQ/set8.png",
+        "items": [
+            {
+            "name": "Nike SB Fleece Pullover Skate Hoodie",
+            "img": "https://i.postimg.cc/jjqNFpNb/1.webp",
+            "type": "Hoodie",
+            "colors": "9 Colors",
+            "price": "$100"
+            },
+            {
+            "name": "Nike Dri-FIT Primary Men''s Training T-Shirt",
+            "img": "https://i.postimg.cc/qRS3ggFJ/2.webp",
+            "type": "Sports Jersey",
+            "colors": "2 Colors",
+            "price": "$34.97"
+            },
+            {
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/Y9hFpQbD/3.webp",
+            "type": "Joggers",
+            "colors": "3 Colors",
+            "price": "$108.97"
+            },
+            {
+            "name": "Nike Dri-FIT Club Structured Heathered Cap",
+            "img": "https://i.postimg.cc/Jz5ZKrsx/4.webp",
+            "type": "Golf Hat",
+            "colors": "2 Colors",
+            "price": "$69.97"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/tR612qf6/set9.png",
+        "items": [
+            {
+            "name": "Nike Circuit Blue Light Glasses",
+            "img": "https://i.postimg.cc/HnbVxz5z/4.webp",
+            "type": "Blue Light Glasses",
+            "colors": "2 Colors",
+            "price": "$22"
+            },
+            {
+            "name": "Nike ESC Men''s Knit Pullover Hoodie",
+            "img": "https://i.postimg.cc/pd191pRf/1.webp",
+            "type": "Hoodie",
+            "colors": "3 Colors",
+            "price": "$35"
+            },
+            {
+            "name": "Nike SB Kearny",
+            "img": "https://i.postimg.cc/JnfsMvyt/2.webp",
+            "type": "Skate Cargo Pants",
+            "colors": "5 Colors",
+            "price": "$36.97"
+            },
+            {
+            "name": "Nike Premium",
+            "img": "https://i.postimg.cc/26bqprSP/3.webp",
+            "type": "Lanyard",
+            "colors": "2 Colors",
+            "price": "$125"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/W4QNkrsH/set10.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/Nf4jz5xK/1.webp",
+            "type": "Pullover Hoodie",
+            "colors": "1 Color",
+            "price": "$39.97"
+            },
+            {
+            "name": "Nike Sportswear Premium Essentials",
+            "img": "https://i.postimg.cc/vZZZFbP3/2.webp",
+            "type": "Men''s T-Shirt",
+            "colors": "6 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Sportswear Sport Essentials Men''s Woven Lined Flow Shorts",
+            "img": "https://i.postimg.cc/Jhy70KCX/3.webp",
+            "type": "Athletic Shorts",
+            "colors": "5 Colors",
+            "price": "$36.97"
+            },
+            {
+            "name": "Nike Sportswear Essentials",
+            "img": "https://i.postimg.cc/QdYxjwws/4.webp",
+            "type": "Messenger Bag (17L)",
+            "colors": "1 Color",
+            "price": "$12"
+            }
+        ]
+        }'::JSONB
+    ],
     /* Explorer Images ////////////////////////////////////////////////////////////////// */
     ARRAY[
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/bf03cb63-a736-4557-95bd-49e9d8714a05/pdp-cw2288-001.jpg',
@@ -1412,336 +1412,336 @@ INSERT INTO shoeData(
     -- Complete The Look
     ARRAY[
         '{
-        "image": "shoe1IMG1",
+        "image": "https://i.postimg.cc/HnYt4r2Q/set1.png",
         "items": [
             {
-            "name": "Nike Men''s Therma-FIT Fitness Crew",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/918f8b7b-b73c-4617-93ae-9b35b4e0bb77/image?bgc=f1f1f1",
-            "type": "Crew Neck Pullover",
+            "name": "Nike Brasilia Training Duffel Bag (Small, 41L)",
+            "img": "https://i.postimg.cc/vBdhTqx2/4.webp",
+            "type": "Athletic Duffel",
+            "colors": "3 Colors",
+            "price": "$30"
+            },
+            {
+            "name": "Nike Element Men''s Dri-FIT 1/2-Zip Running Top",
+            "img": "https://i.postimg.cc/63L0vrdW/1.webp",
+            "type": "Quarter Zip Jacket",
             "colors": "9 Colors",
             "price": "$60"
             },
             {
-            "name": "Nike Men''s Dri-FIT Fitness T-Shirt",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/15c85a1d-fe9a-48c1-a841-b3ce5b293ee9/image?bgc=f1f1f1",
-            "type": "Athletic Shirt",
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/y8tv4Y1H/2.webp",
+            "type": "Men''s Cargo Pants",
             "colors": "3 Colors",
             "price": "$35"
             },
             {
-            "name": "Nike Solo Swoosh",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f5afea7-d314-4a80-9c6b-274a27bbc259/image?bgc=f1f1f1",
-            "type": "Men''s French Terry Shorts",
+            "name": "Nike Everyday Plus Cushioned Training Ankle Socks (3 Pairs)",
+            "img": "https://i.postimg.cc/TPbQRM1W/3.webp",
+            "type": "Athletic Socks",
             "colors": "1 Color",
             "price": "$45.97"
-            },
-            {
-            "name": "Nike Apex Futura Washed Bucket Hat",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f4b276bc-204a-4cf8-a678-cb54acf87bf8/image?bgc=f1f1f1",
-            "type": "Bucket Hat",
-            "colors": "3 Colors",
-            "price": "$30"
             }
         ]
         }'::JSONB,
         '{
-            "image": "shoe1IMG2",
-            "items": [
-                {
-                "name": "Nike Sportswear T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/01dd1161-6b7d-471b-9492-5d4e90c9deda/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "3 Colors",
-                "price": "$35"
-                },
-                {
-                "name": "Nike Club Men''s Mesh Flow Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e9e22579-d56b-4be3-ab6e-9bc4fdb6960b/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
-                "colors": "3 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike Sportswear Everyday Essential",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d715d25a-d3fe-4c2a-a345-af995ef1e2c4/image?bgc=f1f1f1",
-                "type": "Crew Socks (3 Pairs)",
-                "colors": "2 Colors",
-                "price": "$22"
-                },
-                {
-                "name": "Nike Essential Horizon Blue Light Glasses",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/2622c925-ca43-4422-bf3f-0370ec99413c/image?bgc=f1f1f1",
-                "type": "Blue Light Glasses",
-                "colors": "2 Colors",
-                "price": "$99"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG3",
-            "items": [
-                {
-                "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/5048a8ab-e814-4c17-a525-e012de395363/image?bgc=f1f1f1",
-                "type": "Active Long Sleeve Shirt",
-                "colors": "2 Colors",
-                "price": "$34.97"
-                },
-                {
-                "name": "Nike Club Men''s Woven Washed Flow Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f1c4444-973e-4f0d-8187-b55b3be53e1f/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
-                "colors": "7 Colors",
-                "price": "$40.97"
-                },
-                {
-                "name": "Nike Chance Blue Light Glasses",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Other Glasses",
-                "colors": "2 Colors",
-                "price": "$69.97"
-                },
-                {
-                "name": "Nike Hayward",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/c9cab5ae-6d77-49d9-ae99-7eac4f699449/image?bgc=f1f1f1",
-                "type": "Backpack (26L)",
-                "colors": "3 Colors",
-                "price": "$57"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG4",
-            "items": [
-                {
-                "name": "Nike Sportswear Club Men''s Washed-Dye T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/da86341f-333c-48c6-86d4-0b405bcbb5c3/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "1 Color",
-                "price": "$34.97"
-                },
-                {
-                "name": "Nike Club Fleece",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/04ef0063-28b1-44d8-b04c-4b51c8a7c799/image?bgc=f1f1f1",
-                "type": "Men''s French Terry Flow Shorts",
-                "colors": "4 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike Everyday Max Cushioned Training Ankle Socks (3 Pairs)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b085899b-0fc7-4dcc-ab76-349d866f1540/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
-                "colors": "2 Colors",
-                "price": "$24"
-                },
-                {
-                "name": "Nike Brasilia 9.5 Training Backpack (Extra Large, 30L)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/0332e712-954d-4302-a01e-2b3e76553817/image?bgc=f1f1f1",
-                "type": "Athletic Backpack",
-                "colors": "3 Colors",
-                "price": "$52"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG5",
-            "items": [
-                {
-                "name": "Nike",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/530fd3aa-7f44-47d7-b285-2b1ea8c74be3/image?bgc=f1f1f1",
-                "type": "Men''s Dri-FIT Fleece Fitness Pullover",
-                "colors": "4 Colors",
-                "price": "$95"
-                },
-                {
-                "name": "Nike Sportswear Swoosh",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/bc02425a-8f0d-4c95-af69-ec3353a628a9/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
-                "colors": "8 Colors",
-                "price": "$30"
-                },
-                {
-                "name": "Nike Solo Swoosh Men''s Fleece Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/52be6f16-f0d0-4b1a-831d-a972c8a2af79/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
-                "colors": "11 Colors",
-                "price": "$100"
-                },
-                {
-                "name": "Nike Everyday Max Cushioned Training No-Show Socks (3 Pairs)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/dab3628c-9af7-4711-b19c-8a5ba27315d9/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
-                "colors": "2 Colors",
-                "price": "$24"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG6",
-            "items": [
-                {
-                "name": "Nike Sportswear Club Fleece Men''s Full-Zip Hoodie",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/da663b1f-6481-4799-8f0a-8b251f8d351d/image?bgc=f1f1f1",
-                "type": "Hoodie",
-                "colors": "10 Colors",
-                "price": "$70"
-                },
-                {
-                "name": "Nike Sportswear JDI",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/vgrltopc3ma73gt4m6gg/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
-                "colors": "12 Colors",
-                "price": "$30"
-                },
-                {
-                "name": "Nike Sportswear Club Fleece Men''s Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/cb2dva7ujnsixi00saxa/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
-                "colors": "7 Colors",
-                "price": "$60"
-                },
-                {
-                "name": "Nike Sportswear RPM",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/ed7237cc-8717-4600-9e1c-5a762d0f7929/image?bgc=f1f1f1",
-                "type": "Backpack (26L)",
-                "colors": "2 Colors",
-                "price": "$102"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG7",
-            "items": [
-                {
-                "name": "Nike Sportswear Club Fleece Men''s Crew",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f5dc30ee-5333-48a2-8951-88e574a5bb61/image?bgc=f1f1f1",
-                "type": "Crew Neck Pullover",
-                "colors": "14 Colors",
-                "price": "$45.97"
-                },
-                {
-                "name": "Nike Sportswear Club",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/hdxcatug6qs32urlpmyw/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
-                "colors": "17 Colors",
-                "price": "$25.97"
-                },
-                {
-                "name": "Nike Sportswear Club",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/49dc07f5-b48c-4f9b-acd3-6c5da76be9e1/image?bgc=f1f1f1",
-                "type": "Men''s Cargo Shorts",
-                "colors": "3 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike Elemental Premium",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b8538f8c-161d-4450-9d1e-31ea520fb202/image?bgc=f1f1f1",
-                "type": "Backpack (21L)",
-                "colors": "4 Colors",
-                "price": "$23.97"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG8",
-            "items": [
-                {
-                "name": "Nike Solo Swoosh",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/819ab2fd-97a4-408d-82ce-b13060cd2384/image?bgc=f1f1f1",
-                "type": "Men''s Fleece Pullover Hoodie",
-                "colors": "9 Colors",
-                "price": "$100"
-                },
-                {
-                "name": "Nike ACG Men''s T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/fff45434-3a12-43a5-bd59-fd79b822b36e/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "2 Colors",
-                "price": "$34.97"
-                },
-                {
-                "name": "Nike Sportswear Tech Pack Men''s Woven Utility Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/069c88b3-f68c-4ab7-8440-6f52a9f60b41/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
-                "colors": "3 Colors",
-                "price": "$108.97"
-                },
-                {
-                "name": "Nike Chance Blue Light Glasses",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Other Glasses",
-                "colors": "2 Colors",
-                "price": "$69.97"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG9",
-            "items": [
-                {
-                "name": "Nike ACG Therma-FIT",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1ffcc569-642d-4986-b5c9-ebcd581f5e23/image?bgc=f1f1f1",
-                "type": "Fleece Pullover Hoodie",
-                "colors": "2 Colors",
-                "price": "$125"
-                },
-                {
-                "name": "Nike Sportswear Men''s T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/3a5cb00e-ca2b-4942-9cbf-6e19bac245a5/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "3 Colors",
-                "price": "$35"
-                },
-                {
-                "name": "Nike ACG Trail Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e3f188c8-cc94-4b7f-a8e1-a56af04faf40/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
-                "colors": "5 Colors",
-                "price": "$36.97"
-                },
-                {
-                "name": "Nike Everyday Plus Cushioned",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d13c0a26-336e-4536-b5d3-ab96a41d540d/image?bgc=f1f1f1",
-                "type": "Ankle Socks",
-                "colors": "2 Colors",
-                "price": "$22"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG10",
-            "items": [
-                {
-                "name": "Nike Therma-FIT",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/956d9c49-748a-48e1-9b69-43251c2e612f/image?bgc=f1f1f1",
-                "type": "Men''s 1/4-Zip Fitness Hoodie",
-                "colors": "1 Color",
-                "price": "$39.97"
-                },
-                {
-                "name": "Nike ACG \"Lungs\" Men''s Long-Sleeve T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/636fe4a5-885b-4a6b-bf9b-44b296953c40/image?bgc=f1f1f1",
-                "type": "Active Long Sleeve Shirt",
-                "colors": "6 Colors",
-                "price": "$55"
-                },
-                {
-                "name": "Nike ACG",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/117fe364-f46f-45f1-86e6-d508e4c84b27/image?bgc=f1f1f1",
-                "type": "Trail Shorts",
-                "colors": "5 Colors",
-                "price": "$36.97"
-                },
-                {
-                "name": "Nike Refuel",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1c6713af-03b0-4a7f-99b8-6600d6b86f72/image?bgc=f1f1f1",
-                "type": "Water Bottle (24 oz)",
-                "colors": "1 Color",
-                "price": "$12"
-                }
-            ]
-            }'::JSONB
-        ],
+        "image": "https://i.postimg.cc/Sx2frFWt/set2.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Club Fleece Men''s Pullover Printed Hoodie",
+            "img": "https://i.postimg.cc/NFdkNQJZ/1.webp",
+            "type": "Hoodie",
+            "colors": "3 Colors",
+            "price": "$35"
+            },
+            {
+            "name": "Nike SB Men''s Skate T-Shirt",
+            "img": "https://i.postimg.cc/gcsscKz4/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "3 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Club Men''s Woven Tapered Leg Pants",
+            "img": "https://i.postimg.cc/5Nt3XFjJ/3.webp",
+            "type": "Athletic Pants",
+            "colors": "2 Colors",
+            "price": "$22"
+            },
+            {
+            "name": "Nike Diamond Select",
+            "img": "https://i.postimg.cc/jdkhPdJ7/4.webp",
+            "type": "Bat Pack (31L)",
+            "colors": "2 Colors",
+            "price": "$99"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/1X3pVLmB/set3.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Tech Fleece Lightweight Men''s Full-Zip Hoodie Sweatshirt",
+            "img": "https://i.postimg.cc/sgk9H6mf/1.webp",
+            "type": "Hoodie",
+            "colors": "2 Colors",
+            "price": "$34.97"
+            },
+            {
+            "name": "Nike Sportswear Premium Essentials Men''s T-Shirt",
+            "img": "https://i.postimg.cc/wvH5g1nS/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "7 Colors",
+            "price": "$40.97"
+            },
+            {
+            "name": "Nike Sportswear Club Men''s Graphic Shorts",
+            "img": "https://i.postimg.cc/DZgrZ2Tm/3.webp",
+            "type": "Athletic Shorts",
+            "colors": "2 Colors",
+            "price": "$69.97"
+            },
+            {
+            "name": "Nike Sportswear Dri-FIT Everyday Essential Crew Socks (3 Pairs)",
+            "img": "https://i.postimg.cc/8CLd2RXR/4.webp",
+            "type": "Athletic Socks",
+            "colors": "3 Colors",
+            "price": "$57"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/BnK2F50r/set4.png",
+        "items": [
+            {
+            "name": "Nike Solo Swoosh",
+            "img": "https://i.postimg.cc/VLTj5G39/1.webp",
+            "type": "Men''s Full-Zip Hoodie",
+            "colors": "1 Color",
+            "price": "$34.97"
+            },
+            {
+            "name": "Nike Dri-FIT Running Division Men''s Running T-Shirt",
+            "img": "https://i.postimg.cc/7Yb3H8QY/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "4 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Phenom Men''s Dri-FIT Knit Running Pants",
+            "img": "https://i.postimg.cc/QCYcQ0V3/3.webp",
+            "type": "Athletic Pants",
+            "colors": "2 Colors",
+            "price": "$24"
+            },
+            {
+            "name": "Nike Everyday Plus Cushioned",
+            "img": "https://i.postimg.cc/NGd8vfDz/4.webp",
+            "type": "Crew Socks (3 Pairs)",
+            "colors": "3 Colors",
+            "price": "$52"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/jSPJ2s6K/set5.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Tech Fleece Men''s Bomber Jacket",
+            "img": "https://i.postimg.cc/02Lw96wc/1.webp",
+            "type": "Athletic Jacket",
+            "colors": "4 Colors",
+            "price": "$95"
+            },
+            {
+            "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
+            "img": "https://i.postimg.cc/qMtKfczN/2.webp",
+            "type": "Active Long Sleeve Shirt",
+            "colors": "8 Colors",
+            "price": "$30"
+            },
+            {
+            "name": "Nike Sportswear Tech Fleece",
+            "img": "https://i.postimg.cc/bYVnFVNX/3.webp",
+            "type": "Men''s Joggers",
+            "colors": "11 Colors",
+            "price": "$100"
+            },
+            {
+            "name": "Nike Cool Down",
+            "img": "https://i.postimg.cc/Zqmvy1jN/4.jpg",
+            "type": "Sunglasses",
+            "colors": "2 Colors",
+            "price": "$24"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/L5Gn47nn/set6.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Club Fleece Men''s Full-Zip Hoodie",
+            "img": "https://i.postimg.cc/gJkwg8Ck/1.webp",
+            "type": "Hoodie",
+            "colors": "10 Colors",
+            "price": "$70"
+            },
+            {
+            "name": "Nike Sportswear Club Men''s T-Shirt",
+            "img": "https://i.postimg.cc/bJCZWdP0/2.webp",
+            "type": "Athletic Shirt",
+            "colors": "12 Colors",
+            "price": "$30"
+            },
+            {
+            "name": "Nike Sportswear Club Men''s Graphic Shorts",
+            "img": "https://i.postimg.cc/7h55kDPF/3.webp",
+            "type": "Athletic Shorts",
+            "colors": "7 Colors",
+            "price": "$60"
+            },
+            {
+            "name": "Nike ACG Aysén Day Pack (32L)",
+            "img": "https://i.postimg.cc/4317vBFS/4.webp",
+            "type": "Athletic Backpack",
+            "colors": "2 Colors",
+            "price": "$102"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/VLMjrB13/set7.png",
+        "items": [
+            {
+            "name": "Nike Club Unstructured Futura Wash Cap",
+            "img": "https://i.postimg.cc/xjBv1Frv/3.webp",
+            "type": "Baseball Hat",
+            "colors": "14 Colors",
+            "price": "$45.97"
+            },
+            {
+            "name": "Nike Sportswear Club Fleece Men''s Crew-Neck Sweatshirt",
+            "img": "https://i.postimg.cc/BtWnfKVF/1.webp",
+            "type": "Sweatshirt",
+            "colors": "17 Colors",
+            "price": "$25.97"
+            },
+            {
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/G34Prnf3/2.webp",
+            "type": "Joggers",
+            "colors": "3 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Everyday Cushioned Training Crew Socks (6 Pairs)",
+            "img": "https://i.postimg.cc/4yHx05BZ/4.webp",
+            "type": "Athletic Socks",
+            "colors": "4 Colors",
+            "price": "$23.97"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/brn2npXQ/set8.png",
+        "items": [
+            {
+            "name": "Nike SB Fleece Pullover Skate Hoodie",
+            "img": "https://i.postimg.cc/jjqNFpNb/1.webp",
+            "type": "Hoodie",
+            "colors": "9 Colors",
+            "price": "$100"
+            },
+            {
+            "name": "Nike Dri-FIT Primary Men''s Training T-Shirt",
+            "img": "https://i.postimg.cc/qRS3ggFJ/2.webp",
+            "type": "Sports Jersey",
+            "colors": "2 Colors",
+            "price": "$34.97"
+            },
+            {
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/Y9hFpQbD/3.webp",
+            "type": "Joggers",
+            "colors": "3 Colors",
+            "price": "$108.97"
+            },
+            {
+            "name": "Nike Dri-FIT Club Structured Heathered Cap",
+            "img": "https://i.postimg.cc/Jz5ZKrsx/4.webp",
+            "type": "Golf Hat",
+            "colors": "2 Colors",
+            "price": "$69.97"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/tR612qf6/set9.png",
+        "items": [
+            {
+            "name": "Nike Circuit Blue Light Glasses",
+            "img": "https://i.postimg.cc/HnbVxz5z/4.webp",
+            "type": "Blue Light Glasses",
+            "colors": "2 Colors",
+            "price": "$22"
+            },
+            {
+            "name": "Nike ESC Men''s Knit Pullover Hoodie",
+            "img": "https://i.postimg.cc/pd191pRf/1.webp",
+            "type": "Hoodie",
+            "colors": "3 Colors",
+            "price": "$35"
+            },
+            {
+            "name": "Nike SB Kearny",
+            "img": "https://i.postimg.cc/JnfsMvyt/2.webp",
+            "type": "Skate Cargo Pants",
+            "colors": "5 Colors",
+            "price": "$36.97"
+            },
+            {
+            "name": "Nike Premium",
+            "img": "https://i.postimg.cc/26bqprSP/3.webp",
+            "type": "Lanyard",
+            "colors": "2 Colors",
+            "price": "$125"
+            }
+        ]
+        }'::JSONB,
+        '{
+        "image": "https://i.postimg.cc/W4QNkrsH/set10.png",
+        "items": [
+            {
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/Nf4jz5xK/1.webp",
+            "type": "Pullover Hoodie",
+            "colors": "1 Color",
+            "price": "$39.97"
+            },
+            {
+            "name": "Nike Sportswear Premium Essentials",
+            "img": "https://i.postimg.cc/vZZZFbP3/2.webp",
+            "type": "Men''s T-Shirt",
+            "colors": "6 Colors",
+            "price": "$55"
+            },
+            {
+            "name": "Nike Sportswear Sport Essentials Men''s Woven Lined Flow Shorts",
+            "img": "https://i.postimg.cc/Jhy70KCX/3.webp",
+            "type": "Athletic Shorts",
+            "colors": "5 Colors",
+            "price": "$36.97"
+            },
+            {
+            "name": "Nike Sportswear Essentials",
+            "img": "https://i.postimg.cc/QdYxjwws/4.webp",
+            "type": "Messenger Bag (17L)",
+            "colors": "1 Color",
+            "price": "$12"
+            }
+        ]
+        }'::JSONB
+    ],
     /* Explorer Images ////////////////////////////////////////////////////////////////////// */
     ARRAY[
         'https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/edac202b-5742-47db-82a7-601b950abcfb/image.jpg',
@@ -2009,296 +2009,230 @@ INSERT INTO shoeData(
     -- Complete The Look
     ARRAY[
         '{
-        "image": "shoe1IMG1",
+        "image": "https://i.postimg.cc/zf4h7JZ2/set1.png",
         "items": [
             {
-            "name": "Nike Men''s Therma-FIT Fitness Crew",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/918f8b7b-b73c-4617-93ae-9b35b4e0bb77/image?bgc=f1f1f1",
-            "type": "Crew Neck Pullover",
-            "colors": "9 Colors",
-            "price": "$60"
+            "name": "Nike Sportswear Club Fleece",
+            "img": "https://i.postimg.cc/L5p1dNsz/1.webp",
+            "type": "Men''s Full-Zip Hoodie",
+            "colors": "10 Colors",
+            "price": "$70"
             },
             {
-            "name": "Nike Men''s Dri-FIT Fitness T-Shirt",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/15c85a1d-fe9a-48c1-a841-b3ce5b293ee9/image?bgc=f1f1f1",
-            "type": "Athletic Shirt",
+            "name": "Nike Ready",
+            "img": "https://i.postimg.cc/KY1Lt1Vg/2.webp",
+            "type": "Men''s Dri-FIT Fitness Tank",
             "colors": "3 Colors",
             "price": "$35"
             },
             {
-            "name": "Nike Solo Swoosh",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f5afea7-d314-4a80-9c6b-274a27bbc259/image?bgc=f1f1f1",
-            "type": "Men''s French Terry Shorts",
+            "name": "Nike Club",
+            "img": "https://i.postimg.cc/kg1KVQjm/3.webp",
+            "type": "Men''s Woven Washed Flow Shorts",
             "colors": "1 Color",
             "price": "$45.97"
             },
             {
-            "name": "Nike Apex Futura Washed Bucket Hat",
-            "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f4b276bc-204a-4cf8-a678-cb54acf87bf8/image?bgc=f1f1f1",
-            "type": "Bucket Hat",
+            "name": "Nike Show X Rush",
+            "img": "https://i.postimg.cc/gJRZBfGz/4.webp",
+            "type": "Sunglasses",
             "colors": "3 Colors",
             "price": "$30"
             }
         ]
         }'::JSONB,
         '{
-            "image": "shoe1IMG2",
+            "image": "https://i.postimg.cc/NFqP3qTp/set2.png",
             "items": [
                 {
-                "name": "Nike Sportswear T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/01dd1161-6b7d-471b-9492-5d4e90c9deda/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
+                "name": "Nike Sportswear Tech Fleece Men''s Crew",
+                "img": "https://i.postimg.cc/hGvwx0cb/1.webp",
+                "type": "Crew Neck Pullover",
                 "colors": "3 Colors",
                 "price": "$35"
                 },
                 {
-                "name": "Nike Club Men''s Mesh Flow Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e9e22579-d56b-4be3-ab6e-9bc4fdb6960b/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
+                "name": "Nike Rise 365 Men''s Dri-FIT Short-Sleeve Running Top",
+                "img": "https://i.postimg.cc/XYQmpPSY/2.webp",
+                "type": "Athletic Shirt",
                 "colors": "3 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike Sportswear Everyday Essential",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d715d25a-d3fe-4c2a-a345-af995ef1e2c4/image?bgc=f1f1f1",
-                "type": "Crew Socks (3 Pairs)",
+                "name": "Nike Sportswear Club Fleece",
+                "img": "https://i.postimg.cc/50FRKNHX/3.webp",
+                "type": "Men''s Pants",
                 "colors": "2 Colors",
                 "price": "$22"
                 },
                 {
-                "name": "Nike Essential Horizon Blue Light Glasses",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/2622c925-ca43-4422-bf3f-0370ec99413c/image?bgc=f1f1f1",
-                "type": "Blue Light Glasses",
+                "name": "Nike Multiplier",
+                "img": "https://i.postimg.cc/8CYYbrC8/4.webp",
+                "type": "Running No-Show Socks (2 Pairs)",
                 "colors": "2 Colors",
                 "price": "$99"
                 }
             ]
             }'::JSONB,
             '{
-            "image": "shoe1IMG3",
+            "image": "https://i.postimg.cc/rzXJnFqy/set3.png",
             "items": [
                 {
-                "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/5048a8ab-e814-4c17-a525-e012de395363/image?bgc=f1f1f1",
-                "type": "Active Long Sleeve Shirt",
+                "name": "Nike Sportswear Tech Fleece Reimagined",
+                "img": "https://i.postimg.cc/kXbYxL7X/1.webp",
+                "type": "Men''s Oversized Shacket",
                 "colors": "2 Colors",
                 "price": "$34.97"
                 },
                 {
-                "name": "Nike Club Men''s Woven Washed Flow Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/9f1c4444-973e-4f0d-8187-b55b3be53e1f/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
+                "name": "Nike Running Energy Rise 365",
+                "img": "https://i.postimg.cc/jjXFDNtH/2.webp",
+                "type": "Men''s Dri-FIT Short-Sleeve Running Top",
                 "colors": "7 Colors",
                 "price": "$40.97"
                 },
                 {
-                "name": "Nike Chance Blue Light Glasses",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Other Glasses",
+                "name": "Nike Club",
+                "img": "https://i.postimg.cc/gjwStTRs/3.webp",
+                "type": "Men''s Woven Tapered Leg Pants",
                 "colors": "2 Colors",
                 "price": "$69.97"
                 },
                 {
-                "name": "Nike Hayward",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/c9cab5ae-6d77-49d9-ae99-7eac4f699449/image?bgc=f1f1f1",
-                "type": "Backpack (26L)",
+                "name": "Nike Elemental",
+                "img": "https://i.postimg.cc/1z9W1twf/4.webp",
+                "type": "Backpack (21L)",
                 "colors": "3 Colors",
                 "price": "$57"
                 }
             ]
             }'::JSONB,
             '{
-            "image": "shoe1IMG4",
+            "image": "https://i.postimg.cc/TYdFXtxR/set4.png",
             "items": [
                 {
-                "name": "Nike Sportswear Club Men''s Washed-Dye T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/da86341f-333c-48c6-86d4-0b405bcbb5c3/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
+                "name": "Nike Rave Polarized Sunglasses",
+                "img": "https://i.postimg.cc/L87bLR1X/3.webp",
+                "type": "Athletic Sunglasses",
                 "colors": "1 Color",
                 "price": "$34.97"
                 },
                 {
-                "name": "Nike Club Fleece",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/04ef0063-28b1-44d8-b04c-4b51c8a7c799/image?bgc=f1f1f1",
-                "type": "Men''s French Terry Flow Shorts",
+                "name": "Nike Club",
+                "img": "https://i.postimg.cc/YSW-yxV6x/1.webp",
+                "type": "Men''s Allover Print T-Shirt",
                 "colors": "4 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike Everyday Max Cushioned Training Ankle Socks (3 Pairs)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b085899b-0fc7-4dcc-ab76-349d866f1540/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
+                "name": "Nike Sportswear Tech Pack Men''s Woven Utility Shorts",
+                "img": "https://i.postimg.cc/9XtKSvv8/2.webp",
+                "type": "Athletic Shorts",
                 "colors": "2 Colors",
                 "price": "$24"
                 },
                 {
-                "name": "Nike Brasilia 9.5 Training Backpack (Extra Large, 30L)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/0332e712-954d-4302-a01e-2b3e76553817/image?bgc=f1f1f1",
-                "type": "Athletic Backpack",
+                "name": "Nike Multiplier Crew Sock (2 Pairs)",
+                "img": "https://i.postimg.cc/MpXLnXXN/4.webp",
+                "type": "Athletic Socks",
                 "colors": "3 Colors",
                 "price": "$52"
                 }
             ]
             }'::JSONB,
             '{
-            "image": "shoe1IMG5",
+            "image": "https://i.postimg.cc/fTMkXS4H/set5.png",
             "items": [
                 {
-                "name": "Nike",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/530fd3aa-7f44-47d7-b285-2b1ea8c74be3/image?bgc=f1f1f1",
-                "type": "Men''s Dri-FIT Fleece Fitness Pullover",
+                "name": "Nike Sportswear Club Fleece Men''s Crew",
+                "img": "https://i.postimg.cc/7LjfTBD7/1.webp",
+                "type": "Crew Neck Pullover",
                 "colors": "4 Colors",
                 "price": "$95"
                 },
                 {
-                "name": "Nike Sportswear Swoosh",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/bc02425a-8f0d-4c95-af69-ec3353a628a9/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
+                "name": "Nike Sportswear Men''s T-Shirt",
+                "img": "https://i.postimg.cc/HWwVV4Nc/2.webp",
+                "type": "Athletic Shirt",
                 "colors": "8 Colors",
                 "price": "$30"
                 },
                 {
-                "name": "Nike Solo Swoosh Men''s Fleece Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/52be6f16-f0d0-4b1a-831d-a972c8a2af79/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
+                "name": "Nike Life",
+                "img": "https://i.postimg.cc/nLXXr88p/3.webp",
+                "type": "Men''s Pleated Chino Shorts",
                 "colors": "11 Colors",
                 "price": "$100"
                 },
                 {
-                "name": "Nike Everyday Max Cushioned Training No-Show Socks (3 Pairs)",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/dab3628c-9af7-4711-b19c-8a5ba27315d9/image?bgc=f1f1f1",
-                "type": "Athletic Socks",
+                "name": "Nike Swerve",
+                "img": "https://i.postimg.cc/rpRpcSW-p/4.webp",
+                "type": "Polarized Sunglasses",
                 "colors": "2 Colors",
                 "price": "$24"
                 }
             ]
             }'::JSONB,
             '{
-            "image": "shoe1IMG6",
+            "image": "https://i.postimg.cc/SNjRDFs8/set6.png",
             "items": [
                 {
-                "name": "Nike Sportswear Club Fleece Men''s Full-Zip Hoodie",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/da663b1f-6481-4799-8f0a-8b251f8d351d/image?bgc=f1f1f1",
-                "type": "Hoodie",
+                "name": "Nike Solo Swoosh Men''s Fleece Crew",
+                "img": "https://i.postimg.cc/hvtjkN1k/1.webp",
+                "type": "Crew Neck Pullover",
                 "colors": "10 Colors",
                 "price": "$70"
                 },
                 {
-                "name": "Nike Sportswear JDI",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/vgrltopc3ma73gt4m6gg/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
+                "name": "Nike Sportswear T-Shirt",
+                "img": "https://i.postimg.cc/Jnq0dRZ3/2.webp",
+                "type": "Athletic Shirt",
                 "colors": "12 Colors",
                 "price": "$30"
                 },
                 {
-                "name": "Nike Sportswear Club Fleece Men''s Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/cb2dva7ujnsixi00saxa/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
+                "name": "Nike Solo Swoosh",
+                "img": "https://i.postimg.cc/J7ptN41M/3.webp",
+                "type": "Men''s Fleece Pants",
                 "colors": "7 Colors",
                 "price": "$60"
                 },
                 {
-                "name": "Nike Sportswear RPM",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/ed7237cc-8717-4600-9e1c-5a762d0f7929/image?bgc=f1f1f1",
-                "type": "Backpack (26L)",
+                "name": "Nike Everyday Essential Ankle Socks (3 Pairs)",
+                "img": "https://i.postimg.cc/SR1skVZJ/4.webp",
+                "type": "Athletic Socks",
                 "colors": "2 Colors",
                 "price": "$102"
                 }
             ]
             }'::JSONB,
             '{
-            "image": "shoe1IMG7",
+            "image": "https://i.postimg.cc/FKF0rCpx/set7.png",
             "items": [
                 {
-                "name": "Nike Sportswear Club Fleece Men''s Crew",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/f5dc30ee-5333-48a2-8951-88e574a5bb61/image?bgc=f1f1f1",
+                "name": "Nike Club",
+                "img": "https://i.postimg.cc/FH4jqHJ8/3.webp",
+                "type": "Unstructured \"Air Max 1\" Cap",
+                "colors": "14 Colors",
+                "price": "$45.97"
+                },
+                {
+                "name": "Nike Solo Swoosh Men''s Fleece Crew",
+                "img": "https://i.postimg.cc/FH4jqHJ8/3.webp",
                 "type": "Crew Neck Pullover",
                 "colors": "14 Colors",
                 "price": "$45.97"
                 },
                 {
-                "name": "Nike Sportswear Club",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/hdxcatug6qs32urlpmyw/image?bgc=f1f1f1",
-                "type": "Men''s T-Shirt",
-                "colors": "17 Colors",
-                "price": "$25.97"
-                },
-                {
-                "name": "Nike Sportswear Club",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/49dc07f5-b48c-4f9b-acd3-6c5da76be9e1/image?bgc=f1f1f1",
-                "type": "Men''s Cargo Shorts",
+                "name": "Nike Solo Swoosh",
+                "img": "https://i.postimg.cc/QNvgQbNX/2.webp",
+                "type": "Fleece Shorts",
                 "colors": "3 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike Elemental Premium",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/b8538f8c-161d-4450-9d1e-31ea520fb202/image?bgc=f1f1f1",
-                "type": "Backpack (21L)",
-                "colors": "4 Colors",
-                "price": "$23.97"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG8",
-            "items": [
-                {
-                "name": "Nike Solo Swoosh",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/819ab2fd-97a4-408d-82ce-b13060cd2384/image?bgc=f1f1f1",
-                "type": "Men''s Fleece Pullover Hoodie",
-                "colors": "9 Colors",
-                "price": "$100"
-                },
-                {
-                "name": "Nike ACG Men''s T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/fff45434-3a12-43a5-bd59-fd79b822b36e/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "2 Colors",
-                "price": "$34.97"
-                },
-                {
-                "name": "Nike Sportswear Tech Pack Men''s Woven Utility Pants",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/069c88b3-f68c-4ab7-8440-6f52a9f60b41/image?bgc=f1f1f1",
-                "type": "Athletic Pants",
-                "colors": "3 Colors",
-                "price": "$108.97"
-                },
-                {
-                "name": "Nike Chance Blue Light Glasses",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/07887c63-2f49-4ef9-ab3a-b3ab8e944c8e/image?bgc=f1f1f1",
-                "type": "Other Glasses",
-                "colors": "2 Colors",
-                "price": "$69.97"
-                }
-            ]
-            }'::JSONB,
-            '{
-            "image": "shoe1IMG9",
-            "items": [
-                {
-                "name": "Nike ACG Therma-FIT",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1ffcc569-642d-4986-b5c9-ebcd581f5e23/image?bgc=f1f1f1",
-                "type": "Fleece Pullover Hoodie",
-                "colors": "2 Colors",
-                "price": "$125"
-                },
-                {
-                "name": "Nike Sportswear Men''s T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/3a5cb00e-ca2b-4942-9cbf-6e19bac245a5/image?bgc=f1f1f1",
-                "type": "Athletic Shirt",
-                "colors": "3 Colors",
-                "price": "$35"
-                },
-                {
-                "name": "Nike ACG Trail Shorts",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/e3f188c8-cc94-4b7f-a8e1-a56af04faf40/image?bgc=f1f1f1",
-                "type": "Athletic Shorts",
-                "colors": "5 Colors",
-                "price": "$36.97"
-                },
-                {
                 "name": "Nike Everyday Plus Cushioned",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/d13c0a26-336e-4536-b5d3-ab96a41d540d/image?bgc=f1f1f1",
+                "img": "https://i.postimg.cc/8zctw5QG/4.webp",
                 "type": "Ankle Socks",
                 "colors": "2 Colors",
                 "price": "$22"
@@ -2306,33 +2240,99 @@ INSERT INTO shoeData(
             ]
             }'::JSONB,
             '{
-            "image": "shoe1IMG10",
+            "image": "https://i.postimg.cc/Y9KG4XfV/set8.png",
             "items": [
                 {
-                "name": "Nike Therma-FIT",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/956d9c49-748a-48e1-9b69-43251c2e612f/image?bgc=f1f1f1",
-                "type": "Men''s 1/4-Zip Fitness Hoodie",
+                "name": "Nike Club Unstructured Swoosh Cap",
+                "img": "https://i.postimg.cc/c4sDghFr/1.webp",
+                "type": "Baseball Hat",
+                "colors": "3 Colors",
+                "price": "$125"
+                },
+                {
+                "name": "Nike Dri-FIT Legend",
+                "img": "https://i.postimg.cc/ZYP752FG/2.webp",
+                "type": "Men''s Fitness T-Shirt",
+                "colors": "17 Colors",
+                "price": "$35"
+                },
+                {
+                "name": "Nike Sportswear Club",
+                "img": "https://i.postimg.cc/m28mQ9nV/3.webp",
+                "type": "Men''s Graphic Shorts",
+                "colors": "17 Colors",
+                "price": "$27.97"
+                },
+                {
+                "name": "Nike Everyday Plus Cushioned",
+                "img": "https://i.postimg.cc/8zctw5QG/4.webp",
+                "type": "Ankle Socks",
+                "colors": "2 Colors",
+                "price": "$22"
+                }
+            ]
+            }'::JSONB,
+            '{
+            "image": "https://i.postimg.cc/9Qk1khC7/set9.png",
+            "items": [
+                {
+                "name": "Nike Sportswear Windrunner",
+                "img": "https://i.postimg.cc/c4sDghFr/1.webp",
+                "type": "Men''s Hooded Jacket",
+                "colors": "3 Colors",
+                "price": "$125"
+                },
+                {
+                "name": "Nike Sportswear Men''s Long-Sleeve T-Shirt",
+                "img": "https://i.postimg.cc/ZYP752FG/2.webp",
+                "type": "Active Long Sleeve Shirt",
+                "colors": "17 Colors",
+                "price": "$35"
+                },
+                {
+                "name": "Nike Sportswear Tech Fleece Men''s Joggers",
+                "img": "https://i.postimg.cc/m28mQ9nV/3.webp",
+                "type": "Jogger Pants",
+                "colors": "17 Colors",
+                "price": "$27.97"
+                },
+                {
+                "name": "Nike Everyday Plus Cushioned",
+                "img": "https://i.postimg.cc/8zctw5QG/4.webp",
+                "type": "Ankle Socks",
+                "colors": "2 Colors",
+                "price": "$22"
+                }
+            ]
+            }'::JSONB,
+            '{
+            "image": "https://i.postimg.cc/m2vtpXKr/set10.png",
+            "items": [
+                {
+                "name": "Nike Sportswear Windrunner",
+                "img": "https://i.postimg.cc/K8t467yD/1.webp",
+                "type": "Men''s Athletic Button-up",
                 "colors": "1 Color",
                 "price": "$39.97"
                 },
                 {
-                "name": "Nike ACG \"Lungs\" Men''s Long-Sleeve T-Shirt",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/636fe4a5-885b-4a6b-bf9b-44b296953c40/image?bgc=f1f1f1",
-                "type": "Active Long Sleeve Shirt",
+                "name": "Big Athlete White T-Shirt",
+                "img": "https://i.postimg.cc/xjFkMTRM/2.webp",
+                "type": "Men''s Athletic T-Shirt",
                 "colors": "6 Colors",
                 "price": "$55"
                 },
                 {
-                "name": "Nike ACG",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/117fe364-f46f-45f1-86e6-d508e4c84b27/image?bgc=f1f1f1",
-                "type": "Trail Shorts",
+                "name": "Cool Black Pants",
+                "img": "https://i.postimg.cc/3N6dTnRn/3.webp",
+                "type": "Men''s Really Cool Pants",
                 "colors": "5 Colors",
                 "price": "$36.97"
                 },
                 {
-                "name": "Nike Refuel",
-                "img": "https://static.nike.com/a/images/c_limit,ar_4:5,q_100,dn_idn,w_320,f_auto/1c6713af-03b0-4a7f-99b8-6600d6b86f72/image?bgc=f1f1f1",
-                "type": "Water Bottle (24 oz)",
+                "name": "Nike Club",
+                "img": "https://i.postimg.cc/15n8HhCT/4.webp",
+                "type": "Baseball Cap",
                 "colors": "1 Color",
                 "price": "$12"
                 }
