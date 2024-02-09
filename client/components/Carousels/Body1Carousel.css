@@ -147,4 +147,5 @@
 #UploadPhotoBtn:hover{
     outline: 1px solid #706f6f;
     transition: outline 0.3s ease;
+    cursor: pointer;
 }

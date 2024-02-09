@@ -93,6 +93,7 @@
     height: 110px;
     bottom: 20px;
     right: 60px ;
+    cursor: pointer;
 }
 .howOthersName{
     position: relative;
