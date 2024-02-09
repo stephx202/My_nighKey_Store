@@ -49,10 +49,8 @@ const Size_Ship_Rev = ({ shoe }) => {
     });
   };
   const reviewChangeArrow = () => {
-    console.log(currentRevArrow);
     setRevArrow((prevArrow) => (prevArrow === downarrow ? uparrow : downarrow));
     setReviewParagraphVisibility((prevVisibility) => !prevVisibility);
-    console.log(currentRevArrow);
   };
   useEffect(() => {
     if (currentSizeArrow === uparrow && currentShipArrow === uparrow) {
@@ -73,7 +71,6 @@ const Size_Ship_Rev = ({ shoe }) => {
   }, [currentSizeArrow, currentShipArrow]);
 
   const getReviewData = () => {
-    // Check if all required fields have data
     if (
       !shoe.primary_review_comment ||
       !shoe.star_rating ||
@@ -96,32 +93,202 @@ const Size_Ship_Rev = ({ shoe }) => {
       );
 
       return (
-        <div className="reviewsDiv">
-          {/* Render sliced review comments */}
-          <img
-            style={{
-              width: "8.5rem",
-              position: "relative",
-              top: "4rem",
-              left: "-1.4rem",
-            }}
-            src={`${rating}`}
-            alt=""
-          />
-          <p
-            style={{
-              fontSize: "1rem",
-              fontWeight: "400",
-              position: "relative",
-              right: "1.8rem",
-              bottom: "-2px",
-              letterSpacing: ".1px",
-            }}
-          >
-            {`${shoe.star_rating.slice(-3, -2)} Stars`}
-          </p>
+        <div
+          style={{ position: "relative", bottom: "105rem", left: ".1rem" }}
+          className="reviewsDiv"
+        >
+          {/*--------------------------------------------- Star Review Images ------------------------------------*/}
+          <div>
+            <img
+              style={{
+                scale: ".29",
+                position: "relative",
+                top: "102rem",
+                left: "-10.3rem",
+              }}
+              src={`${rating}`}
+              alt="1"
+            />
+            <img
+              style={{
+                scale: ".29",
+                position: "relative",
+                top: "84.9rem",
+                left: "-10.3rem",
+              }}
+              src={`${rating}`}
+              alt="2"
+            />
+            <img
+              style={{
+                scale: ".29",
+                position: "relative",
+                top: "74.2rem",
+                left: "-10.2rem",
+              }}
+              src={`${rating}`}
+              alt="3"
+            />
+
+            <p
+              style={{
+                position: "relative",
+                top: "33.5rem",
+                left: "-.2rem",
+                fontSize: "1.05rem",
+                fontWeight: "600",
+                textWrap: "nowrap",
+              }}
+            >
+              {shoe.primary_review_comment[0]}
+            </p>
+            <p
+              style={{
+                position: "relative",
+                top: "42.8rem",
+                left: "-9.5rem",
+                fontSize: "1.1rem",
+                fontWeight: "600",
+                textWrap: "nowrap",
+              }}
+            >
+              {shoe.primary_review_comment[1]}
+            </p>
+            <p
+              style={{
+                position: "relative",
+                top: "58.2rem",
+                left: "-13.2rem",
+                fontSize: "1.1rem",
+                fontWeight: "600",
+                textWrap: "nowrap",
+              }}
+            >
+              {shoe.primary_review_comment[2]}
+            </p>
+
+            {/* --------------------customer username-------------- */}
+            <p
+              style={{
+                position: "relative",
+                top: "35.2rem",
+                left: "-16.5rem",
+                opacity: ".4",
+                fontSize: "1.1rem",
+                fontWeight: "300",
+                textWrap: "nowrap",
+              }}
+            >
+              {shoe.customer_username[0]} - {shoe.review_date[0]}
+            </p>
+
+            <p
+              style={{
+                position: "relative",
+                top: "46.4rem",
+                left: "-39rem",
+                opacity: ".4",
+                fontSize: "1.1rem",
+                fontWeight: "300",
+                textWrap: "nowrap",
+              }}
+            >
+              {shoe.customer_username[1]} -{" "}
+              <span
+                style={{
+                  position: "relative",
+                  top: "2rem",
+                  left: "-23.3rem",
+                  fontSize: "1.1rem",
+                  fontWeight: "300",
+                }}
+              >
+                - {shoe.review_date[1]}
+              </span>
+            </p>
+            <p
+              style={{
+                position: "relative",
+                top: "60.23rem",
+                left: "-64.1rem",
+                fontSize: "1.1rem",
+                fontWeight: "300",
+                opacity: ".4",
+                textWrap: "nowrap",
+              }}
+            >
+              {shoe.customer_username[2]} - {shoe.review_date[2]}
+            </p>
+            {/* -------------------------------------------Secondary Review Comments --------  */}
+            <p
+              style={{
+                display: "flex",
+                position: "relative",
+                top: "35rem",
+                left: "-.2rem",
+                fontSize: "1.1rem",
+                fontWeight: "300",
+              }}
+              //
+            >
+              {shoe.secondary_review_comment[0]}
+            </p>
+            <p
+              style={{
+                display: "flex",
+                position: "relative",
+                top: "44.4rem",
+                left: "-.2rem",
+                fontSize: "1.1rem",
+                fontWeight: "300",
+              }}
+            >
+              {shoe.secondary_review_comment[1]}
+            </p>
+            <p
+              style={{
+                display: "flex",
+                position: "relative",
+                top: "52rem",
+                left: ".1rem",
+                fontSize: "1.1rem",
+                fontWeight: "300",
+              }}
+            >
+              {shoe.secondary_review_comment[2]}
+            </p>
+          </div>
+          {/*----------------------------------------------------- Star Image next to 4.8 Stars */}
+          <div>
+            <img
+              style={{
+                position: "relative",
+                width: "9rem",
+                top: "7.63rem",
+                left: "-1.3rem",
+              }}
+              src={`${rating}`}
+              alt=""
+            />
+            {/*---------------------------------------------- 4.8 Stars ----------------------------------------*/}
+            <p
+              style={{
+                position: "relative",
+                fontWeight: "300",
+                right: "1.1rem",
+                bottom: "-3.6rem",
+                fontSize: "1.1rem",
+              }}
+            >
+              {shoe.star_rating.slice(-3, -2)} Stars
+            </p>
+          </div>
+
           <h4
             style={{
+              position: "relative",
+              bottom: "-3.5rem",
+              left: ".1rem",
               borderBottom: "1px solid black",
               width: "7.2rem",
               letterSpacing: ".1px",
@@ -130,15 +297,20 @@ const Size_Ship_Rev = ({ shoe }) => {
           >
             Write a Review
           </h4>
-          {slicedComments.map((review, index) => (
-            <div key={index}>
-              {review.username} - {shoe.review_date[index]}
-              <br />
-              {review.comment}
-              <br />
-              <br />
-            </div>
-          ))}
+          <h4
+            className="moreReviews"
+            style={{
+              position: "relative",
+              bottom: "-41rem",
+              left: ".3rem",
+              borderBottom: "1px solid black",
+              width: "7.2rem",
+              letterSpacing: ".1px",
+              paddingBottom: "2px",
+            }}
+          >
+            More Reviews
+          </h4>
         </div>
       );
     }
@@ -239,7 +411,10 @@ const Size_Ship_Rev = ({ shoe }) => {
         )}
       </div>
 
-      <div className="normalSizing" style={{ position: "relative", bottom:"-1px", paddingBottom:"14px" }}>
+      <div
+        className="normalSizing"
+        style={{ position: "relative", bottom: "-1px", paddingBottom: "14px" }}
+      >
         <h4>Reviews (3860)</h4>
         <br></br>
         <img className="star" src={`${rating}`} alt="" />

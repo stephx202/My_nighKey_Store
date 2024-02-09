@@ -61,3 +61,8 @@
   position: relative;
   bottom: 6rem;
 }
+
+.moreReviews:hover {
+  cursor: pointer;
+  opacity: .4;
+}
