@@ -54,7 +54,8 @@
 }
 
 .Body1Carousel {
-    width: 100%
+    width: 100%;
+    padding-bottom: 50px;
   }
 
 .Body1Carousel .slick-track {
