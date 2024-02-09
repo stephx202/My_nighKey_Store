@@ -65,11 +65,11 @@ img.star {
 #review-data-id {
   /* background-color: pink; */
   position: relative;
-  bottom: 4rem;
+  bottom: 5.2rem;
 }
 
 .review-user-date-class {
-  height: 7rem;
+  height: 4.5rem;
   width: 20rem;
 }
 
@@ -99,7 +99,7 @@ img.star {
 
 .review-second-comment-class {
   position: relative;
-  top: 3rem;
+  top: 5rem;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -110,13 +110,73 @@ img.star {
   justify-content: space-evenly;
   position: relative;
   top: 1rem;
-  right: .2rem;
+  right: 0.2rem;
   margin-bottom: -5rem;
 }
 
 .stars-ratingValue img {
   position: relative;
   top: -4rem;
-  right: -.1rem;
+  right: -3.7rem;
   width: 9rem;
+}
+
+.getStarRating {
+  position: relative;
+  left: 3.4rem;
+  bottom:3px;
+}
+
+.list-items {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.shipping-paragraph {
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+}
+
+.shipping-paragraph p,
+span {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.shipping-paragraph span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.shipping-paragraph .free {
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+  right: 0.34rem;
+}
+
+#write-a-review{
+  display:flex;
+  position: relative;
+  z-index: 10;
+  font-weight: 600;
+}
+
+#write-a-review:hover {
+  cursor: pointer;
+  opacity: .3;
+}
+
+.more-reviews {
+  padding-bottom: 8px;
+}
+
+.more-reviews:hover {
+  cursor: pointer;
+  opacity: 0.4;
 }

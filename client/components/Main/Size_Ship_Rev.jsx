@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/size_ship_rev.css";
+import("../../styles/size_ship_rev.css");
 import downarrow from "../../../images/down_arrow.png";
 import uparrow from "../../../images/up_arrow.png";
 import rating from "../../../images/4.8_star_rating.png";
@@ -127,7 +127,7 @@ const Size_Ship_Rev = ({ shoe }) => {
       <div>
         {isSizeParagraphVisible && (
           <div>
-            <ul>
+            <ul class="list-items">
               <li>
                 Fits large; we recommend ordering a half size<br></br>down
               </li>
@@ -144,17 +144,19 @@ const Size_Ship_Rev = ({ shoe }) => {
       </div>
       <div>
         {isShipParagraphVisible && (
-          <div>
+          <div className="shipping-paragraph">
             <p>
-              <span>Free standard shipping on orders $50+ and free 60-day</span>
-              <br></br>
-              returns for Nike Members. <span>Learn more.</span>
+              <span className="free">
+                Free standard shipping on orders $50+ and free
+              </span>
+              <br></br>60-day returns for Nike Members.
+              <span style={{ textWrap: "nowrap" }}>Learn more.</span>
               <br></br>
             </p>
             <span>Return policy exclusions apply.</span>
             <br></br>
             <br></br>
-            <span>Pick-up available at select Nike stores.</span>
+            <span> Pick-up available at select Nike stores.</span>
           </div>
         )}
       </div>
@@ -170,13 +172,52 @@ const Size_Ship_Rev = ({ shoe }) => {
         {isReviewParagraphVisible && (
           <div className="stars-ratingValue">
             <img src={`${rating}`} alt="" />
-            {getStarRating()} <span style = {{position: "relative", left: "5px"}}>Stars</span>
+            <span className="getStarRating">{getStarRating()}</span>
+            <span
+              style={{ position: "relative", left: "3.7rem", bottom: "3px" }}
+            >
+              Stars
+            </span>
+            <div
+              id="write-a-review"
+              style={{
+                borderBottom: "1px solid black",
+                marginBottom: "5.5rem",
+                width: "6.9rem",
+                fontSize: "1rem",
+                textWrap: "nowrap",
+                paddingTop: "35px",
+                position: "relative",
+                right: "7.7rem",
+                height: "26px",
+              }}
+            >
+              Write a Review
+            </div>
           </div>
         )}
       </div>
 
-      <div>{isReviewParagraphVisible && <div>{getReviewData()}</div>}</div>
-
+      <div>
+        {isReviewParagraphVisible && <div>{getReviewData()}</div>}
+        {isReviewParagraphVisible && (
+          <h3
+            className="more-reviews"
+            style={{
+              fontWeight: "600",
+              fontSize: "1rem",
+              borderBottom: "1px solid black",
+              marginBottom: "4rem",
+              width: "6.7rem",
+              textWrap: "nowrap",
+              position: "relative",
+              right: "-.1rem",
+            }}
+          >
+            More Reviews
+          </h3>
+        )}
+      </div>
       <div className="bottom-border"></div>
     </>
   );

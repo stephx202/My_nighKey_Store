@@ -130,12 +130,9 @@
 #purchaseInfo {
   position: relative;
   height: fit-content;
-  /* max-height: auto; */
   flex-grow: 1;
   min-width: 40vh;
-  /* outline: thin solid blue; */
   margin-left: 100px;
-  /* height:165rem; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* #purchaseInfo div{
