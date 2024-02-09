@@ -6,18 +6,9 @@ import './Body1Carousel.css';
 //import Body1IMGs from './Body1IMGs';
 import ModalBody1 from './ModalBody1.jsx';
 
-
-  
-  // const Body1Arrows = ({ className, onClick }) => (
-  //   <button
-  //   className={className}
-  //   onClick={onClick}
-  // >
-  // </button>
-  // );
   
   const Body1Carousel = ({ howotherscarousel }) => {
-    console.log("howotherscarousel:", howotherscarousel);//array of objects
+    // console.log("howotherscarousel:", howotherscarousel);//array of objects
     if (!howotherscarousel || howotherscarousel.length === 0) {
       return <div>No images available</div>;
       
@@ -25,6 +16,7 @@ import ModalBody1 from './ModalBody1.jsx';
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [selectedIndex, setSelectedIndex] = useState(null);
+
 
     const openModal = (image, index) => {
       setSelectedImage(image);
@@ -37,6 +29,10 @@ import ModalBody1 from './ModalBody1.jsx';
       setSelectedImage(null);
     };
     
+
+
+
+
     const settings = {
       dots: false,
       infinite: false,
@@ -74,9 +70,11 @@ import ModalBody1 from './ModalBody1.jsx';
     };
   
     return (
+      <>
         <div className="Body1Carousel">
           <h1 id="howOthersHeading">How Others Are Wearing It</h1>
           <h3 id= "howOthersSmallHeading">Upload your photo or mention @Nike on Instagram for a chance to be featured.</h3>
+          <div id="UploadPhotoBtn">Upload Your Photo</div>
           <Slider {...settings}>
             {howotherscarousel.map((image, index) => (
               <div key={index} className="Body1IMGs" onClick={() => openModal(image.image, index)}>
@@ -100,7 +98,8 @@ import ModalBody1 from './ModalBody1.jsx';
          </Slider>
           <ModalBody1 showModal={showModal} closeModal={closeModal} image={selectedImage} selectedIndex={selectedIndex} howotherscarousel={howotherscarousel} />
         </div>
-      );
+      </>
+    );
   }
   
   export default Body1Carousel;

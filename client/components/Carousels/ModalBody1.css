@@ -93,6 +93,7 @@
     height: 110px;
     bottom: 20px;
     right: 60px ;
+    cursor: pointer;
 }
 .howOthersName{
     position: relative;
@@ -138,3 +139,9 @@
     bottom: 360px;
     right: 30px;
   }
+
+#circleBtn:hover{
+    fill: black;
+  }
+
+  
