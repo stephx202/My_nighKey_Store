@@ -10,6 +10,8 @@ const Body2Carousel = ({shoe}) => {
   const [theLook, setTheLook] = useState(null);
   const [showDiscs, setShowDiscs] = useState(null);
 
+  const [hoveredItem, setHoveredItem] = useState(null);
+
 
   const settings = {
     dots: false,
@@ -30,14 +32,20 @@ const Body2Carousel = ({shoe}) => {
       return null
     }
     return shoe.completethelook[theLook].items.map((item, index) => (
-      <div key={index} className='modalItems'>
-        <img className="itemImage" src={shoe.completethelook[theLook].items[index].img}></img>
-        <div className='itemDesc'>
-          <p className='textBold'>{shoe.completethelook[theLook].items[index].name}</p>
-          <p className='textNormal'>{shoe.completethelook[theLook].items[index].type}</p>
-          <p className='textNormal'>{shoe.completethelook[theLook].items[index].colors}</p>
-          <p className='textBold'>{shoe.completethelook[theLook].items[index].price}</p>
-          <p className='shopText'>SHOP</p>
+      <div 
+        key={index} 
+        className='modalItems'
+        >
+          <img className="itemImage" src={shoe.completethelook[theLook].items[index].img}></img>
+          <div className='itemDesc'>
+            <p 
+            onMouseEnter={() => setHoveredItem(index)}
+            onMouseLeave={() => setHoveredItem(null)}
+            className={hoveredItem === index ? 'textBoldHovered' : 'textBold'}>{shoe.completethelook[theLook].items[index].name}</p>
+            <p className='textNormal'>{shoe.completethelook[theLook].items[index].type}</p>
+            <p className='textNormal'>{shoe.completethelook[theLook].items[index].colors}</p>
+            <p className='textPrice'>{shoe.completethelook[theLook].items[index].price}</p>
+            <p className='shopText'>SHOP</p>
         </div>
       </div>
     ))
@@ -57,8 +65,8 @@ const Body2Carousel = ({shoe}) => {
   let clickModal = () => {
     if (theLook && shoe) {
       return (
-        <div id='modalDim'>
-          <div id='theLookModal'>
+        <div id='modalDim' onClick={modalClose}>
+          <div id='theLookModal' onClick={(event) => event.stopPropagation()}>
             <div id='lookModalLeft'>
               <img id="modalImg" src={shoe.completethelook[theLook].image}></img>
               <div id='currentSet'>{(+theLook + 1)}/10</div>
