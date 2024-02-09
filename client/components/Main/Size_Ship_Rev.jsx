@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/size_ship_rev.css";
+import "../../styles/side_panel.css";
 import downarrow from "../../../images/down_arrow.png";
 import uparrow from "../../../images/up_arrow.png";
 import rating from "../../../images/4.8_star_rating.png";
@@ -98,93 +99,27 @@ const Size_Ship_Rev = ({ shoe }) => {
             <p className="primaryComment3">{shoe.primary_review_comment[2]}</p>
 
             {/* --------------------customer username-------------- */}
-            <p
-              style={{
-                position: "relative",
-                top: "35.2rem",
-                left: "-16.5rem",
-                opacity: ".4",
-                fontSize: "1.1rem",
-                fontWeight: "300",
-                textWrap: "nowrap",
-              }}
-            >
+            <p className="username_date1">
               {shoe.customer_username[0]} - {shoe.review_date[0]}
             </p>
 
-            <p
-              style={{
-                position: "relative",
-                top: "46.4rem",
-                left: "-39rem",
-                opacity: ".4",
-                fontSize: "1.1rem",
-                fontWeight: "300",
-                textWrap: "nowrap",
-              }}
-            >
-              {shoe.customer_username[1]} -{" "}
-              <span
-                style={{
-                  position: "relative",
-                  top: "2rem",
-                  left: "-23.3rem",
-                  fontSize: "1.1rem",
-                  fontWeight: "300",
-                }}
-              >
+            <p className="username_date2">
+              {shoe.customer_username[1]}
+              <span className="username_date2_span">
                 - {shoe.review_date[1]}
               </span>
             </p>
-            <p
-              style={{
-                position: "relative",
-                top: "60.23rem",
-                left: "-64.1rem",
-                fontSize: "1.1rem",
-                fontWeight: "300",
-                opacity: ".4",
-                textWrap: "nowrap",
-              }}
-            >
+            <p className="username_date3">
               {shoe.customer_username[2]} - {shoe.review_date[2]}
             </p>
             {/* -------------------------------------------Secondary Review Comments --------  */}
-            <p
-              style={{
-                display: "flex",
-                position: "relative",
-                top: "35rem",
-                left: "-.2rem",
-                fontSize: "1.1rem",
-                fontWeight: "300",
-              }}
-              //
-            >
+            <p className="secondaryComment1">
               {shoe.secondary_review_comment[0]}
             </p>
-            <p
-              style={{
-                display: "flex",
-                position: "relative",
-                top: "44.4rem",
-                left: "-.2rem",
-                fontSize: "1.1rem",
-                fontWeight: "300",
-              }}
-            >
+            <p className="secondaryComment2">
               {shoe.secondary_review_comment[1]}
             </p>
-            <p
-              style={{
-                display: "flex",
-                position: "relative",
-                top: "52rem",
-                left: ".1rem",
-                fontSize: "1.1rem",
-                fontWeight: "300",
-              }}
-            >
+            <p className="secondaryComment3">
               {shoe.secondary_review_comment[2]}
             </p>
           </div>
@@ -201,46 +136,11 @@ const Size_Ship_Rev = ({ shoe }) => {
               alt=""
             />
             {/*---------------------------------------------- 4.8 Stars ----------------------------------------*/}
-            <p
-              style={{
-                position: "relative",
-                fontWeight: "300",
-                right: "1.1rem",
-                bottom: "-3.6rem",
-                fontSize: "1.1rem",
-              }}
-            >
-              {shoe.star_rating.slice(-3, -2)} Stars
-            </p>
+            <p className="starRating">{shoe.star_rating.slice(-3, -2)} Stars</p>
           </div>
 
-          <h4
-            style={{
-              position: "relative",
-              bottom: "-3.5rem",
-              left: ".1rem",
-              borderBottom: "1px solid black",
-              width: "7.2rem",
-              letterSpacing: ".1px",
-              paddingBottom: "2px",
-            }}
-          >
-            Write a Review
-          </h4>
-          <h4
-            className="moreReviews"
-            style={{
-              position: "relative",
-              bottom: "-41rem",
-              left: ".3rem",
-              borderBottom: "1px solid black",
-              width: "7.2rem",
-              letterSpacing: ".1px",
-              paddingBottom: "2px",
-            }}
-          >
-            More Reviews
-          </h4>
+          <h4 className="writeReview">Write a Review</h4>
+          <h4 className="moreReviews">More Reviews</h4>
         </div>
       );
     }
@@ -282,6 +182,7 @@ const Size_Ship_Rev = ({ shoe }) => {
         <img onClick={shipChangeArrow} src={`${currentShipArrow}`} alt="" />
       </div>
       <div>
+        {/*---------------------------------- Drop Down Paragraph Formatting In-line CSS--------------- */}
         {isShipParagraphVisible && (
           <div
             style={{
