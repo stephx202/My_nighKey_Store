@@ -6,7 +6,6 @@ import rating from "../../../images/4.8_star_rating.png";
 
 const Size_Ship_Rev = ({ shoe }) => {
   const [currentShipping, setShipping] = useState("normalShipping");
-  const [currentStarClass, setStarClass] = useState("star");
   const [currentReviewing, setReviewing] = useState("normalReviewing");
   const [currentSizeArrow, setSizeArrow] = useState(downarrow);
   const [currentShipArrow, setShipArrow] = useState(downarrow);
@@ -15,12 +14,6 @@ const Size_Ship_Rev = ({ shoe }) => {
   const [isShipParagraphVisible, setShipParagraphVisibility] = useState(false);
   const [isReviewParagraphVisible, setReviewParagraphVisibility] =
     useState(false);
-  const [currentSizingClass, setSizingClass] = useState("downarrow-sizing");
-  const [currentShippingClass, setShippingClass] =
-    useState("downarrow-shipping");
-  const [currentReviewingClass, setReviewingClass] = useState(
-    "downarrow-reviewing"
-  );
 
   const sizeChangeArrow = () => {
     setSizeArrow((prevArrow) =>
@@ -93,79 +86,16 @@ const Size_Ship_Rev = ({ shoe }) => {
       );
 
       return (
-        <div
-          style={{ position: "relative", bottom: "105rem", left: ".1rem" }}
-          className="reviewsDiv"
-        >
+        <div className="sidePanelMain">
           {/*--------------------------------------------- Star Review Images ------------------------------------*/}
           <div>
-            <img
-              style={{
-                scale: ".29",
-                position: "relative",
-                top: "102rem",
-                left: "-10.3rem",
-              }}
-              src={`${rating}`}
-              alt="1"
-            />
-            <img
-              style={{
-                scale: ".29",
-                position: "relative",
-                top: "84.9rem",
-                left: "-10.3rem",
-              }}
-              src={`${rating}`}
-              alt="2"
-            />
-            <img
-              style={{
-                scale: ".29",
-                position: "relative",
-                top: "74.2rem",
-                left: "-10.2rem",
-              }}
-              src={`${rating}`}
-              alt="3"
-            />
+            <img className="star1" src={`${rating}`} alt="1" />
+            <img className="star2" src={`${rating}`} alt="2" />
+            <img className="star3" src={`${rating}`} alt="3" />
 
-            <p
-              style={{
-                position: "relative",
-                top: "33.5rem",
-                left: "-.2rem",
-                fontSize: "1.05rem",
-                fontWeight: "600",
-                textWrap: "nowrap",
-              }}
-            >
-              {shoe.primary_review_comment[0]}
-            </p>
-            <p
-              style={{
-                position: "relative",
-                top: "42.8rem",
-                left: "-9.5rem",
-                fontSize: "1.1rem",
-                fontWeight: "600",
-                textWrap: "nowrap",
-              }}
-            >
-              {shoe.primary_review_comment[1]}
-            </p>
-            <p
-              style={{
-                position: "relative",
-                top: "58.2rem",
-                left: "-13.2rem",
-                fontSize: "1.1rem",
-                fontWeight: "600",
-                textWrap: "nowrap",
-              }}
-            >
-              {shoe.primary_review_comment[2]}
-            </p>
+            <p className="primaryComment1">{shoe.primary_review_comment[0]}</p>
+            <p className="primaryComment2">{shoe.primary_review_comment[1]}</p>
+            <p className="primaryComment3">{shoe.primary_review_comment[2]}</p>
 
             {/* --------------------customer username-------------- */}
             <p

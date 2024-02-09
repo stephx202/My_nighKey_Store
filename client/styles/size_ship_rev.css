@@ -25,7 +25,7 @@
   font-weight: 400;
   align-items: center;
   position: relative;
-  bottom:12px;
+  bottom: 12px;
 }
 
 .normalSizing h4 {
@@ -51,7 +51,7 @@
 
 /* ------------------------------------------------------------ */
 
-  img.star {
+img.star {
   position: relative;
   scale: 14;
   z-index: 1;
@@ -64,5 +64,61 @@
 
 .moreReviews:hover {
   cursor: pointer;
-  opacity: .4;
+  opacity: 0.4;
+}
+
+/* SIDE PANEL CSS */
+
+.star1 {
+  position: relative;
+  scale: 0.29;
+  top: 102rem;
+  left: -10.3rem;
+}
+
+.star2 {
+  scale: 0.29;
+  position: relative;
+  top: 84.9rem;
+  left: -10.3rem;
+}
+
+.star3 {
+  scale: 0.29;
+  position: relative;
+  top: 74.2rem;
+  left: -10.2rem;
+}
+
+.sidePanelMain {
+  position: relative;
+  bottom: 105rem;
+  left: 0.1rem;
+}
+
+.primaryComment1 {
+  position: relative;
+  top: 33.5rem;
+  left: -0.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+.primaryComment2 {
+  position: relative;
+  top: 42.8rem;
+  left: -9.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+.primaryComment3 {
+  position: relative;
+  top: 58.2rem;
+  left: -13.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-wrap: nowrap;
 }
