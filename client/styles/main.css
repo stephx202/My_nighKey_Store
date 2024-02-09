@@ -15,7 +15,6 @@
   /* outline: solid thin red; */
 }
 
-
 /* Image Gallery Component ////////////////////////////////////////////////// */
 #imageGallery {
   position: -webkit-sticky;
@@ -130,12 +129,11 @@
 
 #purchaseInfo {
   position: relative;
-  height:fit-content;
-  /* max-height: auto; */
+  height: fit-content;
   flex-grow: 1;
   min-width: 40vh;
-  /* outline: thin solid blue; */
   margin-left: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* #purchaseInfo div{
   outline: thin solid orange;
@@ -318,4 +316,3 @@ a.details {
   background-color: #f5f5f5;
   color: #707072;
 }
-
