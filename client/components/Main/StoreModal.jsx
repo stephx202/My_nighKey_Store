@@ -5,7 +5,7 @@ export default function StoreModal(props){
     const [selected, setSelected] = useState({})
 
     function saveStore(){
-        console.log(Object.keys(selected).length)
+        // console.log(Object.keys(selected).length)
         if (Object.keys(selected).length !== 0){
              props.select({...selected, date: month + " " +day })
         } else{
@@ -27,8 +27,8 @@ export default function StoreModal(props){
 const stores = [{id:1, name:"Nike Unite - Harlem"}, {id:2, name:"Nike Factory Store - Paramus"}, {id:3, name:"Nike Soho"}, {id:4, name:"Nike Well Collective - Battery Park"}, {id:5, name:"Nike Well Collective - Williamsburg"}, {id:6, name:"Nike Unite - East New York"}, {id:7, name:"Nike Well Collective - Shrewsbury"}, {id:8, name:"Nike Factory Store - Staten Island"},  {id:9, name:"Nike Unite - North Bronx"}, {id:10, name:"Nike Factory Store - Newark"}]
 
     return (
-        <div className="modal">
-            <div id="stores" >
+        <div className="modal" onClick={() => props.close(false)}>
+            <div id="stores" onClick={(e) => e.stopPropagation()}>
             <button className="close" onClick={() => props.close(false)}><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path d="M7 17L16.8995 7.10051" stroke="#000000" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M7 7.00001L16.8995 16.8995" stroke="#000000" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg></button>
                 <h1>Select Pickup Location</h1>
                 <div className="search">

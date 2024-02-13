@@ -183,13 +183,14 @@ div.link:hover{
     outline: none;
 }
 
+
 /* .searchbox input:hover+*{
         background-color: 
     } */
     
-.input:hover button{
-    background-color: #c5c5c5; ;
-}
+/* .searchbox:last-child{
+    background-color: #c5c5c5; 
+} */
 
 .heart, .bag{
     background-color: white;
