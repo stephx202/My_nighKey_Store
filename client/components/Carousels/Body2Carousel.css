@@ -279,32 +279,55 @@
 }
 .textBold {
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: -10px;
+    margin-bottom: 0px;
     margin-left: 10px;
+    font-size: large;
     font-weight: 600;
     font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
 }
 .textNormal {
     position: relative;
-    margin-top: 0px;
+    margin-top: -20px;
     margin-bottom: 0px;
     margin-left: 10px;
     font-size:medium;
     font-style:oblique;
+    font-weight: 100;
     color: #818181;
+    font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
+}
+.textPrice {
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: 500;
     font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
 }
 .shopText {
     position: relative;
-    margin-top: 0px;
+    margin-top: -20px;
     margin-bottom: 0px;
     margin-left: 10px;
-    font-size: small;
-    font-weight: 700;
+    font-size: medium;
+    font-weight: 600;
     font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
     text-decoration: underline;
 }
+
+.textBoldHovered {
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: large;
+    font-weight: 600;
+    font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
+    color: #b4b4b4;
+}
+
 
     .Body2Carousel .slick-prev,
 .Body2Carousel .slick-next {
@@ -314,7 +337,6 @@
     border: none; 
     cursor: pointer;
     top: 350px;
-    
 }
   
 .Body2Carousel .slick-prev::before,

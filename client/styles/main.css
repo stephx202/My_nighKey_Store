@@ -15,7 +15,6 @@
   /* outline: solid thin red; */
 }
 
-
 /* Image Gallery Component ////////////////////////////////////////////////// */
 #imageGallery {
   position: -webkit-sticky;
@@ -130,12 +129,11 @@
 
 #purchaseInfo {
   position: relative;
-  height:fit-content;
-  /* max-height: auto; */
+  height: fit-content;
   flex-grow: 1;
   width: 300px;
-  /* outline: thin solid blue; */
   margin-left: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* #purchaseInfo div{
   outline: thin solid orange;

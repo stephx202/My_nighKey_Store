@@ -23,6 +23,9 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   text-wrap: nowrap;
   font-weight: 400;
+  align-items: center;
+  position: relative;
+  bottom: 12px;
 }
 
 .normalSizing h4 {
@@ -35,21 +38,145 @@
   height: 10px;
   width: 9px;
   scale: 2;
-  padding-top: 20px;
-}
-
-.bottom-border {
-  position: relative;
-  bottom:10px;
-  width: 100%;
-  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  z-index: 10;
+  align-items: center;
 }
 
 /* ------------------------------------------------------------ */
 
-.normalSizing img.star {
+img.star {
   position: relative;
-  bottom:1.9rem;
-  width: 4.5rem;
+  scale: 14;
+  z-index: 1;
+}
+
+.reviewsDiv {
+  position: relative;
+  bottom: 6rem;
+}
+
+.moreReviews:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+/* ------------------------------SIDE PANEL CSS-----------------------------*/
+
+#review-data-id {
+  /* background-color: pink; */
+  position: relative;
+  bottom: 5.2rem;
+}
+
+.review-user-date-class {
   height: 4.5rem;
+  width: 20rem;
+}
+
+#review-data-id h3 {
+  position: relative;
+  top: 7rem;
+  font-size: 1.05rem;
+}
+
+#review-data-id img {
+  position: relative;
+  right: 7.6rem;
+  scale: 0.34;
+  bottom: 3rem;
+}
+
+#review-data-id p {
+  position: relative;
+  right: -5.5rem;
+  bottom: 13.95rem;
+  font-size: 0.95rem;
+  opacity: 0.4;
+  font-weight: 300;
+  text-wrap: wrap;
+  line-height: 1.5;
+}
+
+.review-second-comment-class {
+  position: relative;
+  top: 5rem;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.stars-ratingValue {
+  display: flex;
+  width: 10rem;
+  justify-content: space-evenly;
+  position: relative;
+  top: 1rem;
+  right: 0.2rem;
+  margin-bottom: -5rem;
+}
+
+.stars-ratingValue img {
+  position: relative;
+  top: -4rem;
+  right: -3.7rem;
+  width: 9rem;
+}
+
+.getStarRating {
+  position: relative;
+  left: 3.4rem;
+  bottom:3px;
+}
+
+.list-items {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.shipping-paragraph {
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+}
+
+.shipping-paragraph p,
+span {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.shipping-paragraph span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.shipping-paragraph .free {
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+  right: 0.34rem;
+}
+
+#write-a-review{
+  display:flex;
+  position: relative;
+  z-index: 10;
+  font-weight: 600;
+}
+
+#write-a-review:hover {
+  cursor: pointer;
+  opacity: .3;
+}
+
+.more-reviews {
+  padding-bottom: 8px;
+}
+
+.more-reviews:hover {
+  cursor: pointer;
+  opacity: 0.4;
 }

@@ -54,7 +54,8 @@
 }
 
 .Body1Carousel {
-    width: 100%
+    width: 100%;
+    padding-bottom: 50px;
   }
 
 .Body1Carousel .slick-track {
@@ -128,4 +129,24 @@
     background-size: contain;
     background-position: center;
     right: 60px
+}
+
+#UploadPhotoBtn{
+    margin-left: 58px;
+    padding: 5px;
+    padding-left: 12px;
+    padding-top: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 400;
+    width: 160px;
+    height: 20px;
+    outline: 1px solid #bebebe;
+    border-radius: 25px ;
+
+}
+
+#UploadPhotoBtn:hover{
+    outline: 1px solid #706f6f;
+    transition: outline 0.3s ease;
+    cursor: pointer;
 }

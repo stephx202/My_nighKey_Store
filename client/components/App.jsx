@@ -30,7 +30,6 @@ const App = () => {
       .then((res) => res.json())
       .then((shoes) => {
         setShoe(shoes)
-        console.log("something", shoes.howotherscarousel)
       });
   }, [currentShoe]);
   ////////////////////////////////////////////////////////////////////////
