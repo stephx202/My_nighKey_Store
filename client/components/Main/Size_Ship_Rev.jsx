@@ -128,7 +128,7 @@ const Size_Ship_Rev = ({ shoe }) => {
         {isSizeParagraphVisible && (
           <div>
             <ul class="list-items">
-              <li>
+              <li class = "li-class">
                 Fits large; we recommend ordering a half size<br></br>down
               </li>
               <li>
