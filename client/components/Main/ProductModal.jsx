@@ -15,13 +15,13 @@ export default function ProductModal(props){
                 <h4 style={{paddingTop: "13px"}}>LEGENDARY STYLE REFINED.</h4>
                 <div>{props.shoe.description}</div>
                 <h4>Benefits</h4>
-                  <ul className="details">
+                  <ul>
                     {props.shoe.benefits.map(benefit => <li key={benefit}>{benefit}</li>)}
                   </ul>
                 <h4>Product Details</h4>
                   <ul>
                    {props.shoe.details.map(detail => <li key={detail}>{detail}</li>)}
-                    <ul className="details">
+                    <ul>
                       <li>Shown: {props.shoe.color}</li>
                       <li>Style: {props.shoe.style}</li>
                     </ul>
