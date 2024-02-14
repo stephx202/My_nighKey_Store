@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch server.js",
-    "start": "node server.js"
+    "start": "npm run dev"
+    
   },
   "dependencies": {
     "dotenv": "^16.0.3",
