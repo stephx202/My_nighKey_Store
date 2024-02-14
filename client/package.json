@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite serve",
-    "build": "vite build"
+    "build": "vite build",
+    "start": "vite"
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.3.2",
