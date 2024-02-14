@@ -15,6 +15,7 @@ await client.connect();
 const app = express();
 
 app.use(express.json());
+app.use(express.static('../client/dist'))
 
 app.get("/api/shoedata", (req, res) => {
   client.query("SELECT id, thumbnails, expandedimg FROM shoedata;").then((result) => {
