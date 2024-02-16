@@ -12,7 +12,7 @@ const ModalBody1 = (props) => {
       <div className="modal-overlay" onClick={closeModal}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <div className="imageDiv">
-            <img className="background-image" src={image} alt="Background Image" />
+            <img loading="lazy" className="background-image" src={image} alt="Background Image" />
             <img className="image" src={image} alt="Full Image" />
           </div>
           
@@ -24,7 +24,7 @@ const ModalBody1 = (props) => {
                   <div className="oneItemContainer" key={index}>
                     <h4 className="howOthersName">{item.name}</h4>
                     <h4 className="howOthersType">{item.type}</h4>
-                      < img src={item.image} alt={item.name} />
+                      < img loading="lazy" src={item.image} alt={item.name} />
                   </div>
                 ))}
               </ul>
